@@ -1,2 +1,2 @@
 # dotfiles
-These are my resource files for vimm, Zsh, Xterm, etc
+These are my resource files for vim, Zsh, Xterm, etc
