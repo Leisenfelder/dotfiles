@@ -15,9 +15,9 @@
 set nocompatible            " Checks for compatiblity issue in your distro
 set nocp
 
+" Reloading vimrc
 set exrc                    " forces vim to source .vimrc file 
 set secure                  " restrict usage of some commands in .vimrc file
-
 autocmd! bufwritepost .vimrc source %   " Automatic reloading of .vimrc
 
 " Show whitespace (MUST be inserted BEFORE the colorscheme command)
@@ -44,8 +44,9 @@ let timeoutlen=500          " changer the default timeout for <leader> command t
 set hidden                " Allows you to re-use the same window and switch from an unsaved buffer without saving it first.
 
 "Pasting and clipboard settings
-set pastetoggle=<F5>      " pastes blocks of text in inserts mode
+set pastetoggle=<F2>      " pastes blocks of text in inserts mode
 set clipboard=unnamed
+set showmode
 "
 "-------------------------------------------------------------------------
 " options 
@@ -67,11 +68,13 @@ set tw=79                 " set width of dcoment
 set nowrap                "no automatically wraping on load
 set fo-=t                  " don't automatically wrap text when typing
 set columns=180
-set colorcolumn=80
 set ruler                 " Displays cursor positionin the status line
 set relativenumber        " change the line numbers to the number relative to your current line 
 set wrapmargin=8          "sets number of letters on the edge of left margin
-highlight ColorColums ctermbg=233
+
+" Setting up the margin line
+set colorcolumn=110
+highlight ColorColums ctermbg=darkgray
 
 "filename completion
 if has("wildmenu")                     "checks if wildmenu is avliable
@@ -128,8 +131,10 @@ set smartindent
 "
 map Y y$                             " to yank until EOL, rather than act as yy,
 map <F9> :w<CR>:!python %<CR>        " exc python from the shell
-map <Leader>n :tabprevious<CR>   " n now move forward through the tabs in NREEDTree
-map <Leader>m :tabnext<CR>       " m now move back through the tabs in NREEDTree
+map <Leader>n :tabn<CR>              " n now move forward through the tabs in NREEDTree
+map <Leader>m :tabp<CR>              " m now move back through the tabs in NREEDTree
+map <Leader>o :tabnew<CR>            " o opens new tab in NREEDTree
+
 map <Leader>j <C-w>j
 map <Leader>k <C-w>k
 map <Leader>l <C-w>l
@@ -138,6 +143,18 @@ map <Leader>h <C-w>h
 "Maps for normal mode
 nnoremap <C-n> :NERDTree<CR>        " Map CTPL-n to NERDTree
 nnoremap <C-L> :nohl<CR><C-L>       " Map <C-L> (redraw screen) to also turn off search highlighting until the next search
+
+"fugitive: key maps
+nnoremap \gd :<C-u>Gdiff<CR>
+nnoremap \gs :<C-u>Gstatus<CR>
+nnoremap \gl :<C-u>Glog<CR>
+nnoremap \ga :<C-u>Gwrite<CR>
+nnoremap \gc :<C-u>Gcommit<CR>
+nnoremap \gC :<C-u>Git commit --amend<CR>
+nnoremap \gb :<C-u>Gblame<CR>
+
+" Ex mode config 
+nnoremap Q <nop>                    " stop entering Ex mode when hitting Q
 
 "Maps for visual mode
 vnoremap <Leader>s :sort<CR>        " map sort funtion to a key
@@ -265,3 +282,23 @@ let g:pymode_syntax_builtin_funcs = 0
 
 " Don't autofold code
 let g:pymode_folding = 0
+"
+"----------------------------------------------------------- 
+" Settings for syntastic
+"-----------------------------------------------------------
+"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_loc_list_height = 5
+
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_shell = "/bin/zsh"
+
+let g:pymode_lint_on_write = 0
+
