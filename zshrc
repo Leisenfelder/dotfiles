@@ -7,13 +7,29 @@
 # ***************************************************************************
 # ***************************************************************************
 #
-# The following lines were added by compinstall
-zstyle :compinstall filename '/cygdrive/c/bin/.zshrc'
+# ------------------------------
+# Function
+# ------------------------------
 
+function collapse_pwd {
+    echo $(pwd | sed -e "s,^$HOME,~,")
+}
+
+function prompt_char {
+    git branch >/dev/null 2>/dev/null && echo '±' && return
+    echo '○'
+}
+
+
+
+function virtualenv_info {
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
+}
+
+#
 # ------------------------------
 # General Settings
 # ------------------------------
-export EDITOR=vim        # エディタをvimに設定
 export LANG=ja_JP.UTF-8  # 文字コードをUTF-8に設定
 export KCODE=u           # KCODEにUTF-8を設定
 export AUTOFEATURE=true  # autotestでfeatureを動かす
@@ -21,8 +37,10 @@ export LD_LIBRARY_PATH=/usr/local/lib
 export LIBRARY_PATH=/usr/local/lib
 export CPATH=/usr/local/include
 
-#bindkey -e               # キーバインドをemacsモードに設定
-bindkey -v              # キーバインドをviモードに設定
+# Sets the default editor for all apps.
+export EDITOR="vim"        # エディタをvimに設定
+export USE_EDITOR=$EDITOR
+export VISUAL=$EDITOR
 
 setopt no_beep           # ビープ音を鳴らさないようにする
 setopt auto_cd           # ディレクトリ名の入力のみで移動する 
@@ -86,7 +104,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 # プロンプトに色を付ける
 autoload -U colors; colors
 # 一般ユーザ時
-tmp_prompt="%{${fg[cyan]}%}%n%# %{${reset_color}%}"
+tmp_prompt="%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}%m%{$reset_color%} in %{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(virtualenv_info)$(prompt_char)" 
 tmp_prompt2="%{${fg[cyan]}%}%_> %{${reset_color}%}"
 tmp_rprompt="%{${fg[green]}%}[%~]%{${reset_color}%}"
 tmp_sprompt="%{${fg[yellow]}%}%r is correct? [Yes, No, Abort, Edit]:%{${reset_color}%}"
@@ -103,10 +121,6 @@ PROMPT=$tmp_prompt    # 通常のプロンプト
 PROMPT2=$tmp_prompt2  # セカンダリのプロンプト(コマンドが2行以上の時に表示される)
 RPROMPT=$tmp_rprompt  # 右側のプロンプト
 SPROMPT=$tmp_sprompt  # スペル訂正用プロンプト
-# SSHログイン時のプロンプト
-[ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
-  PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
-;
 
 ### Title (user@hostname) ###
 case "${TERM}" in
@@ -121,22 +135,31 @@ esac
 # ------------------------------
 # Other Settings
 # ------------------------------
-### RVM ###
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 
-### Macports ###
-case "${OSTYPE}" in
-  darwin*)
-    export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-    export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
-  ;;
-esac
+### Binding Keys ####
+#bindkey -e               # キーバインドをemacsモードに設定 
+bindkey -v              # キーバインドをviモードに設定
+bindkey '^[^[[D' backward-word
+bindkey '^[^[[C' forward-word
+bindkey '^[[5D' beginning-of-line
+bindkey '^[[5C' end-of-line
+bindkey '^[[3~' delete-char
+bindkey '^[^N' newtab
+bindkey '^?' backward-delete-char
+bindkey '^[[Z' reverse-menu-complete
 
 ### Aliases ###
-alias r=rails
 alias v=vim
+alias ll='ls -l'
+alias la='ls -alh'
 
-# cdコマンド実行後、lsを実行する
-#function cd() {
-#  builtin cd $@ && ls;
-#}
+alias agi='sudo apt-get install'
+alias agr='sudo aot-get remove'
+alias agu='sudo apt-get update && sudo apt-get dist-upgrade'
+alias as='apt-cache search'
+alias aw='apt-cache show'
+
+alias e='exit'
+alias s='sudo'
+alias shutdown='sudo shutdown -h now'
+alias restart='sudo shutdown -r now'
