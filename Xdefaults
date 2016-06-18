@@ -1,0 +1,64 @@
+
+
+
+*utf8: 1
+*faceSize: 10
+*jumpScroll: true
+*multiScroll: true
+*boldMode: false
+*scrollBar: false
+*cutNewline: false
+*scrollTtyOutput: false
+*scrollKey: true
+*cursorBlink: true
+*dynamicColors: true
+*saveLines: 5000
+
+XTerm*termName: XTerm-256color
+
+XTerm*background:         black
+XTerm*foreground:         white
+XTerm*cursorColor:        yellow
+XTerm*scrollTtyOutput:    false
+
+
+
+## borderless and no scrollbar
+XTerm*scrollBar_right: false
+XTerm*scrollBar: true
+XTerm*borderLess: false
+
+## teh transparency stuff
+XTerm*inheritPixmap: true
+XTerm*tintColor: white
+XTerm*shading: 30
+
+## geometry and font
+XTerm*geometry: 200x40-50-200
+
+
+XTerm*font: xft:DejaVu Sans Mono:pixelsize=16:antialias=true:hinting=true
+XTerm*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=16:antialias=true:hinting=true
+XTerm.letterSpace: 1
+
+## change default colors
+#XTerm*color0: #000000
+#XTerm*color1: #A80000
+#XTerm*color2: #00A800
+#XTerm*color3: #A85400
+#XTerm*color4: #0000A8
+#XTerm*color5: #A800A8
+#XTerm*color6: #00A8A8
+#XTerm*color7: #A8A8A8
+#XTerm*color8: #545054
+#XTerm*color9: #F85450
+XTerm*color10: #50FC50
+XTerm*color11: #F2FC50
+XTerm*color12: #5054F8
+XTerm*color13: #F854F8
+XTerm*color14: #50FCF8
+XTerm*color15: #F8FCF8
+
+XTerm.urlLauncher: firefox
+XTerm.matcher.button: 2
+XTerm.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-]
