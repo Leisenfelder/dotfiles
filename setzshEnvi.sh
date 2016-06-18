@@ -17,6 +17,10 @@ sudo apt-get install curl -y
 sudo apt-get install ack-grep -y
 sudo apt-get install htop -y
 
+rm -rf ~/.vimrc
+rm -rf ~/.zshrc
+rm -rf ~/.tmux.conf
+
 # ------------------------------
 # Install and setup Git
 #------------------------------
@@ -31,7 +35,6 @@ git config --global core.excludesfile ~/.gitignore_global
 #------------------------------
 sudo apt-get install zsh -y
 sudo chsh -s $(which zsh) $(whoami)
-rm -rf ~/.zshrc
 git submodule add https://github.com/Leisenfelder/dotfiles/zshrc.git ~/.vim/zshrc
 ln -s ~/.vim/zshrc ~/.zshrc
 
@@ -39,8 +42,7 @@ ln -s ~/.vim/zshrc ~/.zshrc
 # Install tmux
 #------------------------------
 sudo apt-get install tmux -y
-rm -rf ~/.tmux.conf
-it submodule add https://github.com/Leisenfelder/dotfiles/tumx.conf.git ~/.vim/tmux.conf
+git submodule add https://github.com/Leisenfelder/dotfiles/tumx.conf.git ~/.vim/tmux.conf
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
 
 # ------------------------------
@@ -65,7 +67,6 @@ mkdir ~/.vim
 mkdir ~/.vim/bundle
 mkdir ~/.vim/colors
 cd ~/.vim
-rm -rf ~/.vimrc
 git submodule add https://github.com/Leisenfelder/dotfiles/vimrc.git ~/.vim/vimrc
 ln -s ~/.vim/vimrc ~/.vimrc
 
