@@ -21,6 +21,10 @@ rm -rf ~/.vimrc
 rm -rf ~/.zshrc
 rm -rf ~/.tmux.conf
 
+mkdir ~/.vim
+mkdir ~/.vim/bundle
+mkdir ~/.vim/colors
+
 # ------------------------------
 # Install and setup Git
 #------------------------------
@@ -63,10 +67,6 @@ sudo pip install jupyter
 # Install Vim
 #------------------------------
 sudo apt-get install vim -y
-mkdir ~/.vim
-mkdir ~/.vim/bundle
-mkdir ~/.vim/colors
-cd ~/.vim
 git submodule add https://github.com/Leisenfelder/dotfiles/vimrc.git ~/.vim/vimrc
 ln -s ~/.vim/vimrc ~/.vimrc
 
