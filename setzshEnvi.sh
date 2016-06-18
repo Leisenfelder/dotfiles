@@ -12,7 +12,7 @@
 # ------------------------------
 # Update sources & install tools
 # ------------------------------
-sudo apt-get -y update
+sudo apt-get update -y
 sudo apt-get install -y curl
 sudo apt-get install -y ack-grep
 sudo apt-get install -y htop
