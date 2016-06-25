@@ -10,6 +10,14 @@
 # ***************************************************************************
 #
 # ------------------------------
+# install Envirment
+# ------------------------------
+sudo apt-get install -y uim mozc-server uim-mozc
+export LANG=ja_JP.UTF-8
+export OUTPUT_CHARSET=utf-8
+export LV="-Ou8"
+
+# ------------------------------
 # Update sources & install tools
 # ------------------------------
 sudo apt-get update -y
@@ -18,9 +26,6 @@ sudo apt-get install -y ack-grep
 sudo apt-get install -y htop
 sudo apt-get install -y net-tools
 
-rm -rf ~/.vimrc
-rm -rf ~/.zshrc
-rm -rf ~/.tmux.conf
 
 mkdir ~/.vim
 mkdir ~/.vim/bundle
@@ -29,7 +34,7 @@ mkdir ~/.vim/colors
 # ------------------------------
 # Install and setup Git
 #------------------------------
-sudo apt-get install git-core -y
+sudo apt-get install -y git-core
 git config --global color.ui true
 
 echo '.*swp' > ~/.gitignore_global
@@ -38,24 +43,48 @@ git config --global core.excludesfile ~/.gitignore_global
 # ------------------------------
 # Install  Z - Shell
 #------------------------------
-sudo apt-get install zsh -y
+sudo apt-get install -y zsh
 sudo chsh -s $(which zsh) $(whoami)
+compaudit | xargs chmod -R 555
 git submodule add https://github.com/Leisenfelder/dotfiles/zshrc.git ~/.vim/zshrc
+rm -rf ~/.zshrc
 ln -s ~/.vim/zshrc ~/.zshrc
 
 # ------------------------------
 # Install tmux
 #------------------------------
-sudo apt-get install tmux -y
+sudo apt-get install -y tmux
 git submodule add https://github.com/Leisenfelder/dotfiles/tumx.conf.git ~/.vim/tmux.conf
+rm -rf ~/.tmux.conf
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
+
+# ------------------------------
+# Install X-server
+#------------------------------
+sudo apt-get install -y xserver-xorg
+sudo apt-get install -y xinit
+sudo apt-get install -y xterm
+
+git submodule add https://github.com/Leisenfelder/dotfiles/xession.git ~/.vim/xession
+git submodule add https://github.com/Leisenfelder/dotfiles/Xdefaults.git ~/.vim/Xdefaults
+git submodule add https://github.com/Leisenfelder/dotfiles/xinitrc.git ~/.vim/xinitrc
+
+ln -s ~/.vim/xession ~/.xession
+ln -s ~/.vim/Xdefaults ~/.Xdefaults
+ln -s ~/.vim/xinitrc ~/.xinitrc
+
+# ------------------------------
+# Install ssh-server
+#------------------------------
+sudo apt-get install -y openssh-server
 
 # ------------------------------
 # Development tools
 # ------------------------------
-sudo apt-get install build-essential -y
-sudo apt-get install python-pip
-sudo apt-get install python-setuptools
+sudo apt-get install -y build-essential
+sudo apt-get install -y python3 python3-pygt5
+sudo apt-get install -y python-pip
+sudo apt-get install -y python-setuptools
 
 ## pip packages ###
 sudo pip install jedi
@@ -67,9 +96,10 @@ sudo pip install jupyter
 # ------------------------------
 # Install Vim
 #------------------------------
-sudo apt-get install vim -y
+sudo apt-get install -y vim -y
 git submodule add -f https://github.com/Leisenfelder/dotfiles/vimrc.git ~/.vim/vimrc
 ln -s ~/.vim/vimrc ~/.vimrc
+rm -rf ~/.vimrc
 
 git init
 git commit -m "Initial commit"
@@ -104,7 +134,6 @@ git submodule update --init
 
 git submodule add -f https://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
 git submodule update --init
-
 
 git submodule add -f https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp
 git submodule update --init

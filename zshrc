@@ -11,28 +11,85 @@
 # Function
 # ------------------------------
 
-function collapse_pwd {
-    echo $(pwd | sed -e "s,^$HOME,~,")
+function _user_host() {
+  if [[ -n $SSH_CONNECTION ]]; then
+    me="%n@%m"
+  elif [[ $LOGNAME != $USER ]]; then
+    me="%n"
+  fi
+  if [[ -n $me ]]; then
+    echo "%{$fg[cyan]%}$me%{$reset_color%}:"
+  fi
 }
 
-function prompt_char {
-    git branch >/dev/null 2>/dev/null && echo '±' && return
-    echo '○'
-}
+# ------------------------------
+# Set oh-my-zsh installation.
+# ------------------------------
+export ZSH=/home/herb/.oh-my-zsh
 
+ZSH_THEME="robbyrussell"  # Set name of the theme to load.
 
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
 
-function virtualenv_info {
-    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
-}
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
-#
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# ------------------------------
+# Install pugins:  plugins can be found in ~/.oh-my-zsh/plugins/*
+#                  Custom plugins ~/.oh-my-zsh/custom/plugins/
+# ------------------------------
+plugins=(git)            # Example format: plugins=(rails git textmate ruby lighthouse)
+
+# ------------------------------
+# Set Path
+# ------------------------------
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export MANPATH="/usr/local/man:$MANPATH"
+
+source $ZSH/oh-my-zsh.sh
+
 # ------------------------------
 # General Settings
 # ------------------------------
 export LANG=ja_JP.UTF-8  # 文字コードをUTF-8に設定
 export KCODE=u           # KCODEにUTF-8を設定
 export AUTOFEATURE=true  # autotestでfeatureを動かす
+export OUTPUT_CHARSET=utf-8
+export LV="-Ou8"
+
 export LD_LIBRARY_PATH=/usr/local/lib
 export LIBRARY_PATH=/usr/local/lib
 export CPATH=/usr/local/include
@@ -84,72 +141,41 @@ bindkey "^N" history-beginning-search-forward-end
 # すべてのヒストリを表示する
 function history-all { history -E 1 }
 
+# ------------------------------
+# Color Settings
+# ------------------------------
+
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+
+ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}✗%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}✔%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%}✚ "
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%}⚑ "
+ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%}✖ "
+ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[blue]%}▴ "
+ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[cyan]%}§ "
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%}◒ "
+
+# LS colors, made with http://geoff.greer.fm/lscolors/
+export LSCOLORS="exfxcxdxbxegedabagacad"
+export LS_COLORS='di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+export GREP_COLOR='1;33'
 
 # ------------------------------
-# Look And Feel Settings
+# Prompt Settings
 # ------------------------------
-### Ls Color ###
-# 色の設定
-export LSCOLORS=Exfxcxdxbxegedabagacad
-# 補完時の色の設定
-export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
-# ZLS_COLORSとは？
-export ZLS_COLORS=$LS_COLORS
-# lsコマンド時、自動で色がつく(ls -Gのようなもの？)
-export CLICOLOR=true
-# 補完候補に色を付ける
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-
-### Prompt ###
-# プロンプトに色を付ける
-autoload -U colors; colors
-# 一般ユーザ時
-tmp_prompt="%{$fg[magenta]%}%n%{$reset_color%} at %{$fg[yellow]%}%m%{$reset_color%} in %{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(virtualenv_info)$(prompt_char) " 
-tmp_prompt2="%{${fg[cyan]}%}%_> %{${reset_color}%}"
+tmp_prompt=" $fg[cyan]%m: $(_user_host)$%{$fg[magenta]%}$(git_prompt_info)%{$reset_color%}→" 
 tmp_rprompt="%{${fg[green]}%}[%~]%{${reset_color}%}"
-tmp_sprompt="%{${fg[yellow]}%}%r is correct? [Yes, No, Abort, Edit]:%{${reset_color}%}"
 
-# rootユーザ時(太字にし、アンダーバーをつける)
-if [ ${UID} -eq 0 ]; then
-  tmp_prompt="%B%U${tmp_prompt}%u%b"
-  tmp_prompt2="%B%U${tmp_prompt2}%u%b"
-  tmp_rprompt="%B%U${tmp_rprompt}%u%b"
-  tmp_sprompt="%B%U${tmp_sprompt}%u%b"
-fi
-
-PROMPT=$tmp_prompt    # 通常のプロンプト
-PROMPT2=$tmp_prompt2  # セカンダリのプロンプト(コマンドが2行以上の時に表示される)
+#PROMPT=$tmp_prompt    # 通常のプロンプト
 RPROMPT=$tmp_rprompt  # 右側のプロンプト
-SPROMPT=$tmp_sprompt  # スペル訂正用プロンプト
-
-### Title (user@hostname) ###
-case "${TERM}" in
-kterm*|xterm*|)
-  precmd() {
-    echo -ne "\033]0;${USER}@${HOST%%.*}\007"
-  }
-  ;;
-esac
-
 
 # ------------------------------
-# Other Settings
+# Aliases Settings
 # ------------------------------
-
-### Binding Keys ####
-#bindkey -e               # キーバインドをemacsモードに設定 
-bindkey -v              # キーバインドをviモードに設定
-bindkey '^[^[[D' backward-word
-bindkey '^[^[[C' forward-word
-bindkey '^[[5D' beginning-of-line
-bindkey '^[[5C' end-of-line
-bindkey '^[[3~' delete-char
-bindkey '^[^N' newtab
-bindkey '^?' backward-delete-char
-bindkey '^[[Z' reverse-menu-complete
-
-### Aliases ###
 alias v=vim
+
 alias ll='ls -l'
 alias la='ls -alh'
 
@@ -158,6 +184,16 @@ alias agr='sudo aot-get remove'
 alias agu='sudo apt-get update && sudo apt-get dist-upgrade'
 alias as='apt-cache search'
 alias aw='apt-cache show'
+
+alias g='git'
+alias ga='git add'
+alias gb='git branch'
+alias gc='git checkout'
+alias gco='git commit'
+alias gd='git diff'
+alias gp='git push'
+alias gs='git status'
+alias gh='git push heroku master'
 
 alias e='exit'
 alias s='sudo'
@@ -171,4 +207,3 @@ alias restart='sudo shutdown -r now'
 if [ "$(tty)" = "/dev/tty1" -o "$(tty)" = "/dev/vc/1" ]; then
     startx
 fi
-

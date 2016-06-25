@@ -15,6 +15,11 @@
 set nocompatible            " Checks for compatiblity issue in your distro
 set nocp
 
+" set lang for japan  "
+set termencoding=utf-8
+set fileencodings=iso-2022-jp,cp932,utf-8,japan
+set ambiwidth=double
+
 " Reloading vimrc
 set exrc                    " forces vim to source .vimrc file 
 set secure                  " restrict usage of some commands in .vimrc file
@@ -26,12 +31,12 @@ autocmd! bufwritepost .vimrc source %   " Automatic reloading of .vimrc
 
 "Color scheme
 
-if &term=="xterm"
+"if &term=="xterm"  
      set t_Co=256                " set the color scheme using wombat256
      set t_Sb=^[[4%dm
      set t_Sf=^[[3%dm
      color wombat256mod
-endif
+"endif  "
 
 set visualbell             " Use visual bell instead of beeping when doing something wrong
 set t_vb=
