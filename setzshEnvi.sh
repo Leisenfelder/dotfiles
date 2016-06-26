@@ -12,7 +12,13 @@
 # ------------------------------
 # install Envirment
 # ------------------------------
-sudo apt-get install -y uim mozc-server uim-mozc
+rm -rf .v*
+rm -rf .x*
+rm -rf .z*
+rm -rf .g*
+rm -rf .t*
+setxkbmap -layout jp
+sudo apt-get install -y uim
 export LANG=ja_JP.UTF-8
 export OUTPUT_CHARSET=utf-8
 export LV="-Ou8"
@@ -26,7 +32,6 @@ sudo apt-get install -y ack-grep
 sudo apt-get install -y htop
 sudo apt-get install -y net-tools
 
-
 mkdir ~/.vim
 mkdir ~/.vim/bundle
 mkdir ~/.vim/colors
@@ -39,6 +44,10 @@ git config --global color.ui true
 
 echo '.*swp' > ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
+git init
+git commit -m "Initial commit"
+git submodule add -f https://github.com/Leisenfelder/dotfiles.git ~/.vim
+git submodule update --init
 
 # ------------------------------
 # Install  Z - Shell
@@ -46,7 +55,6 @@ git config --global core.excludesfile ~/.gitignore_global
 sudo apt-get install -y zsh
 sudo chsh -s $(which zsh) $(whoami)
 compaudit | xargs chmod -R 555
-git submodule add https://github.com/Leisenfelder/dotfiles/zshrc.git ~/.vim/zshrc
 rm -rf ~/.zshrc
 ln -s ~/.vim/zshrc ~/.zshrc
 
@@ -54,7 +62,6 @@ ln -s ~/.vim/zshrc ~/.zshrc
 # Install tmux
 #------------------------------
 sudo apt-get install -y tmux
-git submodule add https://github.com/Leisenfelder/dotfiles/tumx.conf.git ~/.vim/tmux.conf
 rm -rf ~/.tmux.conf
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
 
@@ -64,10 +71,6 @@ ln -s ~/.vim/tmux.conf ~/.tmux.conf
 sudo apt-get install -y xserver-xorg
 sudo apt-get install -y xinit
 sudo apt-get install -y xterm
-
-git submodule add https://github.com/Leisenfelder/dotfiles/xession.git ~/.vim/xession
-git submodule add https://github.com/Leisenfelder/dotfiles/Xdefaults.git ~/.vim/Xdefaults
-git submodule add https://github.com/Leisenfelder/dotfiles/xinitrc.git ~/.vim/xinitrc
 
 ln -s ~/.vim/xession ~/.xession
 ln -s ~/.vim/Xdefaults ~/.Xdefaults
@@ -97,17 +100,13 @@ sudo pip install jupyter
 # Install Vim
 #------------------------------
 sudo apt-get install -y vim -y
-git submodule add -f https://github.com/Leisenfelder/dotfiles/vimrc.git ~/.vim/vimrc
 ln -s ~/.vim/vimrc ~/.vimrc
 rm -rf ~/.vimrc
-
-git init
-git commit -m "Initial commit"
 
 ### pathogen.vim: manage your runtimepath  #####
 git submodule add -f https://github.com/tpope/vim-pathogen.git ~/.vim/bundle/pathogen
 git submodule update --init
-ln -s bundle/pathogen/autoload/ autoload
+ln -s ~/.vim/bundle/pathogen/autoload/ ~/.vim/autoload
 
 ### Syntastic:  syntax checking plugin for Vim that runs files through external syntax checkers and displays any resulting errors to the user
 git submodule add -f https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
