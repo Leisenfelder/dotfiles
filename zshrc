@@ -184,6 +184,8 @@ alias agr='sudo aot-get remove'
 alias agu='sudo apt-get update && sudo apt-get dist-upgrade'
 alias as='apt-cache search'
 alias aw='apt-cache show'
+alias agcl='sudo apt-get autoclean'
+
 
 alias g='git'
 alias ga='git add'

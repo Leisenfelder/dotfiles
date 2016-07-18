@@ -31,12 +31,12 @@ autocmd! bufwritepost .vimrc source %   " Automatic reloading of .vimrc
 
 "Color scheme
 
-"if &term=="xterm"  
+if &term=="xterm"  
      set t_Co=256                " set the color scheme using wombat256
      set t_Sb=^[[4%dm
      set t_Sf=^[[3%dm
      color wombat256mod
-"endif  "
+endif  
 
 set visualbell             " Use visual bell instead of beeping when doing something wrong
 set t_vb=
@@ -135,7 +135,8 @@ set smartindent
 "--------------------------------------------------------------------------------------
 "
 map Y y$                             " to yank until EOL, rather than act as yy,
-map <F9> :w<CR>:!python %<CR>        " exc python from the shell
+map <F9> :w<CR>:!python3 %<CR>        " exc python from the shell
+map <F10> :<CR>:!python3 -m pdb %<CR> " exc python in the bebugger
 map <Leader>n :tabn<CR>              " n now move forward through the tabs in NREEDTree
 map <Leader>m :tabp<CR>              " m now move back through the tabs in NREEDTree
 map <Leader>o :tabnew<CR>            " o opens new tab in NREEDTree
@@ -182,7 +183,7 @@ inoremap <Tab> <C-X><C-F>            "maps C-X  C-F for completions in insert to
 "-----------------------------------------------------------
 "
 let g:nerdtree_tabs_open_on_console_startup=1   "run NERDTreeTabs on console vim startup
-"let g:nerdtree_tabs_autofind=1                  "Automatically find and select currently opened file in NERDTree
+let g:nerdtree_tabs_autofind=1                  "Automatically find and select currently opened file in NERDTree
 " 
 "------------------------------------------------------------
 " Python
@@ -196,7 +197,7 @@ call pathogen#helptags()
 " Ctrl - P
 "-----------------------------------------------------------
 "
-"set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
 set wildignore+=*_build/*

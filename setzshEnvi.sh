@@ -125,9 +125,6 @@ git submodule update --init
 git submodule add -f https://github.com/fholgado/minibufexpl.vim.git ~/.vim/bundle/minibufexpl
 git submodule update --init
 
-git submodule add -f https://github.com/wincent/Command-T.git ~/.vim/bundle/command-t
-git submodule update --init
-
 git submodule add -f https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack
 git submodule update --init
 
