@@ -76,8 +76,7 @@ set columns=180
 set ruler                 " Displays cursor positionin the status line
 set relativenumber        " change the line numbers to the number relative to your current line 
 set wrapmargin=8          "sets number of letters on the edge of left margin
-
-" Setting up the margin line
+set showbreak=++++         " Setting up the margin line
 set colorcolumn=110
 highlight ColorColums ctermbg=darkgray
 
@@ -125,7 +124,7 @@ set shiftround
 set expandtab
 set autoindent             "Keeps the same indent as the line you're currently on. 
 set smartindent
-"set cindent 
+"nmap <S-Enter> O<Esc>set cindent 
 
 " set spell                 " spell checking on
 " set dictionary=/usr/share/dict/words
@@ -140,6 +139,7 @@ map <F10> :<CR>:!python3 -m pdb %<CR> " exc python in the bebugger
 map <Leader>n :tabn<CR>              " n now move forward through the tabs in NREEDTree
 map <Leader>m :tabp<CR>              " m now move back through the tabs in NREEDTree
 map <Leader>o :tabnew<CR>            " o opens new tab in NREEDTree
+map <CR> O<Esc>                " Insert newline without entering insert mode
 
 map <Leader>j <C-w>j
 map <Leader>k <C-w>k
