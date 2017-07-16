@@ -12,101 +12,90 @@
 # ------------------------------
 # install Envirment
 # ------------------------------
-rm -rf .v*
-rm -rf .x*
-rm -rf .z*
-rm -rf .g*
-rm -rf .t*
-setxkbmap -layout jp
-sudo apt-get install -y uim
-export LANG=ja_JP.UTF-8
-export OUTPUT_CHARSET=utf-8
-export LV="-Ou8"
+#rm -rf .v*
+#rm -rf .x*
+#rm -rf .z*
+#rm -rf .g*
+#rm -rf .t*
+#setxkbmap -layout jp
+#sudo apt-get install -y uim
+#export LANG=ja_JP.UTF-8
+#export OUTPUT_CHARSET=utf-8
+#export LV="-Ou8"
 
 # ------------------------------
 # Update sources & install tools
 # ------------------------------
-sudo apt-get update -y
-sudo apt-get install -y curl
-sudo apt-get install -y ack-grep
-sudo apt-get install -y htop
-sudo apt-get install -y net-tools
-
-mkdir ~/.vim
-mkdir ~/.vim/bundle
-mkdir ~/.vim/colors
-
-# ------------------------------
-# Install and setup Git
-#------------------------------
-sudo apt-get install -y git-core
-git config --global color.ui true
-
-echo '.*swp' > ~/.gitignore_global
-git config --global core.excludesfile ~/.gitignore_global
-git init
-git commit -m "Initial commit"
-git submodule add -f https://github.com/Leisenfelder/dotfiles.git ~/.vim
-git submodule update --init
+#sudo apt-get update -y
+#sudo apt-get install -y curl
+#sudo apt-get install -y ack-grep
+#sudo apt-get install -y htop
+#sudo apt-get install -y net-tools
 
 # ------------------------------
 # Install  Z - Shell
 #------------------------------
-sudo apt-get install -y zsh
-sudo chsh -s $(which zsh) $(whoami)
-compaudit | xargs chmod -R 555
-rm -rf ~/.zshrc
-ln -s ~/.vim/zshrc ~/.zshrc
+#sudo apt-get install -y zsh
+#sudo chsh -s $(which zsh) $(whoami)
+#compaudit | xargs chmod -R 555
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#rm -rf ~/.zshrc
+#ln -s ~/bin/dotfiles/zshrc ~/.zshrc
 
 # ------------------------------
 # Install tmux
 #------------------------------
-sudo apt-get install -y tmux
+#sudo apt-get install -y tmux
 rm -rf ~/.tmux.conf
-ln -s ~/.vim/tmux.conf ~/.tmux.conf
-
-# ------------------------------
-# Install X-server
-#------------------------------
-sudo apt-get install -y xserver-xorg
-sudo apt-get install -y xinit
-sudo apt-get install -y xterm
-
-ln -s ~/.vim/xession ~/.xession
-ln -s ~/.vim/Xdefaults ~/.Xdefaults
-ln -s ~/.vim/xinitrc ~/.xinitrc
+ln -s ~/bin/dotfile/tmux.conf ~/.tmux.conf
 
 # ------------------------------
 # Install ssh-server
 #------------------------------
-sudo apt-get install -y openssh-server
+#sudo apt-get install -y openssh-server
 
 # ------------------------------
 # Development tools
 # ------------------------------
-sudo apt-get install -y build-essential
-sudo apt-get install -y python3 python3-pygt5
-sudo apt-get install -y python-pip
-sudo apt-get install -y python-setuptools
-
-## pip packages ###
-sudo pip install jedi
-sudo pip install virtualenv
-sudo pip install pyflakes
-sudo pip install nose
-sudo pip install jupyter
+#sudo apt-get install -y build-essential
+#sudo apt-get install -y python3 python3-pygt5
+#sudo apt-get install -y python-pip
+#sudo apt-get install -y python-setuptools
 
 # ------------------------------
 # Install Vim
 #------------------------------
-sudo apt-get install -y vim -y
-ln -s ~/.vim/vimrc ~/.vimrc
-rm -rf ~/.vimrc
+#mkdir ~/.vim
+#mkdir ~/.vim/bundle
+#mkdir ~/.vim/colors
+#sudo apt-get install -y vim -y
+#rm -rf ~/.vimrc
+#ln -s ~/bin/dotfiles/vimrc ~/.vimrc
+
+
+## pip packages ###
+#sudo pip install flake8 pyflakes pep8 pylint jedi
+#sudo pip install virtualenv
+#sudo pip install jupyter
+
+# ------------------------------
+# Install and setup Git
+#------------------------------
+
+#git config --global color.ui true
+#echo '.*swp' > ~/.gitignore_global
+#git config --global core.excludesfile ~/.gitignore_global
+#git config --global user.email "leisenfelder@gmail.com"
+#git config --global user.name "leisenfelder"
+
+cd ~/.vim
+#git init
+#git commit -m "Initial commit"
 
 ### pathogen.vim: manage your runtimepath  #####
-git submodule add -f https://github.com/tpope/vim-pathogen.git ~/.vim/bundle/pathogen
-git submodule update --init
-ln -s ~/.vim/bundle/pathogen/autoload/ ~/.vim/autoload
+#git submodule add -f https://github.com/tpope/vim-pathogen.git ~/.vim/bundle/pathogen
+#git submodule update --init
+#ln -s ~/.vim/bundle/pathogen/autoload/ ~/.vim/autoload
 
 ### Syntastic:  syntax checking plugin for Vim that runs files through external syntax checkers and displays any resulting errors to the user
 git submodule add -f https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
@@ -149,7 +138,7 @@ git submodule update --init
 git submodule add -f https://github.com/tpope/vim-surround.git ~/.vim/bundle/surround
 git submodule update --init
 
-git submodule add -f https://github.com/msanders/snipmate.vim.git ~/.vim/bundle/snipmate
+#git submodule add -f https://github.com/msanders/snipmate.vim.git ~/.vim/bundle/snipmate
 git submodule update --init
 git submodule add https://github.com/Leisenfelder/dotfiles/snippets ~/.vim/bundle/snipmate/snippets
 
@@ -191,3 +180,5 @@ git submodule update --init
 
 git submodule add -f https://github.com/vim-scripts/SyntaxComplete.git ~/.vim/bundle/syntaxcomplete
 git submodule update --init
+
+ln -s ~/bin/dotfiles/wombat256mod.vim ~/.vim/colors/wombat256mod.vim
