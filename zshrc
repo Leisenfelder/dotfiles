@@ -179,6 +179,7 @@ alias v=vim
 alias ll='ls -l'
 alias la='ls -alh'
 
+# aliases for apt
 alias agi='sudo apt-get install'
 alias agr='sudo aot-get remove'
 alias agu='sudo apt-get update && sudo apt-get dist-upgrade'
@@ -186,7 +187,7 @@ alias as='apt-cache search'
 alias aw='apt-cache show'
 alias agcl='sudo apt-get autoclean'
 
-
+# aliases for git
 alias g='git'
 alias ga='git add'
 alias gb='git branch'
@@ -202,11 +203,18 @@ alias gr='git remote -v'
 alias gra='git remote add'
 alias gm='git merge'
 
-
+# aliases for commands
 alias e='exit'
 alias s='sudo'
 alias shutdown='sudo shutdown -h now'
 alias restart='sudo shutdown -r now'
+
+# aliases for Tmux
+alias tmux='tmux -2'
+alias ta='tmux attach -t'
+alias tnew='tmux new -s'
+alias tls='tmux ls'
+alias tkill='tmux kill-session -t'
 
 #------------------------------
 # start X session

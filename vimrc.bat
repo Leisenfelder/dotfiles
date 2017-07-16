@@ -17,10 +17,8 @@ set nocp
 
 " set lang for japan  "
 set termencoding=utf-8
-set fileencodings=utf-8
+set fileencodings=iso-2022-jp,cp932,utf-8,japan
 set ambiwidth=double
-set fileformat=unix
-set list
 
 " Reloading vimrc
 set exrc                    " forces vim to source .vimrc file 
@@ -105,7 +103,7 @@ set cmdheight=2           " Set the command window height to 2 lines,
 "Seatch settings
 set hlsearch              " Use <C-L> to temporarily turn off highlighting; see mapping
 set ignorecase            " Use case insensitive search, except when using capital letters
-set incsearch
+set incsearch 
 set smartcase
 
 set nostartofline          " typing G while in visual mode will go to the bottom
@@ -117,7 +115,7 @@ set bs=2                  "make backspace behave like normal
 set backspace=indent,eol,start  " Allow backspacing over autoindent, line breaks and start of insert action
 
 set notimeout ttimeout ttimeoutlen=200  " Quickly time out on keycodes, but never time out on mappings
-
+ 
 "Tab Settings and indenting
 set tabstop=4
 set shiftwidth=4          " Indentation settings according to personal preference.
@@ -126,30 +124,18 @@ set shiftround
 set expandtab
 set autoindent             "Keeps the same indent as the line you're currently on. 
 set smartindent
-"nmap <S-Enter> O<Esc>set cindent
+"nmap <S-Enter> O<Esc>set cindent 
 
 " set spell                 " spell checking on
 " set dictionary=/usr/share/dict/words
-"
+" 
 "--------------------------------------------------------------------------------------
 " Mappings
 "--------------------------------------------------------------------------------------
 "
 map Y y$                             " to yank until EOL, rather than act as yy,
-
-" Quick run via
-if &filetype == 'c'
-   map <F9> :w<CR>:!gcc % -o %<CR>        " exc gcc from the shell
-   map <F10> :<CR>:!Make %<CR> " exc make
-elseif &filetype == 'cpp'
-   map <F9> :w<CR>:!g++ -std=c++11 % -o %<CR>        " exc c++ from the shell
-   map <F10> :<CR>:!Make %<CR> " exc make 
-elseif &filetype == 'python'
-   map <F9> :w<CR>:!python3 %<CR>        " exc python from the shell
-   map <F10> :<CR>:!python3 -m pdb %<CR> " exc python in the bebugger
-endif
-
-
+map <F9> :w<CR>:!python3 %<CR>        " exc python from the shell
+map <F10> :<CR>:!python3 -m pdb %<CR> " exc python in the bebugger
 map <Leader>n :tabn<CR>              " n now move forward through the tabs in NREEDTree
 map <Leader>m :tabp<CR>              " m now move back through the tabs in NREEDTree
 map <Leader>o :tabnew<CR>            " o opens new tab in NREEDTree
@@ -182,7 +168,7 @@ vnoremap <Leader>s :sort<CR>        " map sort funtion to a key
 "Maps for insert ode
 inoremap ;; <Esc>
 inoremap <Tab> <C-X><C-F>            "maps C-X  C-F for completions in insert to tab
-"
+" 
 " *************************************************************************************************
 " *************************************************************************************************
 "
@@ -190,15 +176,15 @@ inoremap <Tab> <C-X><C-F>            "maps C-X  C-F for completions in insert to
 "
 " *************************************************************************************************
 " *************************************************************************************************
-"
-"
+" 
+" 
 "------------------------------------------------------------
-" NERDTree
+" NERDTree 
 "-----------------------------------------------------------
 "
 let g:nerdtree_tabs_open_on_console_startup=1   "run NERDTreeTabs on console vim startup
 let g:nerdtree_tabs_autofind=1                  "Automatically find and select currently opened file in NERDTree
-"
+" 
 "------------------------------------------------------------
 " Python
 "-----------------------------------------------------------
@@ -215,34 +201,32 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
 set wildignore+=*_build/*
-
-"
+"""
 "-----------------------------------------------------------
 " OmniCppComplete
 "-----------------------------------------------------------
 "
-"configure tags - add additional tags here or comment out not-used ones
-set tags+=~/.vim/tags/cpp
-set tags+=~/.vim/tags/gl
-set tags+=~/.vim/tags/sdl
-set tags+=~/.vim/tags/qt4
+" configure tags - add additional tags here or comment out not-used ones
+"set tags+=~/.vim/tags/cpp
+"set tags+=~/.vim/tags/gl
+"set tags+=~/.vim/tags/sdl
+"set tags+=~/.vim/tags/qt4
 
-"build tags of your own project with Ctrl-F12
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+" build tags of your own project with Ctrl-F12
+"map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " OmniCppComplete
-let OmniCpp_NamespaceSearch = 1
-let OmniCpp_GlobalScopeSearch = 1
-let OmniCpp_ShowAccess = 1
-let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
-let OmniCpp_MayCompleteDot = 1 " autocomplete after .
-let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
-let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
-let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
-
+"let OmniCpp_NamespaceSearch = 1
+"let OmniCpp_GlobalScopeSearch = 1
+"let OmniCpp_ShowAccess = 1
+"let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
+"let OmniCpp_MayCompleteDot = 1 " autocomplete after .
+"let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
+"let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
+"let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 "automatically open and close the popup menu / preview window
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-set completeopt=menuone,menu,longest,preview
+"au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+"set completeopt=menuone,menu,longest,preview
 "
 "-----------------------------------------------------------
 " Snipmate 

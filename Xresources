@@ -1,0 +1,4 @@
+XTerm.VT100.translations: #override \                                                                                                   
+    Ctrl<Key>period:    string(0x1b) string("[1;2P") \n\                                                                                
+    Ctrl<Key>comma:    string(0x1b) string("[1;2P") \n\                                                                                 
+    Ctrl<Key>semicolon:    string(0x1b) string("[1;2P")

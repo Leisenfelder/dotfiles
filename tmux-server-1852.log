@@ -1,0 +1,1597 @@
+1497064625.749263 server started (1852): socket /tmp/tmux-1000/default, protocol 8
+1497064625.749280 on Linux 4.9.0-040900-generic #201612111631 SMP Sun Dec 11 21:33:00 UTC 2016; libevent 2.0.21-stable (poll)
+1497064625.749326 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749331 cmdq 0x5638eb8de740: bind-key C-b send-prefix
+1497064625.749334 preparing state for bind-key C-b send-prefix (client (nil))
+1497064625.749337 cmd_find_client: no target, return (nil)
+1497064625.749339 preparing -t state: target none
+1497064625.749340 preparing -s state: target none
+1497064625.749344 preparing state for bind-key C-b send-prefix (client (nil))
+1497064625.749346 cmd_find_client: no target, return (nil)
+1497064625.749348 preparing -t state: target none
+1497064625.749350 preparing -s state: target none
+1497064625.749362 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749365 cmdq 0x5638eb8de740: bind-key C-o rotate-window
+1497064625.749367 preparing state for bind-key C-o rotate-window (client (nil))
+1497064625.749369 cmd_find_client: no target, return (nil)
+1497064625.749371 preparing -t state: target none
+1497064625.749372 preparing -s state: target none
+1497064625.749375 preparing state for bind-key C-o rotate-window (client (nil))
+1497064625.749377 cmd_find_client: no target, return (nil)
+1497064625.749378 preparing -t state: target none
+1497064625.749380 preparing -s state: target none
+1497064625.749385 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749387 cmdq 0x5638eb8de740: bind-key C-z suspend-client
+1497064625.749390 preparing state for bind-key C-z suspend-client (client (nil))
+1497064625.749392 cmd_find_client: no target, return (nil)
+1497064625.749393 preparing -t state: target none
+1497064625.749395 preparing -s state: target none
+1497064625.749397 preparing state for bind-key C-z suspend-client (client (nil))
+1497064625.749399 cmd_find_client: no target, return (nil)
+1497064625.749401 preparing -t state: target none
+1497064625.749402 preparing -s state: target none
+1497064625.749407 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749410 cmdq 0x5638eb8de740: bind-key Space next-layout
+1497064625.749413 preparing state for bind-key Space next-layout (client (nil))
+1497064625.749415 cmd_find_client: no target, return (nil)
+1497064625.749429 preparing -t state: target none
+1497064625.749431 preparing -s state: target none
+1497064625.749434 preparing state for bind-key Space next-layout (client (nil))
+1497064625.749436 cmd_find_client: no target, return (nil)
+1497064625.749437 preparing -t state: target none
+1497064625.749441 preparing -s state: target none
+1497064625.749464 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749469 cmdq 0x5638eb8de740: bind-key ! break-pane
+1497064625.749472 preparing state for bind-key ! break-pane (client (nil))
+1497064625.749474 cmd_find_client: no target, return (nil)
+1497064625.749475 preparing -t state: target none
+1497064625.749477 preparing -s state: target none
+1497064625.749480 preparing state for bind-key ! break-pane (client (nil))
+1497064625.749481 cmd_find_client: no target, return (nil)
+1497064625.749483 preparing -t state: target none
+1497064625.749485 preparing -s state: target none
+1497064625.749489 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749491 cmdq 0x5638eb8de740: bind-key " split-window
+1497064625.749494 preparing state for bind-key " split-window (client (nil))
+1497064625.749496 cmd_find_client: no target, return (nil)
+1497064625.749497 preparing -t state: target none
+1497064625.749499 preparing -s state: target none
+1497064625.749501 preparing state for bind-key " split-window (client (nil))
+1497064625.749503 cmd_find_client: no target, return (nil)
+1497064625.749505 preparing -t state: target none
+1497064625.749506 preparing -s state: target none
+1497064625.749511 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749514 cmdq 0x5638eb8de740: bind-key # list-buffers
+1497064625.749516 preparing state for bind-key # list-buffers (client (nil))
+1497064625.749518 cmd_find_client: no target, return (nil)
+1497064625.749523 preparing -t state: target none
+1497064625.749525 preparing -s state: target none
+1497064625.749568 preparing state for bind-key # list-buffers (client (nil))
+1497064625.749573 cmd_find_client: no target, return (nil)
+1497064625.749574 preparing -t state: target none
+1497064625.749576 preparing -s state: target none
+1497064625.749582 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749587 cmdq 0x5638eb8de740: bind-key $ command-prompt -I#S "rename-session '%%'"
+1497064625.749591 preparing state for bind-key $ command-prompt -I#S "rename-session '%%'" (client (nil))
+1497064625.749592 cmd_find_client: no target, return (nil)
+1497064625.749594 preparing -t state: target none
+1497064625.749596 preparing -s state: target none
+1497064625.749599 preparing state for bind-key $ command-prompt -I#S "rename-session '%%'" (client (nil))
+1497064625.749601 cmd_find_client: no target, return (nil)
+1497064625.749603 preparing -t state: target none
+1497064625.749604 preparing -s state: target none
+1497064625.749609 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749612 cmdq 0x5638eb8de740: bind-key % split-window -h
+1497064625.749615 preparing state for bind-key % split-window -h (client (nil))
+1497064625.749617 cmd_find_client: no target, return (nil)
+1497064625.749618 preparing -t state: target none
+1497064625.749620 preparing -s state: target none
+1497064625.749623 preparing state for bind-key % split-window -h (client (nil))
+1497064625.749625 cmd_find_client: no target, return (nil)
+1497064625.749626 preparing -t state: target none
+1497064625.749628 preparing -s state: target none
+1497064625.749634 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749638 cmdq 0x5638eb8de740: bind-key & confirm-before "-pkill-window #W? (y/n)" kill-window
+1497064625.749643 preparing state for bind-key & confirm-before "-pkill-window #W? (y/n)" kill-window (client (nil))
+1497064625.749645 cmd_find_client: no target, return (nil)
+1497064625.749646 preparing -t state: target none
+1497064625.749648 preparing -s state: target none
+1497064625.749652 preparing state for bind-key & confirm-before "-pkill-window #W? (y/n)" kill-window (client (nil))
+1497064625.749654 cmd_find_client: no target, return (nil)
+1497064625.749655 preparing -t state: target none
+1497064625.749657 preparing -s state: target none
+1497064625.749662 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749666 cmdq 0x5638eb8de740: bind-key ' command-prompt -pindex "select-window -t ':%%'"
+1497064625.749669 preparing state for bind-key ' command-prompt -pindex "select-window -t ':%%'" (client (nil))
+1497064625.749671 cmd_find_client: no target, return (nil)
+1497064625.749673 preparing -t state: target none
+1497064625.749674 preparing -s state: target none
+1497064625.749678 preparing state for bind-key ' command-prompt -pindex "select-window -t ':%%'" (client (nil))
+1497064625.749680 cmd_find_client: no target, return (nil)
+1497064625.749681 preparing -t state: target none
+1497064625.749683 preparing -s state: target none
+1497064625.749687 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749690 cmdq 0x5638eb8de740: bind-key ( switch-client -p
+1497064625.749693 preparing state for bind-key ( switch-client -p (client (nil))
+1497064625.749695 cmd_find_client: no target, return (nil)
+1497064625.749696 preparing -t state: target none
+1497064625.749698 preparing -s state: target none
+1497064625.749701 preparing state for bind-key ( switch-client -p (client (nil))
+1497064625.749703 cmd_find_client: no target, return (nil)
+1497064625.749704 preparing -t state: target none
+1497064625.749706 preparing -s state: target none
+1497064625.749711 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749714 cmdq 0x5638eb8de740: bind-key ) switch-client -n
+1497064625.749717 preparing state for bind-key ) switch-client -n (client (nil))
+1497064625.749719 cmd_find_client: no target, return (nil)
+1497064625.749720 preparing -t state: target none
+1497064625.749723 preparing -s state: target none
+1497064625.749729 preparing state for bind-key ) switch-client -n (client (nil))
+1497064625.749731 cmd_find_client: no target, return (nil)
+1497064625.749732 preparing -t state: target none
+1497064625.749734 preparing -s state: target none
+1497064625.749740 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749743 cmdq 0x5638eb8de740: bind-key , command-prompt -I#W "rename-window '%%'"
+1497064625.749747 preparing state for bind-key , command-prompt -I#W "rename-window '%%'" (client (nil))
+1497064625.749749 cmd_find_client: no target, return (nil)
+1497064625.749750 preparing -t state: target none
+1497064625.749752 preparing -s state: target none
+1497064625.749755 preparing state for bind-key , command-prompt -I#W "rename-window '%%'" (client (nil))
+1497064625.749757 cmd_find_client: no target, return (nil)
+1497064625.749759 preparing -t state: target none
+1497064625.749760 preparing -s state: target none
+1497064625.749764 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749767 cmdq 0x5638eb8de740: bind-key - delete-buffer
+1497064625.749769 preparing state for bind-key - delete-buffer (client (nil))
+1497064625.749771 cmd_find_client: no target, return (nil)
+1497064625.749773 preparing -t state: target none
+1497064625.749774 preparing -s state: target none
+1497064625.749777 preparing state for bind-key - delete-buffer (client (nil))
+1497064625.749779 cmd_find_client: no target, return (nil)
+1497064625.749780 preparing -t state: target none
+1497064625.749782 preparing -s state: target none
+1497064625.749786 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749789 cmdq 0x5638eb8de740: bind-key . command-prompt "move-window -t '%%'"
+1497064625.749794 preparing state for bind-key . command-prompt "move-window -t '%%'" (client (nil))
+1497064625.749796 cmd_find_client: no target, return (nil)
+1497064625.749797 preparing -t state: target none
+1497064625.749799 preparing -s state: target none
+1497064625.749802 preparing state for bind-key . command-prompt "move-window -t '%%'" (client (nil))
+1497064625.749804 cmd_find_client: no target, return (nil)
+1497064625.749805 preparing -t state: target none
+1497064625.749807 preparing -s state: target none
+1497064625.749811 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749814 cmdq 0x5638eb8de740: bind-key 0 select-window -t:=0
+1497064625.749817 preparing state for bind-key 0 select-window -t:=0 (client (nil))
+1497064625.749819 cmd_find_client: no target, return (nil)
+1497064625.749820 preparing -t state: target none
+1497064625.749822 preparing -s state: target none
+1497064625.749825 preparing state for bind-key 0 select-window -t:=0 (client (nil))
+1497064625.749827 cmd_find_client: no target, return (nil)
+1497064625.749828 preparing -t state: target none
+1497064625.749830 preparing -s state: target none
+1497064625.749835 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749838 cmdq 0x5638eb8de740: bind-key 1 select-window -t:=1
+1497064625.749840 preparing state for bind-key 1 select-window -t:=1 (client (nil))
+1497064625.749842 cmd_find_client: no target, return (nil)
+1497064625.749844 preparing -t state: target none
+1497064625.749845 preparing -s state: target none
+1497064625.749848 preparing state for bind-key 1 select-window -t:=1 (client (nil))
+1497064625.749850 cmd_find_client: no target, return (nil)
+1497064625.749852 preparing -t state: target none
+1497064625.749853 preparing -s state: target none
+1497064625.749859 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749862 cmdq 0x5638eb8de740: bind-key 2 select-window -t:=2
+1497064625.749865 preparing state for bind-key 2 select-window -t:=2 (client (nil))
+1497064625.749866 cmd_find_client: no target, return (nil)
+1497064625.749868 preparing -t state: target none
+1497064625.749870 preparing -s state: target none
+1497064625.749873 preparing state for bind-key 2 select-window -t:=2 (client (nil))
+1497064625.749874 cmd_find_client: no target, return (nil)
+1497064625.749876 preparing -t state: target none
+1497064625.749877 preparing -s state: target none
+1497064625.749897 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749902 cmdq 0x5638eb8de740: bind-key 3 select-window -t:=3
+1497064625.749905 preparing state for bind-key 3 select-window -t:=3 (client (nil))
+1497064625.749915 cmd_find_client: no target, return (nil)
+1497064625.749918 preparing -t state: target none
+1497064625.749919 preparing -s state: target none
+1497064625.749922 preparing state for bind-key 3 select-window -t:=3 (client (nil))
+1497064625.749924 cmd_find_client: no target, return (nil)
+1497064625.749926 preparing -t state: target none
+1497064625.749927 preparing -s state: target none
+1497064625.749933 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749935 cmdq 0x5638eb8de740: bind-key 4 select-window -t:=4
+1497064625.749938 preparing state for bind-key 4 select-window -t:=4 (client (nil))
+1497064625.749940 cmd_find_client: no target, return (nil)
+1497064625.749942 preparing -t state: target none
+1497064625.749943 preparing -s state: target none
+1497064625.749946 preparing state for bind-key 4 select-window -t:=4 (client (nil))
+1497064625.749948 cmd_find_client: no target, return (nil)
+1497064625.749949 preparing -t state: target none
+1497064625.749953 preparing -s state: target none
+1497064625.749958 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749960 cmdq 0x5638eb8de740: bind-key 5 select-window -t:=5
+1497064625.749963 preparing state for bind-key 5 select-window -t:=5 (client (nil))
+1497064625.749965 cmd_find_client: no target, return (nil)
+1497064625.749967 preparing -t state: target none
+1497064625.749968 preparing -s state: target none
+1497064625.749971 preparing state for bind-key 5 select-window -t:=5 (client (nil))
+1497064625.749973 cmd_find_client: no target, return (nil)
+1497064625.749975 preparing -t state: target none
+1497064625.749976 preparing -s state: target none
+1497064625.749981 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.749983 cmdq 0x5638eb8de740: bind-key 6 select-window -t:=6
+1497064625.749986 preparing state for bind-key 6 select-window -t:=6 (client (nil))
+1497064625.749988 cmd_find_client: no target, return (nil)
+1497064625.749989 preparing -t state: target none
+1497064625.749991 preparing -s state: target none
+1497064625.749994 preparing state for bind-key 6 select-window -t:=6 (client (nil))
+1497064625.749996 cmd_find_client: no target, return (nil)
+1497064625.749997 preparing -t state: target none
+1497064625.749999 preparing -s state: target none
+1497064625.750003 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750006 cmdq 0x5638eb8de740: bind-key 7 select-window -t:=7
+1497064625.750009 preparing state for bind-key 7 select-window -t:=7 (client (nil))
+1497064625.750011 cmd_find_client: no target, return (nil)
+1497064625.750012 preparing -t state: target none
+1497064625.750014 preparing -s state: target none
+1497064625.750018 preparing state for bind-key 7 select-window -t:=7 (client (nil))
+1497064625.750020 cmd_find_client: no target, return (nil)
+1497064625.750022 preparing -t state: target none
+1497064625.750023 preparing -s state: target none
+1497064625.750028 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750031 cmdq 0x5638eb8de740: bind-key 8 select-window -t:=8
+1497064625.750033 preparing state for bind-key 8 select-window -t:=8 (client (nil))
+1497064625.750035 cmd_find_client: no target, return (nil)
+1497064625.750037 preparing -t state: target none
+1497064625.750038 preparing -s state: target none
+1497064625.750041 preparing state for bind-key 8 select-window -t:=8 (client (nil))
+1497064625.750043 cmd_find_client: no target, return (nil)
+1497064625.750045 preparing -t state: target none
+1497064625.750046 preparing -s state: target none
+1497064625.750051 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750053 cmdq 0x5638eb8de740: bind-key 9 select-window -t:=9
+1497064625.750056 preparing state for bind-key 9 select-window -t:=9 (client (nil))
+1497064625.750058 cmd_find_client: no target, return (nil)
+1497064625.750062 preparing -t state: target none
+1497064625.750064 preparing -s state: target none
+1497064625.750067 preparing state for bind-key 9 select-window -t:=9 (client (nil))
+1497064625.750068 cmd_find_client: no target, return (nil)
+1497064625.750070 preparing -t state: target none
+1497064625.750072 preparing -s state: target none
+1497064625.750076 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750078 cmdq 0x5638eb8de740: bind-key : command-prompt
+1497064625.750081 preparing state for bind-key : command-prompt (client (nil))
+1497064625.750083 cmd_find_client: no target, return (nil)
+1497064625.750085 preparing -t state: target none
+1497064625.750087 preparing -s state: target none
+1497064625.750090 preparing state for bind-key : command-prompt (client (nil))
+1497064625.750092 cmd_find_client: no target, return (nil)
+1497064625.750093 preparing -t state: target none
+1497064625.750095 preparing -s state: target none
+1497064625.750099 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750101 cmdq 0x5638eb8de740: bind-key ; last-pane
+1497064625.750104 preparing state for bind-key ; last-pane (client (nil))
+1497064625.750105 cmd_find_client: no target, return (nil)
+1497064625.750107 preparing -t state: target none
+1497064625.750109 preparing -s state: target none
+1497064625.750111 preparing state for bind-key ; last-pane (client (nil))
+1497064625.750113 cmd_find_client: no target, return (nil)
+1497064625.750115 preparing -t state: target none
+1497064625.750116 preparing -s state: target none
+1497064625.750120 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750123 cmdq 0x5638eb8de740: bind-key = choose-buffer
+1497064625.750125 preparing state for bind-key = choose-buffer (client (nil))
+1497064625.750127 cmd_find_client: no target, return (nil)
+1497064625.750129 preparing -t state: target none
+1497064625.750130 preparing -s state: target none
+1497064625.750133 preparing state for bind-key = choose-buffer (client (nil))
+1497064625.750135 cmd_find_client: no target, return (nil)
+1497064625.750136 preparing -t state: target none
+1497064625.750138 preparing -s state: target none
+1497064625.750141 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750144 cmdq 0x5638eb8de740: bind-key ? list-keys
+1497064625.750146 preparing state for bind-key ? list-keys (client (nil))
+1497064625.750148 cmd_find_client: no target, return (nil)
+1497064625.750150 preparing -t state: target none
+1497064625.750152 preparing -s state: target none
+1497064625.750155 preparing state for bind-key ? list-keys (client (nil))
+1497064625.750157 cmd_find_client: no target, return (nil)
+1497064625.750158 preparing -t state: target none
+1497064625.750160 preparing -s state: target none
+1497064625.750164 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750166 cmdq 0x5638eb8de740: bind-key D choose-client
+1497064625.750169 preparing state for bind-key D choose-client (client (nil))
+1497064625.750171 cmd_find_client: no target, return (nil)
+1497064625.750172 preparing -t state: target none
+1497064625.750174 preparing -s state: target none
+1497064625.750176 preparing state for bind-key D choose-client (client (nil))
+1497064625.750178 cmd_find_client: no target, return (nil)
+1497064625.750180 preparing -t state: target none
+1497064625.750181 preparing -s state: target none
+1497064625.750185 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750188 cmdq 0x5638eb8de740: bind-key L switch-client -l
+1497064625.750191 preparing state for bind-key L switch-client -l (client (nil))
+1497064625.750193 cmd_find_client: no target, return (nil)
+1497064625.750194 preparing -t state: target none
+1497064625.750196 preparing -s state: target none
+1497064625.750199 preparing state for bind-key L switch-client -l (client (nil))
+1497064625.750200 cmd_find_client: no target, return (nil)
+1497064625.750202 preparing -t state: target none
+1497064625.750204 preparing -s state: target none
+1497064625.750208 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750211 cmdq 0x5638eb8de740: bind-key M select-pane -M
+1497064625.750216 preparing state for bind-key M select-pane -M (client (nil))
+1497064625.750218 cmd_find_client: no target, return (nil)
+1497064625.750220 preparing -t state: target none
+1497064625.750222 preparing -s state: target none
+1497064625.750225 preparing state for bind-key M select-pane -M (client (nil))
+1497064625.750227 cmd_find_client: no target, return (nil)
+1497064625.750228 preparing -t state: target none
+1497064625.750230 preparing -s state: target none
+1497064625.750234 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750237 cmdq 0x5638eb8de740: bind-key [ copy-mode
+1497064625.750239 preparing state for bind-key [ copy-mode (client (nil))
+1497064625.750241 cmd_find_client: no target, return (nil)
+1497064625.750243 preparing -t state: target none
+1497064625.750244 preparing -s state: target none
+1497064625.750247 preparing state for bind-key [ copy-mode (client (nil))
+1497064625.750249 cmd_find_client: no target, return (nil)
+1497064625.750250 preparing -t state: target none
+1497064625.750252 preparing -s state: target none
+1497064625.750255 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750258 cmdq 0x5638eb8de740: bind-key ] paste-buffer
+1497064625.750261 preparing state for bind-key ] paste-buffer (client (nil))
+1497064625.750262 cmd_find_client: no target, return (nil)
+1497064625.750264 preparing -t state: target none
+1497064625.750266 preparing -s state: target none
+1497064625.750268 preparing state for bind-key ] paste-buffer (client (nil))
+1497064625.750270 cmd_find_client: no target, return (nil)
+1497064625.750272 preparing -t state: target none
+1497064625.750273 preparing -s state: target none
+1497064625.750277 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750279 cmdq 0x5638eb8de740: bind-key c new-window
+1497064625.750282 preparing state for bind-key c new-window (client (nil))
+1497064625.750286 cmd_find_client: no target, return (nil)
+1497064625.750288 preparing -t state: target none
+1497064625.750289 preparing -s state: target none
+1497064625.750292 preparing state for bind-key c new-window (client (nil))
+1497064625.750294 cmd_find_client: no target, return (nil)
+1497064625.750295 preparing -t state: target none
+1497064625.750297 preparing -s state: target none
+1497064625.750301 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750303 cmdq 0x5638eb8de740: bind-key d detach-client
+1497064625.750306 preparing state for bind-key d detach-client (client (nil))
+1497064625.750308 cmd_find_client: no target, return (nil)
+1497064625.750309 preparing -t state: target none
+1497064625.750311 preparing -s state: target none
+1497064625.750313 preparing state for bind-key d detach-client (client (nil))
+1497064625.750315 cmd_find_client: no target, return (nil)
+1497064625.750317 preparing -t state: target none
+1497064625.750318 preparing -s state: target none
+1497064625.750323 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750326 cmdq 0x5638eb8de740: bind-key f command-prompt "find-window '%%'"
+1497064625.750329 preparing state for bind-key f command-prompt "find-window '%%'" (client (nil))
+1497064625.750331 cmd_find_client: no target, return (nil)
+1497064625.750333 preparing -t state: target none
+1497064625.750334 preparing -s state: target none
+1497064625.750337 preparing state for bind-key f command-prompt "find-window '%%'" (client (nil))
+1497064625.750339 cmd_find_client: no target, return (nil)
+1497064625.750341 preparing -t state: target none
+1497064625.750342 preparing -s state: target none
+1497064625.750346 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750349 cmdq 0x5638eb8de740: bind-key i display-message
+1497064625.750352 preparing state for bind-key i display-message (client (nil))
+1497064625.750354 cmd_find_client: no target, return (nil)
+1497064625.750356 preparing -t state: target none
+1497064625.750357 preparing -s state: target none
+1497064625.750360 preparing state for bind-key i display-message (client (nil))
+1497064625.750362 cmd_find_client: no target, return (nil)
+1497064625.750365 preparing -t state: target none
+1497064625.750367 preparing -s state: target none
+1497064625.750370 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750373 cmdq 0x5638eb8de740: bind-key l last-window
+1497064625.750375 preparing state for bind-key l last-window (client (nil))
+1497064625.750377 cmd_find_client: no target, return (nil)
+1497064625.750379 preparing -t state: target none
+1497064625.750380 preparing -s state: target none
+1497064625.750383 preparing state for bind-key l last-window (client (nil))
+1497064625.750385 cmd_find_client: no target, return (nil)
+1497064625.750386 preparing -t state: target none
+1497064625.750388 preparing -s state: target none
+1497064625.750392 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750395 cmdq 0x5638eb8de740: bind-key m select-pane -m
+1497064625.750397 preparing state for bind-key m select-pane -m (client (nil))
+1497064625.750407 cmd_find_client: no target, return (nil)
+1497064625.750412 preparing -t state: target none
+1497064625.750413 preparing -s state: target none
+1497064625.750416 preparing state for bind-key m select-pane -m (client (nil))
+1497064625.750418 cmd_find_client: no target, return (nil)
+1497064625.750420 preparing -t state: target none
+1497064625.750421 preparing -s state: target none
+1497064625.750426 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750428 cmdq 0x5638eb8de740: bind-key n next-window
+1497064625.750433 preparing state for bind-key n next-window (client (nil))
+1497064625.750435 cmd_find_client: no target, return (nil)
+1497064625.750436 preparing -t state: target none
+1497064625.750438 preparing -s state: target none
+1497064625.750440 preparing state for bind-key n next-window (client (nil))
+1497064625.750442 cmd_find_client: no target, return (nil)
+1497064625.750444 preparing -t state: target none
+1497064625.750445 preparing -s state: target none
+1497064625.750449 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750452 cmdq 0x5638eb8de740: bind-key o select-pane -t:.+
+1497064625.750455 preparing state for bind-key o select-pane -t:.+ (client (nil))
+1497064625.750457 cmd_find_client: no target, return (nil)
+1497064625.750459 preparing -t state: target none
+1497064625.750460 preparing -s state: target none
+1497064625.750463 preparing state for bind-key o select-pane -t:.+ (client (nil))
+1497064625.750465 cmd_find_client: no target, return (nil)
+1497064625.750467 preparing -t state: target none
+1497064625.750468 preparing -s state: target none
+1497064625.750473 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750475 cmdq 0x5638eb8de740: bind-key p previous-window
+1497064625.750478 preparing state for bind-key p previous-window (client (nil))
+1497064625.750479 cmd_find_client: no target, return (nil)
+1497064625.750481 preparing -t state: target none
+1497064625.750483 preparing -s state: target none
+1497064625.750485 preparing state for bind-key p previous-window (client (nil))
+1497064625.750487 cmd_find_client: no target, return (nil)
+1497064625.750489 preparing -t state: target none
+1497064625.750490 preparing -s state: target none
+1497064625.750503 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750507 cmdq 0x5638eb8de740: bind-key q display-panes
+1497064625.750510 preparing state for bind-key q display-panes (client (nil))
+1497064625.750512 cmd_find_client: no target, return (nil)
+1497064625.750514 preparing -t state: target none
+1497064625.750515 preparing -s state: target none
+1497064625.750518 preparing state for bind-key q display-panes (client (nil))
+1497064625.750520 cmd_find_client: no target, return (nil)
+1497064625.750521 preparing -t state: target none
+1497064625.750523 preparing -s state: target none
+1497064625.750527 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750530 cmdq 0x5638eb8de740: bind-key r refresh-client
+1497064625.750532 preparing state for bind-key r refresh-client (client (nil))
+1497064625.750534 cmd_find_client: no target, return (nil)
+1497064625.750536 preparing -t state: target none
+1497064625.750540 preparing -s state: target none
+1497064625.750543 preparing state for bind-key r refresh-client (client (nil))
+1497064625.750544 cmd_find_client: no target, return (nil)
+1497064625.750546 preparing -t state: target none
+1497064625.750547 preparing -s state: target none
+1497064625.750552 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750555 cmdq 0x5638eb8de740: bind-key s choose-tree
+1497064625.750557 preparing state for bind-key s choose-tree (client (nil))
+1497064625.750559 cmd_find_client: no target, return (nil)
+1497064625.750561 preparing -t state: target none
+1497064625.750562 preparing -s state: target none
+1497064625.750565 preparing state for bind-key s choose-tree (client (nil))
+1497064625.750567 cmd_find_client: no target, return (nil)
+1497064625.750568 preparing -t state: target none
+1497064625.750570 preparing -s state: target none
+1497064625.750574 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750576 cmdq 0x5638eb8de740: bind-key t clock-mode
+1497064625.750579 preparing state for bind-key t clock-mode (client (nil))
+1497064625.750580 cmd_find_client: no target, return (nil)
+1497064625.750582 preparing -t state: target none
+1497064625.750584 preparing -s state: target none
+1497064625.750586 preparing state for bind-key t clock-mode (client (nil))
+1497064625.750588 cmd_find_client: no target, return (nil)
+1497064625.750590 preparing -t state: target none
+1497064625.750591 preparing -s state: target none
+1497064625.750595 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750597 cmdq 0x5638eb8de740: bind-key w choose-window
+1497064625.750600 preparing state for bind-key w choose-window (client (nil))
+1497064625.750602 cmd_find_client: no target, return (nil)
+1497064625.750603 preparing -t state: target none
+1497064625.750605 preparing -s state: target none
+1497064625.750608 preparing state for bind-key w choose-window (client (nil))
+1497064625.750609 cmd_find_client: no target, return (nil)
+1497064625.750611 preparing -t state: target none
+1497064625.750613 preparing -s state: target none
+1497064625.750617 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750621 cmdq 0x5638eb8de740: bind-key x confirm-before "-pkill-pane #P? (y/n)" kill-pane
+1497064625.750625 preparing state for bind-key x confirm-before "-pkill-pane #P? (y/n)" kill-pane (client (nil))
+1497064625.750627 cmd_find_client: no target, return (nil)
+1497064625.750629 preparing -t state: target none
+1497064625.750630 preparing -s state: target none
+1497064625.750634 preparing state for bind-key x confirm-before "-pkill-pane #P? (y/n)" kill-pane (client (nil))
+1497064625.750636 cmd_find_client: no target, return (nil)
+1497064625.750637 preparing -t state: target none
+1497064625.750639 preparing -s state: target none
+1497064625.750643 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750646 cmdq 0x5638eb8de740: bind-key z resize-pane -Z
+1497064625.750649 preparing state for bind-key z resize-pane -Z (client (nil))
+1497064625.750651 cmd_find_client: no target, return (nil)
+1497064625.750652 preparing -t state: target none
+1497064625.750654 preparing -s state: target none
+1497064625.750657 preparing state for bind-key z resize-pane -Z (client (nil))
+1497064625.750659 cmd_find_client: no target, return (nil)
+1497064625.750660 preparing -t state: target none
+1497064625.750662 preparing -s state: target none
+1497064625.750667 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750670 cmdq 0x5638eb8de740: bind-key { swap-pane -U
+1497064625.750673 preparing state for bind-key { swap-pane -U (client (nil))
+1497064625.750674 cmd_find_client: no target, return (nil)
+1497064625.750676 preparing -t state: target none
+1497064625.750678 preparing -s state: target none
+1497064625.750681 preparing state for bind-key { swap-pane -U (client (nil))
+1497064625.750682 cmd_find_client: no target, return (nil)
+1497064625.750684 preparing -t state: target none
+1497064625.750686 preparing -s state: target none
+1497064625.750691 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750695 cmdq 0x5638eb8de740: bind-key } swap-pane -D
+1497064625.750698 preparing state for bind-key } swap-pane -D (client (nil))
+1497064625.750700 cmd_find_client: no target, return (nil)
+1497064625.750702 preparing -t state: target none
+1497064625.750703 preparing -s state: target none
+1497064625.750706 preparing state for bind-key } swap-pane -D (client (nil))
+1497064625.750708 cmd_find_client: no target, return (nil)
+1497064625.750710 preparing -t state: target none
+1497064625.750711 preparing -s state: target none
+1497064625.750716 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750719 cmdq 0x5638eb8de740: bind-key ~ show-messages
+1497064625.750721 preparing state for bind-key ~ show-messages (client (nil))
+1497064625.750723 cmd_find_client: no target, return (nil)
+1497064625.750725 preparing -t state: target none
+1497064625.750726 preparing -s state: target none
+1497064625.750729 preparing state for bind-key ~ show-messages (client (nil))
+1497064625.750731 cmd_find_client: no target, return (nil)
+1497064625.750733 preparing -t state: target none
+1497064625.750734 preparing -s state: target none
+1497064625.750739 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750742 cmdq 0x5638eb8de740: bind-key PPage copy-mode -u
+1497064625.750745 preparing state for bind-key PPage copy-mode -u (client (nil))
+1497064625.750747 cmd_find_client: no target, return (nil)
+1497064625.750749 preparing -t state: target none
+1497064625.750750 preparing -s state: target none
+1497064625.750753 preparing state for bind-key PPage copy-mode -u (client (nil))
+1497064625.750755 cmd_find_client: no target, return (nil)
+1497064625.750757 preparing -t state: target none
+1497064625.750758 preparing -s state: target none
+1497064625.750763 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750767 cmdq 0x5638eb8de740: bind-key -r Up select-pane -U
+1497064625.750770 preparing state for bind-key -r Up select-pane -U (client (nil))
+1497064625.750772 cmd_find_client: no target, return (nil)
+1497064625.750774 preparing -t state: target none
+1497064625.750776 preparing -s state: target none
+1497064625.750779 preparing state for bind-key -r Up select-pane -U (client (nil))
+1497064625.750781 cmd_find_client: no target, return (nil)
+1497064625.750783 preparing -t state: target none
+1497064625.750784 preparing -s state: target none
+1497064625.750790 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750794 cmdq 0x5638eb8de740: bind-key -r Down select-pane -D
+1497064625.750797 preparing state for bind-key -r Down select-pane -D (client (nil))
+1497064625.750799 cmd_find_client: no target, return (nil)
+1497064625.750801 preparing -t state: target none
+1497064625.750802 preparing -s state: target none
+1497064625.750806 preparing state for bind-key -r Down select-pane -D (client (nil))
+1497064625.750807 cmd_find_client: no target, return (nil)
+1497064625.750809 preparing -t state: target none
+1497064625.750811 preparing -s state: target none
+1497064625.750816 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750819 cmdq 0x5638eb8de740: bind-key -r Left select-pane -L
+1497064625.750822 preparing state for bind-key -r Left select-pane -L (client (nil))
+1497064625.750824 cmd_find_client: no target, return (nil)
+1497064625.750826 preparing -t state: target none
+1497064625.750828 preparing -s state: target none
+1497064625.750831 preparing state for bind-key -r Left select-pane -L (client (nil))
+1497064625.750833 cmd_find_client: no target, return (nil)
+1497064625.750835 preparing -t state: target none
+1497064625.750836 preparing -s state: target none
+1497064625.750841 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750845 cmdq 0x5638eb8de740: bind-key -r Right select-pane -R
+1497064625.750848 preparing state for bind-key -r Right select-pane -R (client (nil))
+1497064625.750850 cmd_find_client: no target, return (nil)
+1497064625.750852 preparing -t state: target none
+1497064625.750853 preparing -s state: target none
+1497064625.750857 preparing state for bind-key -r Right select-pane -R (client (nil))
+1497064625.750860 cmd_find_client: no target, return (nil)
+1497064625.750862 preparing -t state: target none
+1497064625.750864 preparing -s state: target none
+1497064625.750869 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750872 cmdq 0x5638eb8de740: bind-key M-1 select-layout even-horizontal
+1497064625.750876 preparing state for bind-key M-1 select-layout even-horizontal (client (nil))
+1497064625.750877 cmd_find_client: no target, return (nil)
+1497064625.750879 preparing -t state: target none
+1497064625.750881 preparing -s state: target none
+1497064625.750884 preparing state for bind-key M-1 select-layout even-horizontal (client (nil))
+1497064625.750886 cmd_find_client: no target, return (nil)
+1497064625.750888 preparing -t state: target none
+1497064625.750889 preparing -s state: target none
+1497064625.750894 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750897 cmdq 0x5638eb8de740: bind-key M-2 select-layout even-vertical
+1497064625.750900 preparing state for bind-key M-2 select-layout even-vertical (client (nil))
+1497064625.750902 cmd_find_client: no target, return (nil)
+1497064625.750915 preparing -t state: target none
+1497064625.750917 preparing -s state: target none
+1497064625.750920 preparing state for bind-key M-2 select-layout even-vertical (client (nil))
+1497064625.750922 cmd_find_client: no target, return (nil)
+1497064625.750924 preparing -t state: target none
+1497064625.750925 preparing -s state: target none
+1497064625.750931 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750934 cmdq 0x5638eb8de740: bind-key M-3 select-layout main-horizontal
+1497064625.750937 preparing state for bind-key M-3 select-layout main-horizontal (client (nil))
+1497064625.750939 cmd_find_client: no target, return (nil)
+1497064625.750940 preparing -t state: target none
+1497064625.750942 preparing -s state: target none
+1497064625.750945 preparing state for bind-key M-3 select-layout main-horizontal (client (nil))
+1497064625.750947 cmd_find_client: no target, return (nil)
+1497064625.750949 preparing -t state: target none
+1497064625.750950 preparing -s state: target none
+1497064625.750955 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750958 cmdq 0x5638eb8de740: bind-key M-4 select-layout main-vertical
+1497064625.750961 preparing state for bind-key M-4 select-layout main-vertical (client (nil))
+1497064625.750963 cmd_find_client: no target, return (nil)
+1497064625.750965 preparing -t state: target none
+1497064625.750966 preparing -s state: target none
+1497064625.750969 preparing state for bind-key M-4 select-layout main-vertical (client (nil))
+1497064625.750971 cmd_find_client: no target, return (nil)
+1497064625.750973 preparing -t state: target none
+1497064625.750974 preparing -s state: target none
+1497064625.750979 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.750982 cmdq 0x5638eb8de740: bind-key M-5 select-layout tiled
+1497064625.750985 preparing state for bind-key M-5 select-layout tiled (client (nil))
+1497064625.750987 cmd_find_client: no target, return (nil)
+1497064625.750989 preparing -t state: target none
+1497064625.750990 preparing -s state: target none
+1497064625.750993 preparing state for bind-key M-5 select-layout tiled (client (nil))
+1497064625.750995 cmd_find_client: no target, return (nil)
+1497064625.750997 preparing -t state: target none
+1497064625.750998 preparing -s state: target none
+1497064625.751003 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751006 cmdq 0x5638eb8de740: bind-key M-n next-window -a
+1497064625.751009 preparing state for bind-key M-n next-window -a (client (nil))
+1497064625.751011 cmd_find_client: no target, return (nil)
+1497064625.751012 preparing -t state: target none
+1497064625.751014 preparing -s state: target none
+1497064625.751017 preparing state for bind-key M-n next-window -a (client (nil))
+1497064625.751019 cmd_find_client: no target, return (nil)
+1497064625.751020 preparing -t state: target none
+1497064625.751022 preparing -s state: target none
+1497064625.751029 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751032 cmdq 0x5638eb8de740: bind-key M-o rotate-window -D
+1497064625.751035 preparing state for bind-key M-o rotate-window -D (client (nil))
+1497064625.751037 cmd_find_client: no target, return (nil)
+1497064625.751038 preparing -t state: target none
+1497064625.751040 preparing -s state: target none
+1497064625.751043 preparing state for bind-key M-o rotate-window -D (client (nil))
+1497064625.751045 cmd_find_client: no target, return (nil)
+1497064625.751046 preparing -t state: target none
+1497064625.751048 preparing -s state: target none
+1497064625.751053 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751055 cmdq 0x5638eb8de740: bind-key M-p previous-window -a
+1497064625.751058 preparing state for bind-key M-p previous-window -a (client (nil))
+1497064625.751060 cmd_find_client: no target, return (nil)
+1497064625.751062 preparing -t state: target none
+1497064625.751064 preparing -s state: target none
+1497064625.751067 preparing state for bind-key M-p previous-window -a (client (nil))
+1497064625.751068 cmd_find_client: no target, return (nil)
+1497064625.751070 preparing -t state: target none
+1497064625.751072 preparing -s state: target none
+1497064625.751077 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751080 cmdq 0x5638eb8de740: bind-key -r M-Up resize-pane -U 5
+1497064625.751084 preparing state for bind-key -r M-Up resize-pane -U 5 (client (nil))
+1497064625.751086 cmd_find_client: no target, return (nil)
+1497064625.751088 preparing -t state: target none
+1497064625.751090 preparing -s state: target none
+1497064625.751093 preparing state for bind-key -r M-Up resize-pane -U 5 (client (nil))
+1497064625.751095 cmd_find_client: no target, return (nil)
+1497064625.751097 preparing -t state: target none
+1497064625.751099 preparing -s state: target none
+1497064625.751104 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751108 cmdq 0x5638eb8de740: bind-key -r M-Down resize-pane -D 5
+1497064625.751112 preparing state for bind-key -r M-Down resize-pane -D 5 (client (nil))
+1497064625.751114 cmd_find_client: no target, return (nil)
+1497064625.751116 preparing -t state: target none
+1497064625.751118 preparing -s state: target none
+1497064625.751121 preparing state for bind-key -r M-Down resize-pane -D 5 (client (nil))
+1497064625.751123 cmd_find_client: no target, return (nil)
+1497064625.751125 preparing -t state: target none
+1497064625.751126 preparing -s state: target none
+1497064625.751132 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751135 cmdq 0x5638eb8de740: bind-key -r M-Left resize-pane -L 5
+1497064625.751139 preparing state for bind-key -r M-Left resize-pane -L 5 (client (nil))
+1497064625.751141 cmd_find_client: no target, return (nil)
+1497064625.751143 preparing -t state: target none
+1497064625.751144 preparing -s state: target none
+1497064625.751148 preparing state for bind-key -r M-Left resize-pane -L 5 (client (nil))
+1497064625.751150 cmd_find_client: no target, return (nil)
+1497064625.751152 preparing -t state: target none
+1497064625.751153 preparing -s state: target none
+1497064625.751159 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751163 cmdq 0x5638eb8de740: bind-key -r M-Right resize-pane -R 5
+1497064625.751167 preparing state for bind-key -r M-Right resize-pane -R 5 (client (nil))
+1497064625.751169 cmd_find_client: no target, return (nil)
+1497064625.751170 preparing -t state: target none
+1497064625.751172 preparing -s state: target none
+1497064625.751176 preparing state for bind-key -r M-Right resize-pane -R 5 (client (nil))
+1497064625.751178 cmd_find_client: no target, return (nil)
+1497064625.751179 preparing -t state: target none
+1497064625.751181 preparing -s state: target none
+1497064625.751186 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751189 cmdq 0x5638eb8de740: bind-key -r C-Up resize-pane -U
+1497064625.751193 preparing state for bind-key -r C-Up resize-pane -U (client (nil))
+1497064625.751195 cmd_find_client: no target, return (nil)
+1497064625.751198 preparing -t state: target none
+1497064625.751200 preparing -s state: target none
+1497064625.751203 preparing state for bind-key -r C-Up resize-pane -U (client (nil))
+1497064625.751205 cmd_find_client: no target, return (nil)
+1497064625.751207 preparing -t state: target none
+1497064625.751208 preparing -s state: target none
+1497064625.751213 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751217 cmdq 0x5638eb8de740: bind-key -r C-Down resize-pane -D
+1497064625.751220 preparing state for bind-key -r C-Down resize-pane -D (client (nil))
+1497064625.751222 cmd_find_client: no target, return (nil)
+1497064625.751224 preparing -t state: target none
+1497064625.751225 preparing -s state: target none
+1497064625.751229 preparing state for bind-key -r C-Down resize-pane -D (client (nil))
+1497064625.751231 cmd_find_client: no target, return (nil)
+1497064625.751232 preparing -t state: target none
+1497064625.751234 preparing -s state: target none
+1497064625.751239 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751242 cmdq 0x5638eb8de740: bind-key -r C-Left resize-pane -L
+1497064625.751246 preparing state for bind-key -r C-Left resize-pane -L (client (nil))
+1497064625.751248 cmd_find_client: no target, return (nil)
+1497064625.751249 preparing -t state: target none
+1497064625.751251 preparing -s state: target none
+1497064625.751254 preparing state for bind-key -r C-Left resize-pane -L (client (nil))
+1497064625.751256 cmd_find_client: no target, return (nil)
+1497064625.751258 preparing -t state: target none
+1497064625.751259 preparing -s state: target none
+1497064625.751264 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751268 cmdq 0x5638eb8de740: bind-key -r C-Right resize-pane -R
+1497064625.751271 preparing state for bind-key -r C-Right resize-pane -R (client (nil))
+1497064625.751273 cmd_find_client: no target, return (nil)
+1497064625.751275 preparing -t state: target none
+1497064625.751276 preparing -s state: target none
+1497064625.751280 preparing state for bind-key -r C-Right resize-pane -R (client (nil))
+1497064625.751282 cmd_find_client: no target, return (nil)
+1497064625.751283 preparing -t state: target none
+1497064625.751285 preparing -s state: target none
+1497064625.751291 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751295 cmdq 0x5638eb8de740: bind-key -n MouseDown1Pane select-pane -t=; send-keys -M
+1497064625.751300 preparing state for bind-key -n MouseDown1Pane select-pane -t=; send-keys -M (client (nil))
+1497064625.751302 cmd_find_client: no target, return (nil)
+1497064625.751304 preparing -t state: target none
+1497064625.751305 preparing -s state: target none
+1497064625.751310 preparing state for bind-key -n MouseDown1Pane select-pane -t=; send-keys -M (client (nil))
+1497064625.751312 cmd_find_client: no target, return (nil)
+1497064625.751313 preparing -t state: target none
+1497064625.751321 preparing -s state: target none
+1497064625.751331 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751335 cmdq 0x5638eb8de740: bind-key -n MouseDrag1Border resize-pane -M
+1497064625.751338 preparing state for bind-key -n MouseDrag1Border resize-pane -M (client (nil))
+1497064625.751340 cmd_find_client: no target, return (nil)
+1497064625.751342 preparing -t state: target none
+1497064625.751343 preparing -s state: target none
+1497064625.751347 preparing state for bind-key -n MouseDrag1Border resize-pane -M (client (nil))
+1497064625.751349 cmd_find_client: no target, return (nil)
+1497064625.751350 preparing -t state: target none
+1497064625.751352 preparing -s state: target none
+1497064625.751358 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751362 cmdq 0x5638eb8de740: bind-key -n MouseDown1Status select-window -t=
+1497064625.751365 preparing state for bind-key -n MouseDown1Status select-window -t= (client (nil))
+1497064625.751367 cmd_find_client: no target, return (nil)
+1497064625.751369 preparing -t state: target none
+1497064625.751370 preparing -s state: target none
+1497064625.751374 preparing state for bind-key -n MouseDown1Status select-window -t= (client (nil))
+1497064625.751378 cmd_find_client: no target, return (nil)
+1497064625.751379 preparing -t state: target none
+1497064625.751381 preparing -s state: target none
+1497064625.751387 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751390 cmdq 0x5638eb8de740: bind-key -n WheelDownStatus next-window
+1497064625.751404 preparing state for bind-key -n WheelDownStatus next-window (client (nil))
+1497064625.751407 cmd_find_client: no target, return (nil)
+1497064625.751409 preparing -t state: target none
+1497064625.751410 preparing -s state: target none
+1497064625.751413 preparing state for bind-key -n WheelDownStatus next-window (client (nil))
+1497064625.751415 cmd_find_client: no target, return (nil)
+1497064625.751417 preparing -t state: target none
+1497064625.751418 preparing -s state: target none
+1497064625.751425 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751428 cmdq 0x5638eb8de740: bind-key -n WheelUpStatus previous-window
+1497064625.751431 preparing state for bind-key -n WheelUpStatus previous-window (client (nil))
+1497064625.751433 cmd_find_client: no target, return (nil)
+1497064625.751435 preparing -t state: target none
+1497064625.751436 preparing -s state: target none
+1497064625.751440 preparing state for bind-key -n WheelUpStatus previous-window (client (nil))
+1497064625.751441 cmd_find_client: no target, return (nil)
+1497064625.751443 preparing -t state: target none
+1497064625.751445 preparing -s state: target none
+1497064625.751453 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751460 cmdq 0x5638eb8de740: bind-key -n MouseDrag1Pane if -Ft= #{mouse_any_flag} "if -Ft= "#{pane_in_mode}" "copy-mode -M" "send-keys -M"" "copy-mode -M"
+1497064625.751466 preparing state for bind-key -n MouseDrag1Pane if -Ft= #{mouse_any_flag} "if -Ft= "#{pane_in_mode}" "copy-mode -M" "send-keys -M"" "copy-mode -M" (client (nil))
+1497064625.751468 cmd_find_client: no target, return (nil)
+1497064625.751470 preparing -t state: target none
+1497064625.751472 preparing -s state: target none
+1497064625.751477 preparing state for bind-key -n MouseDrag1Pane if -Ft= #{mouse_any_flag} "if -Ft= "#{pane_in_mode}" "copy-mode -M" "send-keys -M"" "copy-mode -M" (client (nil))
+1497064625.751479 cmd_find_client: no target, return (nil)
+1497064625.751481 preparing -t state: target none
+1497064625.751482 preparing -s state: target none
+1497064625.751491 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751497 cmdq 0x5638eb8de740: bind-key -n MouseDown3Pane if-shell -Ft= #{mouse_any_flag} "select-pane -t=; send-keys -M" "select-pane -mt="
+1497064625.751502 preparing state for bind-key -n MouseDown3Pane if-shell -Ft= #{mouse_any_flag} "select-pane -t=; send-keys -M" "select-pane -mt=" (client (nil))
+1497064625.751504 cmd_find_client: no target, return (nil)
+1497064625.751506 preparing -t state: target none
+1497064625.751508 preparing -s state: target none
+1497064625.751513 preparing state for bind-key -n MouseDown3Pane if-shell -Ft= #{mouse_any_flag} "select-pane -t=; send-keys -M" "select-pane -mt=" (client (nil))
+1497064625.751515 cmd_find_client: no target, return (nil)
+1497064625.751517 preparing -t state: target none
+1497064625.751518 preparing -s state: target none
+1497064625.751527 continuing cmdq 0x5638eb8de740: flags 0, client (nil)
+1497064625.751533 cmdq 0x5638eb8de740: bind-key -n WheelUpPane if-shell -Ft= #{mouse_any_flag} "send-keys -M" "if -Ft= "#{pane_in_mode}" "send-keys -M" "copy-mode -et=""
+1497064625.751539 preparing state for bind-key -n WheelUpPane if-shell -Ft= #{mouse_any_flag} "send-keys -M" "if -Ft= "#{pane_in_mode}" "send-keys -M" "copy-mode -et="" (client (nil))
+1497064625.751541 cmd_find_client: no target, return (nil)
+1497064625.751542 preparing -t state: target none
+1497064625.751544 preparing -s state: target none
+1497064625.751550 preparing state for bind-key -n WheelUpPane if-shell -Ft= #{mouse_any_flag} "send-keys -M" "if -Ft= "#{pane_in_mode}" "send-keys -M" "copy-mode -et="" (client (nil))
+1497064625.751554 cmd_find_client: no target, return (nil)
+1497064625.751556 preparing -t state: target none
+1497064625.751557 preparing -s state: target none
+1497064625.751617 add peer 0x5638eb8ee410: 8 (0x5638eb8edde0)
+1497064625.751623 new client 0x5638eb8edde0
+1497064625.751638 loading /etc/tmux.conf
+1497064625.751650 loading /home/herb/.tmux.conf
+1497064625.751667 /home/herb/.tmux.conf: set -g utf8\r
+1497064625.751673 /home/herb/.tmux.conf: set-windows-option -utf8 on\r
+1497064625.751683 continuing cmdq 0x5638eb8ebd60: flags 0, client (nil)
+1497064625.751686 cmdq 0x5638eb8ebd60: set-option -g utf8\r
+1497064625.751689 preparing state for set-option -g utf8\r (client (nil))
+1497064625.751692 cmd_find_client: no target, return (nil)
+1497064625.751693 preparing -t state: target none
+1497064625.751695 cmd_prepare_state_flag: flag t 8 0x2
+1497064625.751697 cmd_find_target: target none, type 1
+1497064625.751700 cmd_find_target: cmdq 0x5638eb8ebd60, flags 0x2
+1497064625.751701 cmd_find_target: s=none
+1497064625.751703 cmd_find_target: wl=none
+1497064625.751705 cmd_find_target: wp=none
+1497064625.751706 cmd_find_target: idx=none
+1497064625.751708 preparing -s state: target none
+1497064625.751711 preparing state for set-option -g utf8\r (client (nil))
+1497064625.751713 cmd_find_client: no target, return (nil)
+1497064625.751715 preparing -t state: target none
+1497064625.751717 cmd_prepare_state_flag: flag t 8 0x2
+1497064625.751719 cmd_find_target: target none, type 1
+1497064625.751721 cmd_find_target: cmdq 0x5638eb8ebd60, flags 0x2
+1497064625.751722 cmd_find_target: s=none
+1497064625.751724 cmd_find_target: wl=none
+1497064625.751725 cmd_find_target: wp=none
+1497064625.751727 cmd_find_target: idx=none
+1497064625.751729 preparing -s state: target none
+1497064625.751735 unref client 0x5638eb8edde0 (2 references)
+1497064625.751738 server loop enter
+1497064625.751756 peer 0x5638eb8ee410 message 100
+1497064625.751759 client 0x5638eb8edde0 IDENTIFY_FLAGS 0x30000
+1497064625.751761 peer 0x5638eb8ee410 message 101
+1497064625.751763 client 0x5638eb8edde0 IDENTIFY_TERM xterm
+1497064625.751765 peer 0x5638eb8ee410 message 102
+1497064625.751767 client 0x5638eb8edde0 IDENTIFY_TTYNAME /dev/pts/1
+1497064625.751769 peer 0x5638eb8ee410 message 108
+1497064625.751772 client 0x5638eb8edde0 IDENTIFY_CWD /home/herb/bin/dotfiles
+1497064625.751774 peer 0x5638eb8ee410 message 104
+1497064625.751776 client 0x5638eb8edde0 IDENTIFY_STDIN 6
+1497064625.751785 peer 0x5638eb8ee410 message 107
+1497064625.751787 client 0x5638eb8edde0 IDENTIFY_CLIENTPID 1850
+1497064625.751789 peer 0x5638eb8ee410 message 105
+1497064625.751792 client 0x5638eb8edde0 IDENTIFY_ENVIRON USER=herb
+1497064625.751794 peer 0x5638eb8ee410 message 105
+1497064625.751796 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_SEAT=seat0
+1497064625.751798 peer 0x5638eb8ee410 message 105
+1497064625.751801 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_SESSION_TYPE=x11
+1497064625.751802 peer 0x5638eb8ee410 message 105
+1497064625.751805 client 0x5638eb8edde0 IDENTIFY_ENVIRON SSH_AGENT_PID=1210
+1497064625.751807 peer 0x5638eb8ee410 message 105
+1497064625.751809 client 0x5638eb8edde0 IDENTIFY_ENVIRON HOME=/home/herb
+1497064625.751811 peer 0x5638eb8ee410 message 105
+1497064625.751813 client 0x5638eb8edde0 IDENTIFY_ENVIRON QT4_IM_MODULE=uim
+1497064625.751815 peer 0x5638eb8ee410 message 105
+1497064625.751818 client 0x5638eb8edde0 IDENTIFY_ENVIRON DESKTOP_SESSION=lightdm-xsession
+1497064625.751819 peer 0x5638eb8ee410 message 105
+1497064625.751822 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+1497064625.751824 peer 0x5638eb8ee410 message 105
+1497064625.751827 client 0x5638eb8edde0 IDENTIFY_ENVIRON QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+1497064625.751828 peer 0x5638eb8ee410 message 105
+1497064625.751831 client 0x5638eb8edde0 IDENTIFY_ENVIRON DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+1497064625.751833 peer 0x5638eb8ee410 message 105
+1497064625.751835 client 0x5638eb8edde0 IDENTIFY_ENVIRON GLADE_MODULE_PATH=:
+1497064625.751837 peer 0x5638eb8ee410 message 105
+1497064625.751840 client 0x5638eb8edde0 IDENTIFY_ENVIRON LOGNAME=herb
+1497064625.751845 peer 0x5638eb8ee410 message 105
+1497064625.751847 client 0x5638eb8edde0 IDENTIFY_ENVIRON GTK_IM_MODULE=uim
+1497064625.751849 peer 0x5638eb8ee410 message 105
+1497064625.751851 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_SESSION_ID=2
+1497064625.751853 peer 0x5638eb8ee410 message 105
+1497064625.751857 client 0x5638eb8edde0 IDENTIFY_ENVIRON PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+1497064625.751859 peer 0x5638eb8ee410 message 105
+1497064625.751862 client 0x5638eb8edde0 IDENTIFY_ENVIRON GLADE_PIXMAP_PATH=:
+1497064625.751863 peer 0x5638eb8ee410 message 105
+1497064625.751867 client 0x5638eb8edde0 IDENTIFY_ENVIRON SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1251,unix/debian:/tmp/.ICE-unix/1251
+1497064625.751869 peer 0x5638eb8ee410 message 105
+1497064625.751872 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+1497064625.751873 peer 0x5638eb8ee410 message 105
+1497064625.751876 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_RUNTIME_DIR=/run/user/1000
+1497064625.751878 peer 0x5638eb8ee410 message 105
+1497064625.751880 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_MENU_PREFIX=xfce-
+1497064625.751882 peer 0x5638eb8ee410 message 105
+1497064625.751895 client 0x5638eb8edde0 IDENTIFY_ENVIRON DISPLAY=:0.0
+1497064625.751900 peer 0x5638eb8ee410 message 105
+1497064625.751903 client 0x5638eb8edde0 IDENTIFY_ENVIRON LANG=ja_JP.UTF-8
+1497064625.751905 peer 0x5638eb8ee410 message 105
+1497064625.751907 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_CURRENT_DESKTOP=XFCE
+1497064625.751909 peer 0x5638eb8ee410 message 105
+1497064625.751911 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_SESSION_DESKTOP=lightdm-xsession
+1497064625.751913 peer 0x5638eb8ee410 message 105
+1497064625.751916 client 0x5638eb8edde0 IDENTIFY_ENVIRON XAUTHORITY=/home/herb/.Xauthority
+1497064625.751918 peer 0x5638eb8ee410 message 105
+1497064625.751920 client 0x5638eb8edde0 IDENTIFY_ENVIRON XMODIFIERS=@im=uim
+1497064625.751922 peer 0x5638eb8ee410 message 105
+1497064625.751924 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/herb
+1497064625.751926 peer 0x5638eb8ee410 message 105
+1497064625.751929 client 0x5638eb8edde0 IDENTIFY_ENVIRON SSH_AUTH_SOCK=/tmp/ssh-7rNW0qZqPAio/agent.1142
+1497064625.751931 peer 0x5638eb8ee410 message 105
+1497064625.751933 client 0x5638eb8edde0 IDENTIFY_ENVIRON GLADE_CATALOG_PATH=:
+1497064625.751935 peer 0x5638eb8ee410 message 105
+1497064625.751938 client 0x5638eb8edde0 IDENTIFY_ENVIRON SHELL=/bin/zsh
+1497064625.751940 peer 0x5638eb8ee410 message 105
+1497064625.751942 client 0x5638eb8edde0 IDENTIFY_ENVIRON GDMSESSION=lightdm-xsession
+1497064625.751944 peer 0x5638eb8ee410 message 105
+1497064625.751947 client 0x5638eb8edde0 IDENTIFY_ENVIRON QT_ACCESSIBILITY=1
+1497064625.751948 peer 0x5638eb8ee410 message 105
+1497064625.751951 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_VTNR=7
+1497064625.751952 peer 0x5638eb8ee410 message 105
+1497064625.751955 client 0x5638eb8edde0 IDENTIFY_ENVIRON QT_IM_MODULE=uim
+1497064625.751957 peer 0x5638eb8ee410 message 105
+1497064625.751959 client 0x5638eb8edde0 IDENTIFY_ENVIRON PWD=/home/herb/bin/dotfiles
+1497064625.751961 peer 0x5638eb8ee410 message 105
+1497064625.751964 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/:/usr/share
+1497064625.751966 peer 0x5638eb8ee410 message 105
+1497064625.751969 client 0x5638eb8edde0 IDENTIFY_ENVIRON CLUTTER_IM_MODULE=xim
+1497064625.751970 peer 0x5638eb8ee410 message 105
+1497064625.751973 client 0x5638eb8edde0 IDENTIFY_ENVIRON XDG_CONFIG_DIRS=/etc/xdg
+1497064625.751975 peer 0x5638eb8ee410 message 105
+1497064625.751977 client 0x5638eb8edde0 IDENTIFY_ENVIRON TERM=xterm
+1497064625.751979 peer 0x5638eb8ee410 message 105
+1497064625.751981 client 0x5638eb8edde0 IDENTIFY_ENVIRON WINDOWID=48234511
+1497064625.751983 peer 0x5638eb8ee410 message 105
+1497064625.751986 client 0x5638eb8edde0 IDENTIFY_ENVIRON XTERM_VERSION=XTerm(327)
+1497064625.751988 peer 0x5638eb8ee410 message 105
+1497064625.751992 client 0x5638eb8edde0 IDENTIFY_ENVIRON XTERM_LOCALE=ja_JP.utf8
+1497064625.751994 peer 0x5638eb8ee410 message 105
+1497064625.751997 client 0x5638eb8edde0 IDENTIFY_ENVIRON XTERM_SHELL=/bin/zsh
+1497064625.751999 peer 0x5638eb8ee410 message 105
+1497064625.752001 client 0x5638eb8edde0 IDENTIFY_ENVIRON SHLVL=1
+1497064625.752003 peer 0x5638eb8ee410 message 105
+1497064625.752005 client 0x5638eb8edde0 IDENTIFY_ENVIRON OLDPWD=/home/herb/bin
+1497064625.752007 peer 0x5638eb8ee410 message 105
+1497064625.752009 client 0x5638eb8edde0 IDENTIFY_ENVIRON ZSH=/home/herb/.oh-my-zsh
+1497064625.752011 peer 0x5638eb8ee410 message 105
+1497064625.752014 client 0x5638eb8edde0 IDENTIFY_ENVIRON MANPATH=/usr/local/man:
+1497064625.752015 peer 0x5638eb8ee410 message 105
+1497064625.752018 client 0x5638eb8edde0 IDENTIFY_ENVIRON PAGER=less
+1497064625.752020 peer 0x5638eb8ee410 message 105
+1497064625.752022 client 0x5638eb8edde0 IDENTIFY_ENVIRON LESS=-R
+1497064625.752024 peer 0x5638eb8ee410 message 105
+1497064625.752026 client 0x5638eb8edde0 IDENTIFY_ENVIRON LC_CTYPE=ja_JP.utf8
+1497064625.752028 peer 0x5638eb8ee410 message 105
+1497064625.752030 client 0x5638eb8edde0 IDENTIFY_ENVIRON LSCOLORS=exfxcxdxbxegedabagacad
+1497064625.752032 peer 0x5638eb8ee410 message 105
+1497064625.752036 client 0x5638eb8edde0 IDENTIFY_ENVIRON LS_COLORS=di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:
+1497064625.752038 peer 0x5638eb8ee410 message 105
+1497064625.752040 client 0x5638eb8edde0 IDENTIFY_ENVIRON KCODE=u
+1497064625.752042 peer 0x5638eb8ee410 message 105
+1497064625.752045 client 0x5638eb8edde0 IDENTIFY_ENVIRON AUTOFEATURE=true
+1497064625.752046 peer 0x5638eb8ee410 message 105
+1497064625.752049 client 0x5638eb8edde0 IDENTIFY_ENVIRON OUTPUT_CHARSET=utf-8
+1497064625.752051 peer 0x5638eb8ee410 message 105
+1497064625.752053 client 0x5638eb8edde0 IDENTIFY_ENVIRON LV=-Ou8
+1497064625.752055 peer 0x5638eb8ee410 message 105
+1497064625.752057 client 0x5638eb8edde0 IDENTIFY_ENVIRON LD_LIBRARY_PATH=/usr/local/lib
+1497064625.752059 peer 0x5638eb8ee410 message 105
+1497064625.752062 client 0x5638eb8edde0 IDENTIFY_ENVIRON LIBRARY_PATH=/usr/local/lib
+1497064625.752064 peer 0x5638eb8ee410 message 105
+1497064625.752066 client 0x5638eb8edde0 IDENTIFY_ENVIRON CPATH=/usr/local/include
+1497064625.752068 peer 0x5638eb8ee410 message 105
+1497064625.752071 client 0x5638eb8edde0 IDENTIFY_ENVIRON EDITOR=vim
+1497064625.752072 peer 0x5638eb8ee410 message 105
+1497064625.752075 client 0x5638eb8edde0 IDENTIFY_ENVIRON USE_EDITOR=vim
+1497064625.752077 peer 0x5638eb8ee410 message 105
+1497064625.752079 client 0x5638eb8edde0 IDENTIFY_ENVIRON VISUAL=vim
+1497064625.752081 peer 0x5638eb8ee410 message 105
+1497064625.752083 client 0x5638eb8edde0 IDENTIFY_ENVIRON GREP_COLOR=1;33
+1497064625.752085 peer 0x5638eb8ee410 message 105
+1497064625.752088 client 0x5638eb8edde0 IDENTIFY_ENVIRON _=/usr/bin/tmux
+1497064625.752089 peer 0x5638eb8ee410 message 105
+1497064625.752092 client 0x5638eb8edde0 IDENTIFY_ENVIRON EVENT_NOEPOLL=1
+1497064625.752094 peer 0x5638eb8ee410 message 106
+1497064625.752115 peer 0x5638eb8ee410 message 200
+1497064625.752122 continuing cmdq 0x5638eb8ec810: flags 0, client 0x5638eb8edde0
+1497064625.752124 cmdq 0x5638eb8ec810: new-session
+1497064625.752127 preparing state for new-session (client 0x5638eb8edde0)
+1497064625.752129 cmd_find_current_session: have client 0x5638eb8edde0
+1497064625.752132 cmd_find_client: no target, return (nil)
+1497064625.752133 preparing -t state: target none
+1497064625.752135 cmd_prepare_state_flag: flag t 4 0x2
+1497064625.752137 cmd_find_current_session: have client 0x5638eb8edde0
+1497064625.752139 cmd_find_target: target none, type 2
+1497064625.752141 cmd_find_target: cmdq 0x5638eb8ec810, flags 0x2
+1497064625.752143 cmd_find_target: s=none
+1497064625.752145 cmd_find_target: wl=none
+1497064625.752146 cmd_find_target: wp=none
+1497064625.752148 cmd_find_target: idx=none
+1497064625.752150 preparing -s state: target none
+1497064625.752152 preparing state for new-session (client 0x5638eb8edde0)
+1497064625.752154 cmd_find_current_session: have client 0x5638eb8edde0
+1497064625.752159 cmd_find_client: no target, return (nil)
+1497064625.752160 preparing -t state: target none
+1497064625.752162 cmd_prepare_state_flag: flag t 4 0x2
+1497064625.752164 cmd_find_current_session: have client 0x5638eb8edde0
+1497064625.752166 cmd_find_target: target none, type 2
+1497064625.752168 cmd_find_target: cmdq 0x5638eb8ec810, flags 0x2
+1497064625.752169 cmd_find_target: s=none
+1497064625.752171 cmd_find_target: wl=none
+1497064625.752172 cmd_find_target: wp=none
+1497064625.752174 cmd_find_target: idx=none
+1497064625.752176 preparing -s state: target none
+1497064625.752178 new term: xterm
+1497064625.752315 xterm override: XT 
+1497064625.752322 xterm override: Ms \033]52;%p1%s;%p2%s\a
+1497064625.752325 xterm override: Cs \033]12;%p1%s\a
+1497064625.752327 xterm override: Cr \033]112\a
+1497064625.752330 xterm override: Ss \033[%p1%d q
+1497064625.752332 xterm override: Se \033[2 q
+1497064625.752348 new key \033Oo: 0x100000000045 (KP/)
+1497064625.752350 new key \033Oj: 0x100000000046 (KP*)
+1497064625.752352 new key \033Om: 0x100000000047 (KP-)
+1497064625.752354 new key \033Ow: 0x100000000048 (KP7)
+1497064625.752356 new key \033Ox: 0x100000000049 (KP8)
+1497064625.752358 new key \033Oy: 0x10000000004a (KP9)
+1497064625.752360 new key \033Ok: 0x10000000004b (KP+)
+1497064625.752362 new key \033Ot: 0x10000000004c (KP4)
+1497064625.752364 new key \033Ou: 0x10000000004d (KP5)
+1497064625.752365 new key \033Ov: 0x10000000004e (KP6)
+1497064625.752367 new key \033Oq: 0x10000000004f (KP1)
+1497064625.752369 new key \033Or: 0x100000000050 (KP2)
+1497064625.752371 new key \033Os: 0x100000000051 (KP3)
+1497064625.752373 new key \033OM: 0x100000000052 (KPEnter)
+1497064625.752375 new key \033Op: 0x100000000053 (KP0)
+1497064625.752387 new key \033On: 0x100000000054 (KP.)
+1497064625.752391 new key \033OA: 0x100000000041 (Up)
+1497064625.752393 new key \033OB: 0x100000000042 (Down)
+1497064625.752395 new key \033OC: 0x100000000044 (Right)
+1497064625.752397 new key \033OD: 0x100000000043 (Left)
+1497064625.752399 new key \033[A: 0x100000000041 (Up)
+1497064625.752401 new key \033[B: 0x100000000042 (Down)
+1497064625.752403 new key \033[C: 0x100000000044 (Right)
+1497064625.752405 new key \033[D: 0x100000000043 (Left)
+1497064625.752407 new key \033OH: 0x10000000003c (Home)
+1497064625.752409 new key \033OF: 0x10000000003d (End)
+1497064625.752411 new key \033[H: 0x10000000003c (Home)
+1497064625.752413 new key \033[F: 0x10000000003d (End)
+1497064625.752415 new key \033Oa: 0x500000000041 (C-Up)
+1497064625.752417 new key \033Ob: 0x500000000042 (C-Down)
+1497064625.752419 new key \033Oc: 0x500000000044 (C-Right)
+1497064625.752421 new key \033Od: 0x500000000043 (C-Left)
+1497064625.752423 new key \033[a: 0x900000000041 (S-Up)
+1497064625.752425 new key \033[b: 0x900000000042 (S-Down)
+1497064625.752427 new key \033[c: 0x900000000044 (S-Right)
+1497064625.752429 new key \033[d: 0x900000000043 (S-Left)
+1497064625.752431 new key \033[11^: 0x50000000002e (C-F1)
+1497064625.752433 new key \033[12^: 0x50000000002f (C-F2)
+1497064625.752435 new key \033[13^: 0x500000000030 (C-F3)
+1497064625.752437 new key \033[14^: 0x500000000031 (C-F4)
+1497064625.752439 new key \033[15^: 0x500000000032 (C-F5)
+1497064625.752441 new key \033[17^: 0x500000000033 (C-F6)
+1497064625.752443 new key \033[18^: 0x500000000034 (C-F7)
+1497064625.752445 new key \033[19^: 0x500000000035 (C-F8)
+1497064625.752447 new key \033[20^: 0x500000000036 (C-F9)
+1497064625.752449 new key \033[21^: 0x500000000037 (C-F10)
+1497064625.752451 new key \033[23^: 0x500000000038 (C-F11)
+1497064625.752453 new key \033[24^: 0x500000000039 (C-F12)
+1497064625.752456 new key \033[2^: 0x50000000003a (C-IC)
+1497064625.752458 new key \033[3^: 0x50000000003b (C-DC)
+1497064625.752460 new key \033[7^: 0x50000000003c (C-Home)
+1497064625.752462 new key \033[8^: 0x50000000003d (C-End)
+1497064625.752464 new key \033[6^: 0x50000000003e (C-NPage)
+1497064625.752466 new key \033[5^: 0x50000000003f (C-PPage)
+1497064625.752468 new key \033[11$: 0x90000000002e (S-F1)
+1497064625.752470 new key \033[12$: 0x90000000002f (S-F2)
+1497064625.752475 new key \033[13$: 0x900000000030 (S-F3)
+1497064625.752477 new key \033[14$: 0x900000000031 (S-F4)
+1497064625.752479 new key \033[15$: 0x900000000032 (S-F5)
+1497064625.752481 new key \033[17$: 0x900000000033 (S-F6)
+1497064625.752483 new key \033[18$: 0x900000000034 (S-F7)
+1497064625.752485 new key \033[19$: 0x900000000035 (S-F8)
+1497064625.752487 new key \033[20$: 0x900000000036 (S-F9)
+1497064625.752489 new key \033[21$: 0x900000000037 (S-F10)
+1497064625.752491 new key \033[23$: 0x900000000038 (S-F11)
+1497064625.752493 new key \033[24$: 0x900000000039 (S-F12)
+1497064625.752495 new key \033[2$: 0x90000000003a (S-IC)
+1497064625.752497 new key \033[3$: 0x90000000003b (S-DC)
+1497064625.752499 new key \033[7$: 0x90000000003c (S-Home)
+1497064625.752501 new key \033[8$: 0x90000000003d (S-End)
+1497064625.752503 new key \033[6$: 0x90000000003e (S-NPage)
+1497064625.752505 new key \033[5$: 0x90000000003f (S-PPage)
+1497064625.752507 new key \033[11@: 0xd0000000002e (C-S-F1)
+1497064625.752509 new key \033[12@: 0xd0000000002f (C-S-F2)
+1497064625.752511 new key \033[13@: 0xd00000000030 (C-S-F3)
+1497064625.752513 new key \033[14@: 0xd00000000031 (C-S-F4)
+1497064625.752515 new key \033[15@: 0xd00000000032 (C-S-F5)
+1497064625.752517 new key \033[17@: 0xd00000000033 (C-S-F6)
+1497064625.752519 new key \033[18@: 0xd00000000034 (C-S-F7)
+1497064625.752521 new key \033[19@: 0xd00000000035 (C-S-F8)
+1497064625.752522 new key \033[20@: 0xd00000000036 (C-S-F9)
+1497064625.752524 new key \033[21@: 0xd00000000037 (C-S-F10)
+1497064625.752527 new key \033[23@: 0xd00000000038 (C-S-F11)
+1497064625.752528 new key \033[24@: 0xd00000000039 (C-S-F12)
+1497064625.752530 new key \033[2@: 0xd0000000003a (C-S-IC)
+1497064625.752532 new key \033[3@: 0xd0000000003b (C-S-DC)
+1497064625.752535 new key \033[7@: 0xd0000000003c (C-S-Home)
+1497064625.752537 new key \033[8@: 0xd0000000003d (C-S-End)
+1497064625.752539 new key \033[6@: 0xd0000000003e (C-S-NPage)
+1497064625.752541 new key \033[5@: 0xd0000000003f (C-S-PPage)
+1497064625.752544 new key \033[I: 0x100000000000 (Invalid#100000000000)
+1497064625.752546 new key \033[O: 0x100000000001 (Invalid#100000000001)
+1497064625.752548 new key \033OP: 0x10000000002e (F1)
+1497064625.752550 new key \033OQ: 0x10000000002f (F2)
+1497064625.752552 new key \033OR: 0x100000000030 (F3)
+1497064625.752554 new key \033OS: 0x100000000031 (F4)
+1497064625.752556 new key \033[15~: 0x100000000032 (F5)
+1497064625.752558 new key \033[17~: 0x100000000033 (F6)
+1497064625.752560 new key \033[18~: 0x100000000034 (F7)
+1497064625.752562 new key \033[19~: 0x100000000035 (F8)
+1497064625.752564 new key \033[20~: 0x100000000036 (F9)
+1497064625.752566 new key \033[21~: 0x100000000037 (F10)
+1497064625.752568 new key \033[23~: 0x100000000038 (F11)
+1497064625.752569 new key \033[24~: 0x100000000039 (F12)
+1497064625.752572 new key \033[1;2P: 0x90000000002e (S-F1)
+1497064625.752574 new key \033[1;2Q: 0x90000000002f (S-F2)
+1497064625.752576 new key \033[1;2R: 0x900000000030 (S-F3)
+1497064625.752578 new key \033[1;2S: 0x900000000031 (S-F4)
+1497064625.752580 new key \033[15;2~: 0x900000000032 (S-F5)
+1497064625.752582 new key \033[17;2~: 0x900000000033 (S-F6)
+1497064625.752584 new key \033[18;2~: 0x900000000034 (S-F7)
+1497064625.752587 new key \033[19;2~: 0x900000000035 (S-F8)
+1497064625.752589 new key \033[20;2~: 0x900000000036 (S-F9)
+1497064625.752591 new key \033[21;2~: 0x900000000037 (S-F10)
+1497064625.752595 new key \033[23;2~: 0x900000000038 (S-F11)
+1497064625.752597 new key \033[24;2~: 0x900000000039 (S-F12)
+1497064625.752600 new key \033[1;5P: 0x50000000002e (C-F1)
+1497064625.752602 new key \033[1;5Q: 0x50000000002f (C-F2)
+1497064625.752604 new key \033[1;5R: 0x500000000030 (C-F3)
+1497064625.752606 new key \033[1;5S: 0x500000000031 (C-F4)
+1497064625.752608 new key \033[15;5~: 0x500000000032 (C-F5)
+1497064625.752610 new key \033[17;5~: 0x500000000033 (C-F6)
+1497064625.752612 new key \033[18;5~: 0x500000000034 (C-F7)
+1497064625.752614 new key \033[19;5~: 0x500000000035 (C-F8)
+1497064625.752616 new key \033[20;5~: 0x500000000036 (C-F9)
+1497064625.752620 new key \033[21;5~: 0x500000000037 (C-F10)
+1497064625.752622 new key \033[23;5~: 0x500000000038 (C-F11)
+1497064625.752624 new key \033[24;5~: 0x500000000039 (C-F12)
+1497064625.752626 new key \033[1;6P: 0xd0000000002e (C-S-F1)
+1497064625.752628 new key \033[1;6Q: 0xd0000000002f (C-S-F2)
+1497064625.752630 new key \033[1;6R: 0xd00000000030 (C-S-F3)
+1497064625.752632 new key \033[1;6S: 0xd00000000031 (C-S-F4)
+1497064625.752634 new key \033[15;6~: 0xd00000000032 (C-S-F5)
+1497064625.752636 new key \033[17;6~: 0xd00000000033 (C-S-F6)
+1497064625.752638 new key \033[18;6~: 0xd00000000034 (C-S-F7)
+1497064625.752640 new key \033[19;6~: 0xd00000000035 (C-S-F8)
+1497064625.752642 new key \033[20;6~: 0xd00000000036 (C-S-F9)
+1497064625.752644 new key \033[21;6~: 0xd00000000037 (C-S-F10)
+1497064625.752648 new key \033[23;6~: 0xd00000000038 (C-S-F11)
+1497064625.752650 new key \033[24;6~: 0xd00000000039 (C-S-F12)
+1497064625.752652 new key \033[1;3P: 0x30000000002e (M-F1)
+1497064625.752654 new key \033[1;3Q: 0x30000000002f (M-F2)
+1497064625.752656 new key \033[1;3R: 0x300000000030 (M-F3)
+1497064625.752658 new key \033[1;3S: 0x300000000031 (M-F4)
+1497064625.752660 new key \033[15;3~: 0x300000000032 (M-F5)
+1497064625.752663 new key \033[17;3~: 0x300000000033 (M-F6)
+1497064625.752665 new key \033[18;3~: 0x300000000034 (M-F7)
+1497064625.752667 new key \033[19;3~: 0x300000000035 (M-F8)
+1497064625.752669 new key \033[20;3~: 0x300000000036 (M-F9)
+1497064625.752671 new key \033[21;3~: 0x300000000037 (M-F10)
+1497064625.752673 new key \033[23;3~: 0x300000000038 (M-F11)
+1497064625.752675 new key \033[24;3~: 0x300000000039 (M-F12)
+1497064625.752677 new key \033[1;4P: 0xb0000000002e (M-S-F1)
+1497064625.752679 new key \033[1;4Q: 0xb0000000002f (M-S-F2)
+1497064625.752681 new key \033[1;4R: 0xb00000000030 (M-S-F3)
+1497064625.752683 new key \033[2~: 0x10000000003a (IC)
+1497064625.752685 new key \033[3~: 0x10000000003b (DC)
+1497064625.752687 replacing key \033OH: 0x10000000003c (Home)
+1497064625.752689 replacing key \033OF: 0x10000000003d (End)
+1497064625.752691 new key \033[6~: 0x10000000003e (NPage)
+1497064625.752693 new key \033[5~: 0x10000000003f (PPage)
+1497064625.752696 new key \033[Z: 0x100000000040 (BTab)
+1497064625.752698 replacing key \033OA: 0x100000000041 (Up)
+1497064625.752700 replacing key \033OB: 0x100000000042 (Down)
+1497064625.752703 replacing key \033OD: 0x100000000043 (Left)
+1497064625.752705 replacing key \033OC: 0x100000000044 (Right)
+1497064625.752707 new key \033[3;2~: 0x90000000003b (S-DC)
+1497064625.752709 new key \033[3;3~: 0x30000000003b (M-DC)
+1497064625.752711 new key \033[3;4~: 0xb0000000003b (M-S-DC)
+1497064625.752713 new key \033[3;5~: 0x50000000003b (C-DC)
+1497064625.752715 new key \033[3;6~: 0xd0000000003b (C-S-DC)
+1497064625.752717 new key \033[3;7~: 0x70000000003b (C-M-DC)
+1497064625.752720 new key \033[1;2B: 0x900000000042 (S-Down)
+1497064625.752722 new key \033[1;3B: 0x300000000042 (M-Down)
+1497064625.752724 new key \033[1;4B: 0xb00000000042 (M-S-Down)
+1497064625.752726 new key \033[1;5B: 0x500000000042 (C-Down)
+1497064625.752728 new key \033[1;6B: 0xd00000000042 (C-S-Down)
+1497064625.752730 new key \033[1;7B: 0x700000000042 (C-M-Down)
+1497064625.752732 new key \033[1;2F: 0x90000000003d (S-End)
+1497064625.752734 new key \033[1;3F: 0x30000000003d (M-End)
+1497064625.752736 new key \033[1;4F: 0xb0000000003d (M-S-End)
+1497064625.752738 new key \033[1;5F: 0x50000000003d (C-End)
+1497064625.752740 new key \033[1;6F: 0xd0000000003d (C-S-End)
+1497064625.752743 new key \033[1;7F: 0x70000000003d (C-M-End)
+1497064625.752745 new key \033[1;2H: 0x90000000003c (S-Home)
+1497064625.752747 new key \033[1;3H: 0x30000000003c (M-Home)
+1497064625.752749 new key \033[1;4H: 0xb0000000003c (M-S-Home)
+1497064625.752752 new key \033[1;5H: 0x50000000003c (C-Home)
+1497064625.752754 new key \033[1;6H: 0xd0000000003c (C-S-Home)
+1497064625.752756 new key \033[1;7H: 0x70000000003c (C-M-Home)
+1497064625.752758 new key \033[2;2~: 0x90000000003a (S-IC)
+1497064625.752760 new key \033[2;3~: 0x30000000003a (M-IC)
+1497064625.752764 new key \033[2;4~: 0xb0000000003a (M-S-IC)
+1497064625.752766 new key \033[2;5~: 0x50000000003a (C-IC)
+1497064625.752769 new key \033[2;6~: 0xd0000000003a (C-S-IC)
+1497064625.752771 new key \033[2;7~: 0x70000000003a (C-M-IC)
+1497064625.752773 new key \033[1;2D: 0x900000000043 (S-Left)
+1497064625.752775 new key \033[1;3D: 0x300000000043 (M-Left)
+1497064625.752777 new key \033[1;4D: 0xb00000000043 (M-S-Left)
+1497064625.752779 new key \033[1;5D: 0x500000000043 (C-Left)
+1497064625.752781 new key \033[1;6D: 0xd00000000043 (C-S-Left)
+1497064625.752783 new key \033[1;7D: 0x700000000043 (C-M-Left)
+1497064625.752785 new key \033[6;2~: 0x90000000003e (S-NPage)
+1497064625.752787 new key \033[6;3~: 0x30000000003e (M-NPage)
+1497064625.752790 new key \033[6;4~: 0xb0000000003e (M-S-NPage)
+1497064625.752792 new key \033[6;5~: 0x50000000003e (C-NPage)
+1497064625.752794 new key \033[6;6~: 0xd0000000003e (C-S-NPage)
+1497064625.752796 new key \033[6;7~: 0x70000000003e (C-M-NPage)
+1497064625.752798 new key \033[5;2~: 0x90000000003f (S-PPage)
+1497064625.752800 new key \033[5;3~: 0x30000000003f (M-PPage)
+1497064625.752803 new key \033[5;4~: 0xb0000000003f (M-S-PPage)
+1497064625.752806 new key \033[5;5~: 0x50000000003f (C-PPage)
+1497064625.752808 new key \033[5;6~: 0xd0000000003f (C-S-PPage)
+1497064625.752810 new key \033[5;7~: 0x70000000003f (C-M-PPage)
+1497064625.752812 new key \033[1;2C: 0x900000000044 (S-Right)
+1497064625.752814 new key \033[1;3C: 0x300000000044 (M-Right)
+1497064625.752816 new key \033[1;4C: 0xb00000000044 (M-S-Right)
+1497064625.752818 new key \033[1;5C: 0x500000000044 (C-Right)
+1497064625.752821 new key \033[1;6C: 0xd00000000044 (C-S-Right)
+1497064625.752823 new key \033[1;7C: 0x700000000044 (C-M-Right)
+1497064625.752825 new key \033[1;2A: 0x900000000041 (S-Up)
+1497064625.752827 new key \033[1;3A: 0x300000000041 (M-Up)
+1497064625.752829 new key \033[1;4A: 0xb00000000041 (M-S-Up)
+1497064625.752831 new key \033[1;5A: 0x500000000041 (C-Up)
+1497064625.752833 new key \033[1;6A: 0xd00000000041 (C-S-Up)
+1497064625.752835 new key \033[1;7A: 0x700000000041 (C-M-Up)
+1497064625.752847 new session 0 $0
+1497064625.752850 session 0 activity 1497064625.752848 (last 0.000000)
+1497064625.752892 @0 alerts flags added 0x2
+1497064625.752908 spawn: /bin/zsh -- 
+1497064625.752911 spawn: AUTOFEATURE=true
+1497064625.752913 spawn: CLUTTER_IM_MODULE=xim
+1497064625.752914 spawn: CPATH=/usr/local/include
+1497064625.752917 spawn: DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+1497064625.752919 spawn: DESKTOP_SESSION=lightdm-xsession
+1497064625.752920 spawn: DISPLAY=:0.0
+1497064625.752922 spawn: EDITOR=vim
+1497064625.752924 spawn: GDMSESSION=lightdm-xsession
+1497064625.752926 spawn: GLADE_CATALOG_PATH=:
+1497064625.752927 spawn: GLADE_MODULE_PATH=:
+1497064625.752929 spawn: GLADE_PIXMAP_PATH=:
+1497064625.752931 spawn: GREP_COLOR=1;33
+1497064625.752932 spawn: GTK_IM_MODULE=uim
+1497064625.752934 spawn: HOME=/home/herb
+1497064625.752936 spawn: KCODE=u
+1497064625.752937 spawn: LANG=ja_JP.UTF-8
+1497064625.752939 spawn: LC_CTYPE=ja_JP.utf8
+1497064625.752941 spawn: LD_LIBRARY_PATH=/usr/local/lib
+1497064625.752942 spawn: LESS=-R
+1497064625.752944 spawn: LIBRARY_PATH=/usr/local/lib
+1497064625.752946 spawn: LOGNAME=herb
+1497064625.752947 spawn: LSCOLORS=exfxcxdxbxegedabagacad
+1497064625.752950 spawn: LS_COLORS=di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:
+1497064625.752952 spawn: LV=-Ou8
+1497064625.752954 spawn: MANPATH=/usr/local/man:
+1497064625.752955 spawn: OLDPWD=/home/herb/bin
+1497064625.752957 spawn: OUTPUT_CHARSET=utf-8
+1497064625.752959 spawn: PAGER=less
+1497064625.752961 spawn: PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+1497064625.752963 spawn: PWD=/home/herb/bin/dotfiles
+1497064625.752965 spawn: QT4_IM_MODULE=uim
+1497064625.752966 spawn: QT_ACCESSIBILITY=1
+1497064625.752968 spawn: QT_IM_MODULE=uim
+1497064625.752970 spawn: QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+1497064625.752972 spawn: SESSION_MANAGER=local/debian:@/tmp/.ICE-unix/1251,unix/debian:/tmp/.ICE-unix/1251
+1497064625.752976 spawn: SHELL=/bin/zsh
+1497064625.752978 spawn: SHLVL=1
+1497064625.752980 spawn: SSH_AGENT_PID=1210
+1497064625.752982 spawn: SSH_AUTH_SOCK=/tmp/ssh-7rNW0qZqPAio/agent.1142
+1497064625.752983 spawn: TERM=screen
+1497064625.752985 spawn: TMUX=/tmp/tmux-1000/default,1852,0
+1497064625.752987 spawn: USER=herb
+1497064625.752988 spawn: USE_EDITOR=vim
+1497064625.752990 spawn: VISUAL=vim
+1497064625.752991 spawn: WINDOWID=48234511
+1497064625.752993 spawn: XAUTHORITY=/home/herb/.Xauthority
+1497064625.752995 spawn: XDG_CONFIG_DIRS=/etc/xdg
+1497064625.752997 spawn: XDG_CURRENT_DESKTOP=XFCE
+1497064625.752999 spawn: XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/:/usr/share
+1497064625.753001 spawn: XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/herb
+1497064625.753003 spawn: XDG_MENU_PREFIX=xfce-
+1497064625.753005 spawn: XDG_RUNTIME_DIR=/run/user/1000
+1497064625.753006 spawn: XDG_SEAT=seat0
+1497064625.753008 spawn: XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+1497064625.753010 spawn: XDG_SESSION_DESKTOP=lightdm-xsession
+1497064625.753012 spawn: XDG_SESSION_ID=2
+1497064625.753014 spawn: XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+1497064625.753016 spawn: XDG_SESSION_TYPE=x11
+1497064625.753017 spawn: XDG_VTNR=7
+1497064625.753019 spawn: XMODIFIERS=@im=uim
+1497064625.753021 spawn: XTERM_LOCALE=ja_JP.utf8
+1497064625.753022 spawn: XTERM_SHELL=/bin/zsh
+1497064625.753024 spawn: XTERM_VERSION=XTerm(327)
+1497064625.753026 spawn: ZSH=/home/herb/.oh-my-zsh
+1497064625.753027 spawn: _=/usr/bin/tmux
+1497064625.755219 @0 alerts timer reset 0
+1497064625.755229 session 0 created
+1497064625.755236 sending message 207 to peer 0x5638eb8ee410 (0 bytes)
+1497064625.755243 client 0x5638eb8edde0, status interval 15
+1497064625.755246 session 0 activity 1497064625.755245 (last 1497064625.752848)
+1497064625.755265 screen_write_start: size 200x39, no pane
+1497064625.755277 screen_write_stop: 0 of 60 written (dirty 60, skipped 3)
+1497064625.755280 screen_write_start: size 200x39, pane %0
+1497064625.755282 screen_write_start: size 200x39, pane %0
+1497064625.755285 screen_write_cell: allocating 7800 bits
+1497064625.755294 screen_write_stop: 62 of 200 written (dirty 138, skipped 138)
+1497064625.755296 screen_write_stop: 0 of 0 written (dirty 0, skipped 0)
+1497064625.755298 screen_write_start: size 200x39, no pane
+1497064625.755305 screen_write_stop: 0 of 45 written (dirty 45, skipped 3)
+1497064625.755307 screen_write_start: size 200x39, pane %0
+1497064625.755309 screen_write_start: size 200x39, pane %0
+1497064625.755318 screen_write_stop: 42 of 200 written (dirty 158, skipped 158)
+1497064625.755334 screen_write_stop: 0 of 0 written (dirty 0, skipped 0)
+1497064625.755340 session 0 has 3 references
+1497064625.755349 session 0 has 2 references
+1497064625.755352 unref client 0x5638eb8edde0 (2 references)
+1497064625.755360 screen_write_start: size 200x1, no pane
+1497064625.755374 screen_write_stop: 0 of 200 written (dirty 200, skipped 0)
+1497064625.755442 format '[#S] ' -> '[0] '
+1497064625.755482 format ' "#{=21:pane_title}" 12:17 10- 6\346\234\210-17' -> ' "debian" 12:17 10- 6\346\234\210-17'
+1497064625.755519 format '#{window_flags}' -> '*'
+1497064625.755521 format '#I:#W#{?window_flags,#{window_flags}, }' -> '0:zsh*'
+1497064625.755529 screen_write_start: size 7x1, no pane
+1497064625.755532 screen_write_stop: 0 of 7 written (dirty 7, skipped 0)
+1497064625.755535 screen_write_start: size 200x1, no pane
+1497064625.755540 screen_write_stop: 0 of 36 written (dirty 36, skipped 6)
+1497064625.755703 @0 active pane changed
+1497064625.755719 format '[tmux]' -> '[tmux]'
+1497064625.755722 format '' -> ''
+1497064625.755724 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> '[tmux]'
+1497064625.755729 @0 new name [tmux] (was zsh)
+1497064625.755786 screen_write_start: size 200x1, no pane
+1497064625.755802 screen_write_stop: 0 of 200 written (dirty 200, skipped 0)
+1497064625.755833 format '[#S] ' -> '[0] '
+1497064625.755864 format ' "#{=21:pane_title}" 12:17 10- 6\346\234\210-17' -> ' "debian" 12:17 10- 6\346\234\210-17'
+1497064625.755903 format '#{window_flags}' -> '*'
+1497064625.755906 format '#I:#W#{?window_flags,#{window_flags}, }' -> '0:[tmux]*'
+1497064625.755913 screen_write_start: size 10x1, no pane
+1497064625.755917 screen_write_stop: 0 of 10 written (dirty 10, skipped 0)
+1497064625.755919 screen_write_start: size 200x1, no pane
+1497064625.755924 screen_write_stop: 0 of 39 written (dirty 39, skipped 6)
+1497064625.755946 @0 active pane not changed
+1497064625.755960 @0 active pane not changed
+1497064625.757813 peer 0x5638eb8ee410 message 208
+1497064625.757826 @0 active pane not changed
+1497064629.420432 keys are 1 (:)
+1497064629.420472 next key is 1 (:) (expired=0)
+1497064629.420484 complete key : 0x3a
+1497064629.420499 session 0 activity 1497064629.420492 (last 1497064625.755245)
+1497064629.420512 session 0 not pasting
+1497064629.420530 screen_write_start: size 200x39, pane %0
+1497064629.420630 screen_write_stop: 11 of 200 written (dirty 189, skipped 189)
+1497064629.420651 @0 active pane not changed
+1497064629.420686 @0 active pane not changed
+1497064631.008926 keys are 1 (\177)
+1497064631.008963 next key is 1 (\177) (expired=0)
+1497064631.008976 complete key \177 0x7f
+1497064631.008991 session 0 activity 1497064631.008984 (last 1497064629.420492)
+1497064631.009005 session 0 not pasting
+1497064631.009023 screen_write_start: size 200x39, pane %0
+1497064631.009054 screen_write_stop: 0 of 200 written (dirty 200, skipped 200)
+1497064631.009072 @0 active pane not changed
+1497064631.230354 keys are 1 (\177)
+1497064631.230392 next key is 1 (\177) (expired=0)
+1497064631.230405 complete key \177 0x7f
+1497064631.230421 session 0 activity 1497064631.230413 (last 1497064631.008984)
+1497064631.230435 session 0 not pasting
+1497064631.230452 screen_write_start: size 200x39, pane %0
+1497064631.230484 screen_write_stop: 0 of 200 written (dirty 200, skipped 200)
+1497064631.230501 @0 active pane not changed
+1497064631.683692 keys are 1 (\r)
+1497064631.683709 next key is 1 (\r) (expired=0)
+1497064631.683713 complete key \r 0xd
+1497064631.683717 session 0 activity 1497064631.683715 (last 1497064631.230413)
+1497064631.683722 session 0 not pasting
+1497064631.683729 screen_write_start: size 200x39, pane %0
+1497064631.683757 screen_write_stop: 11 of 200 written (dirty 189, skipped 189)
+1497064631.683763 @0 active pane not changed
+1497064631.683773 @0 active pane not changed
+1497064632.022146 keys are 1 (\r)
+1497064632.022157 next key is 1 (\r) (expired=0)
+1497064632.022161 complete key \r 0xd
+1497064632.022165 session 0 activity 1497064632.022163 (last 1497064631.683715)
+1497064632.022170 session 0 not pasting
+1497064632.022184 screen_write_start: size 200x1, no pane
+1497064632.022199 screen_write_stop: 0 of 200 written (dirty 200, skipped 0)
+1497064632.022250 format '[#S] ' -> '[0] '
+1497064632.022288 format ' "#{=21:pane_title}" 12:17 10- 6\346\234\210-17' -> ' "debian" 12:17 10- 6\346\234\210-17'
+1497064632.022323 format '#{window_flags}' -> '*'
+1497064632.022326 format '#I:#W#{?window_flags,#{window_flags}, }' -> '0:[tmux]*'
+1497064632.022333 screen_write_start: size 10x1, no pane
+1497064632.022337 screen_write_stop: 0 of 10 written (dirty 10, skipped 0)
+1497064632.022339 screen_write_start: size 200x1, no pane
+1497064632.022345 screen_write_stop: 0 of 39 written (dirty 39, skipped 6)
+1497064632.022367 @0 active pane changed
+1497064632.022410 format '#{pane_current_command}' -> 'zsh'
+1497064632.022414 format '' -> ''
+1497064632.022416 format '#{?pane_in_mode,[tmux],#{pane_current_command}}#{?pane_dead,[dead],}' -> 'zsh'
+1497064632.022421 @0 new name zsh (was [tmux])
+1497064632.022438 %0 has 378 bytes (of 4096, 0 hits)
+1497064632.022441 @0 alerts timer reset 0
+1497064632.022447 screen_write_start: size 200x39, pane %0
+1497064632.022455 input_parse: %0 ground, 378 bytes: \033[1m\033[3m%\033[23m\033[1m\033[0m                                                                                                                                                                                                       \r \r\033k~/bin/dotfiles\033\\\r\033[0m\033[23m\033[24m\033[J\033[01;32m\342\236\234  \033[36mdotfiles\033[00m \033[32mmaster \033[31m\342\234\227\033[00m\033[00m\033[K\033[163C\033[32m[~/bin/dotfiles]\033[00m\033[179D\033[?1h\033=\033[?2004h
+1497064632.022467 input_csi_dispatch: 'm' "" "1"
+1497064632.022471 input_csi_dispatch: 'm' "" "3"
+1497064632.022474 screen_write_cell: allocating 7800 bits
+1497064632.022476 input_csi_dispatch: 'm' "" "23"
+1497064632.022479 input_csi_dispatch: 'm' "" "1"
+1497064632.022481 input_csi_dispatch: 'm' "" "0"
+1497064632.022489 input_c0_dispatch: '\r'
+1497064632.022491 input_c0_dispatch: '\r'
+1497064632.022493 input_enter_rename
+1497064632.022496 input_exit_rename: "~/bin/dotfiles"
+1497064632.022498 input_esc_dispatch: '\\', 
+1497064632.022500 input_esc_dispatch: unknown '\\'
+1497064632.022502 input_c0_dispatch: '\r'
+1497064632.022504 input_csi_dispatch: 'm' "" "0"
+1497064632.022507 input_csi_dispatch: 'm' "" "23"
+1497064632.022509 input_csi_dispatch: 'm' "" "24"
+1497064632.022512 input_csi_dispatch: 'J' "" ""
+1497064632.022538 input_csi_dispatch: 'm' "" "01"
+1497064632.022541 input_utf8_open 3
+1497064632.022543 input_utf8_add
+1497064632.022546 input_utf8_close 3 '\342\236\234' (width 1)
+1497064632.022549 input_csi_dispatch: 'm' "" "36"
+1497064632.022552 input_csi_dispatch: 'm' "" "00"
+1497064632.022554 input_csi_dispatch: 'm' "" "32"
+1497064632.022557 input_csi_dispatch: 'm' "" "31"
+1497064632.022559 input_utf8_open 3
+1497064632.022561 input_utf8_add
+1497064632.022563 input_utf8_close 3 '\342\234\227' (width 1)
+1497064632.022566 input_csi_dispatch: 'm' "" "00"
+1497064632.022568 input_csi_dispatch: 'm' "" "00"
+1497064632.022570 input_csi_dispatch: 'K' "" ""
+1497064632.022573 input_csi_dispatch: 'C' "" "163"
+1497064632.022575 input_csi_dispatch: 'm' "" "32"
+1497064632.022579 input_csi_dispatch: 'm' "" "00"
+1497064632.022582 input_csi_dispatch: 'D' "" "179"
+1497064632.022584 input_csi_dispatch: 'h' "?" "1"
+1497064632.022587 input_esc_dispatch: '=', 
+1497064632.022589 input_csi_dispatch: 'h' "?" "2004"
+1497064632.022609 screen_write_stop: 35 of 237 written (dirty 202, skipped 200)
+1497064632.022613 screen_write_start: size 200x1, no pane
+1497064632.022627 screen_write_stop: 0 of 200 written (dirty 200, skipped 0)
+1497064632.022661 format '[#S] ' -> '[0] '
+1497064632.022695 format ' "#{=21:pane_title}" 12:17 10- 6\346\234\210-17' -> ' "debian" 12:17 10- 6\346\234\210-17'
+1497064632.022727 format '#{window_flags}' -> '*'
+1497064632.022730 format '#I:#W#{?window_flags,#{window_flags}, }' -> '0:~/bin/dotfiles*'
+1497064632.022737 screen_write_start: size 18x1, no pane
+1497064632.022741 screen_write_stop: 0 of 18 written (dirty 18, skipped 0)
+1497064632.022743 screen_write_start: size 200x1, no pane
+1497064632.022748 screen_write_stop: 0 of 47 written (dirty 47, skipped 6)
+1497064633.483395 keys are 1 (e)
+1497064633.483438 next key is 1 (e) (expired=0)
+1497064633.483449 complete key e 0x65
+1497064633.483464 session 0 activity 1497064633.483457 (last 1497064632.022163)
+1497064633.483478 session 0 not pasting
+1497064633.483492 writing key 0x65 (e) to %0
+1497064633.486338 %0 has 1 bytes (of 4096, 0 hits)
+1497064633.486372 @0 alerts timer reset 0
+1497064633.486385 screen_write_start: size 200x39, pane %0
+1497064633.486396 input_parse: %0 ground, 1 bytes: e
+1497064633.486421 screen_write_stop: 1 of 1 written (dirty 0, skipped 0)
+1497064633.907344 keys are 1 (x)
+1497064633.907382 next key is 1 (x) (expired=0)
+1497064633.907394 complete key x 0x78
+1497064633.907409 session 0 activity 1497064633.907402 (last 1497064633.483457)
+1497064633.907422 session 0 not pasting
+1497064633.907437 writing key 0x78 (x) to %0
+1497064633.908221 %0 has 3 bytes (of 4096, 0 hits)
+1497064633.908252 @0 alerts timer reset 0
+1497064633.908265 screen_write_start: size 200x39, pane %0
+1497064633.908277 input_parse: %0 ground, 3 bytes: \bex
+1497064633.908285 input_c0_dispatch: '\b'
+1497064633.908310 screen_write_stop: 1 of 2 written (dirty 1, skipped 1)
+1497064634.168638 keys are 1 (i)
+1497064634.168682 next key is 1 (i) (expired=0)
+1497064634.168717 complete key i 0x69
+1497064634.168733 session 0 activity 1497064634.168726 (last 1497064633.907402)
+1497064634.168748 session 0 not pasting
+1497064634.168763 writing key 0x69 (i) to %0
+1497064634.169546 %0 has 1 bytes (of 4096, 0 hits)
+1497064634.169578 @0 alerts timer reset 0
+1497064634.169592 screen_write_start: size 200x39, pane %0
+1497064634.169603 input_parse: %0 ground, 1 bytes: i
+1497064634.169629 screen_write_stop: 1 of 1 written (dirty 0, skipped 0)
+1497064634.392666 keys are 1 (t)
+1497064634.392702 next key is 1 (t) (expired=0)
+1497064634.392714 complete key t 0x74
+1497064634.392729 session 0 activity 1497064634.392722 (last 1497064634.168726)
+1497064634.392742 session 0 not pasting
+1497064634.392757 writing key 0x74 (t) to %0
+1497064634.393488 %0 has 1 bytes (of 4096, 0 hits)
+1497064634.393520 @0 alerts timer reset 0
+1497064634.393533 screen_write_start: size 200x39, pane %0
+1497064634.393545 input_parse: %0 ground, 1 bytes: t
+1497064634.393570 screen_write_stop: 1 of 1 written (dirty 0, skipped 0)
+1497064634.571180 keys are 1 (\r)
+1497064634.571192 next key is 1 (\r) (expired=0)
+1497064634.571195 complete key \r 0xd
+1497064634.571200 session 0 activity 1497064634.571198 (last 1497064634.392722)
+1497064634.571204 session 0 not pasting
+1497064634.571209 writing key 0xd (Enter) to %0
+1497064634.571416 %0 has 7 bytes (of 4096, 0 hits)
+1497064634.571425 @0 alerts timer reset 0
+1497064634.571428 screen_write_start: size 200x39, pane %0
+1497064634.571432 input_parse: %0 ground, 7 bytes: \033[?1l\033>
+1497064634.571437 input_csi_dispatch: 'l' "?" "1"
+1497064634.571441 input_esc_dispatch: '>', 
+1497064634.571444 screen_write_stop: 0 of 0 written (dirty 0, skipped 0)
+1497064634.571460 %0 has 11 bytes (of 4096, 0 hits)
+1497064634.571463 @0 alerts timer reset 0
+1497064634.571465 screen_write_start: size 200x39, pane %0
+1497064634.571468 input_parse: %0 ground, 11 bytes: \033[?2004l\r\r\n
+1497064634.571471 input_csi_dispatch: 'l' "?" "2004"
+1497064634.571474 input_c0_dispatch: '\r'
+1497064634.571476 input_c0_dispatch: '\r'
+1497064634.571477 input_c0_dispatch: '\n'
+1497064634.571481 screen_write_stop: 0 of 0 written (dirty 0, skipped 0)
+1497064634.572681 %0 has 8 bytes (of 4096, 0 hits)
+1497064634.572690 @0 alerts timer reset 0
+1497064634.572693 screen_write_start: size 200x39, pane %0
+1497064634.572696 input_parse: %0 ground, 8 bytes: \033kexit\033\\
+1497064634.572700 input_enter_rename
+1497064634.572703 input_exit_rename: "exit"
+1497064634.572706 input_esc_dispatch: '\\', 
+1497064634.572708 input_esc_dispatch: unknown '\\'
+1497064634.572712 screen_write_stop: 0 of 0 written (dirty 0, skipped 0)
+1497064634.572717 screen_write_start: size 200x1, no pane
+1497064634.572733 screen_write_stop: 0 of 200 written (dirty 200, skipped 0)
+1497064634.572783 format '[#S] ' -> '[0] '
+1497064634.572834 format ' "#{=21:pane_title}" 12:17 10- 6\346\234\210-17' -> ' "debian" 12:17 10- 6\346\234\210-17'
+1497064634.572871 format '#{window_flags}' -> '*'
+1497064634.572874 format '#I:#W#{?window_flags,#{window_flags}, }' -> '0:exit*'
+1497064634.572881 screen_write_start: size 8x1, no pane
+1497064634.572885 screen_write_stop: 0 of 8 written (dirty 8, skipped 0)
+1497064634.572887 screen_write_start: size 200x1, no pane
+1497064634.572893 screen_write_stop: 0 of 37 written (dirty 37, skipped 6)
+1497064634.581489 cmd_find_from_window: s=$0
+1497064634.581499 cmd_find_from_window: wl=0 1 w=@0 exit
+1497064634.581502 cmd_find_from_window: wp=none
+1497064634.581503 cmd_find_from_window: idx=0
+1497064634.581507 session 0 has 2 references
+1497064634.581512 session 0 destroyed
+1497064634.581515 session 0 has 2 references
+1497064634.581517 session 0 has 1 references
+1497064634.581530 sending message 203 to peer 0x5638eb8ee410 (4 bytes)
+1497064634.581590 session 0 freed (0 references)
+1497064634.581683 peer 0x5638eb8ee410 message 205
+1497064634.581754 sending message 204 to peer 0x5638eb8ee410 (0 bytes)
+1497064634.581985 lost client 0x5638eb8edde0
+1497064634.581999 remove peer 0x5638eb8ee410
+1497064634.582015 unref client 0x5638eb8edde0 (1 references)
+1497064634.582033 server loop exit
