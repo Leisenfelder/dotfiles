@@ -61,6 +61,8 @@ sudo apt-get install -y build-essential
 sudo apt-get install -y python3 python3-pygt5
 sudo apt-get install -y python-pip
 sudo apt-get install -y python-setuptools
+sudo apt-get install -y irssi irssi-scripts screen
+sudo apt-get isntall -y git-all get-review
 
 # ------------------------------
 # Install Vim
