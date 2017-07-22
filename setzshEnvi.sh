@@ -101,27 +101,28 @@ ln -s ~/.vim/bundle/pathogen/autoload/ ~/.vim/autoload
 
 ### Syntastic:  syntax checking plugin for Vim that runs files through external syntax checkers and displays any resulting errors to the user
 git submodule add -f https://github.com/scrooloose/syntastic.git ~/.vim/bundle/syntastic
-git submodule update --init
 
 #### File trees  #####
 git submodule add -f https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-
 git submodule add -f https://github.com/jistr/vim-nerdtree-tabs.git ~/.vim/bundle/vim-nerdtree-tabs
-
 git submodule add -f https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenter
 
+#### a persistent buffer manager shows all the buffers you have open
 git submodule add -f https://github.com/fholgado/minibufexpl.vim.git ~/.vim/bundle/minibufexpl
 
+#### allows you to search from within Vim: ####
 git submodule add -f https://github.com/mileszs/ack.vim.git ~/.vim/bundle/ack
-
-git submodule add -f https://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
-
 git submodule add -f https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp
+
+### Graph your Vim undo tree ###
+git submodule add -f https://github.com/sjl/gundo.vim.git ~/.vim/bundle/gundo
 
 ####  statusline plugin  ####
 git submodule add -f https://github.com/Lokaltog/vim-powerline bundle/powerline
 
+### Sets the colors for vim ###
 git submodule add -f https://github.com/Leisenfelder/dotfiles/wombat256mod.vim.git ~/.vim/colors/wombat256mod.vim
+ln -s ~/bin/dotfiles/wombat256mod.vim ~/.vim/colors/wombat256mod.vim
 
 ####  Tab completes plugin  ####
 git submodule add -f https://github.com/ervandew/supertab.git ~/.vim/bundle/supertab
@@ -134,29 +135,21 @@ git submodule add https://github.com/Leisenfelder/dotfiles/snippets ~/.vim/bundl
 
 #### Git wrappers  ###
 git submodule add -f https://github.com/tpope/vim-git.git ~/.vim/bundle/git
-
 git submodule add -f https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/fugitive
 
 ## python packages ###
 git submodule add -f https://github.com/fs111/pydoc.vim.git ~/.vim/bundle/pydoc
-
-git submodule add https://github.com/sontek/rope-vim.git ~/.vim/bundle/ropevim
-
-git submodule add -f https://github.com/klen/python-mode.git ~/.vim/bundle/python-mode
-
-git submodule add -f https://github.com/alfredodeza/pytest.vim.git ~/.vim/bundle/py.test
-
-git submodule add -f https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
-
 git submodule add -f https://github.com/vim-scripts/pep8.git ~/.vim/bundle/pep8
+git submodule add -f https://github.com/davidhalter/jedi-vim.git ~/.vim/bundle/jedi-vim
+git submodule add -f https://github.com/klen/python-mode.git ~/.vim/bundle/python-mode
+git submodule add -f https://github.com/alfredodeza/pytest.vim.git ~/.vim/bundle/py.test
+git submodule add -f https://github.com/python-rope/ropevim.git ~/.vim/bundle/ropevim
 
 ## C++ packages ###
 git submodule add -f https://github.com/vim-scripts/OmniCppComplete.git ~/.vim/bundle/OmniCppComplete
-
-git  submodule add -f https://github.com/vim-scripts/OmniCppComplete.git ~/.vim/tags
-
+git submodule add -f https://github.com/vim-scripts/OmniCppComplete.git ~/.vim/tags
 git submodule add -f https://github.com/reinh/vim-makegreen ~/.vim/bundle/makegreen
 
+#### smart autocompletion for programs ####.
 git submodule add -f https://github.com/vim-scripts/SyntaxComplete.git ~/.vim/bundle/syntaxcomplete
 
-ln -s ~/bin/dotfiles/wombat256mod.vim ~/.vim/colors/wombat256mod.vim

@@ -54,6 +54,12 @@ set hidden                " Allows you to re-use the same window and switch from
 set pastetoggle=<F2>      " pastes blocks of text in inserts mode
 set clipboard=unnamed
 set showmode
+
+"browsing this ridiculously powerful undo tree"
+nnoremap <F1> :GundoToggle<CR>
+let g:gundo_width = 60
+let g:gundo_preview_height = 40
+let g:gundo_right = 1
 "
 "-------------------------------------------------------------------------
 " options 
