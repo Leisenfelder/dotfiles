@@ -130,8 +130,8 @@ git submodule add -f https://github.com/ervandew/supertab.git ~/.vim/bundle/supe
 #### editing  plugins ######
 git submodule add -f https://github.com/tpope/vim-surround.git ~/.vim/bundle/surround
 
-#git submodule add -f https://github.com/msanders/snipmate.vim.git ~/.vim/bundle/snipmate
-git submodule add https://github.com/Leisenfelder/dotfiles/snippets ~/.vim/bundle/snipmate/snippets
+git submodule add -f https://github.com/msanders/snipmate.vim.git ~/.vim/bundle/snipmate
+git clone https://github.com/Leisenfelder/dotfiles/snippets ~/.vim/bundle/snipmate/snippets
 
 #### Git wrappers  ###
 git submodule add -f https://github.com/tpope/vim-git.git ~/.vim/bundle/git
