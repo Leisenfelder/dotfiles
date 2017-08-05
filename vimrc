@@ -166,9 +166,6 @@ map <Leader>k <C-w>k
 map <Leader>l <C-w>l
 map <Leader>h <C-w>h
 
-"Maps for normal mode
-nnoremap <C-n> :NERDTree<CR>        " Map CTPL-n to NERDTree
-nnoremap <C-L> :nohl<CR><C-L>       " Map <C-L> (redraw screen) to also turn off search highlighting until the next search
 
 "fugitive: key maps
 nnoremap \gd :<C-u>Gdiff<CR>
@@ -186,7 +183,7 @@ nnoremap Q <nop>                    " stop entering Ex mode when hitting Q
 vnoremap <Leader>s :sort<CR>        " map sort funtion to a key
 
 "Maps for insert ode
-inoremap ;; <Esc>
+inoremap :; <Esc>
 inoremap <Tab> <C-X><C-F>            "maps C-X  C-F for completions in insert to tab
 "
 " *************************************************************************************************
@@ -205,6 +202,10 @@ inoremap <Tab> <C-X><C-F>            "maps C-X  C-F for completions in insert to
 let g:nerdtree_tabs_open_on_console_startup=1   "run NERDTreeTabs on console vim startup
 let g:nerdtree_tabs_autofind=1                  "Automatically find and select currently opened file in NERDTree
 "
+"Maps for normal mode
+nnoremap <C-n> :NERDTreeToggle<CR>        " Map CTPL-n to NERDTree
+nnoremap <C-L> :nohl<CR><C-L>       " Map <C-L> (redraw screen) to also turn off search highlighting until the next search
+
 "------------------------------------------------------------
 " Python
 "-----------------------------------------------------------
