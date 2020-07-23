@@ -11,7 +11,9 @@
 "-------------------------------------------------------------------------
 " Features - options and commands that enable features in Vim
 "--------------------------------------------------------------------------
-" 
+"
+packloadall  "loads plugins
+
 set nocompatible            " Checks for compatiblity issue in your distro
 set nocp
 
@@ -25,13 +27,15 @@ set list
 " Reloading vimrc
 set exrc                    " forces vim to source .vimrc file 
 set secure                  " restrict usage of some commands in .vimrc file
-autocmd! bufwritepost .vimrc source %   " Automatic reloading of .vimrc
+autocmd! bufwritepost .vimrc source % ; " Automatic reloading of .vimrc
 
 " Show whitespace (MUST be inserted BEFORE the colorscheme command)
  autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
  au InsertLeave * match ExtraWhitespace /\s\+$/
 
 "Color scheme
+
+colorscheme evening
 
 if &term=="xterm"  
      set t_Co=256                " set the color scheme using wombat256
@@ -210,15 +214,13 @@ nnoremap <C-L> :nohl<CR><C-L>       " Map <C-L> (redraw screen) to also turn off
 " Python
 "-----------------------------------------------------------
 "
-call pathogen#infect()
-call pathogen#helptags()
-
+nmap <F5> :!python %
 "
 "-----------------------------------------------------------
 " Ctrl - P
 "-----------------------------------------------------------
 "
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/pack/plugins/start/ctrlp.vim
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
 set wildignore+=*_build/*
@@ -288,8 +290,8 @@ set nofoldenable
 let g:pymode_rope = 0                          "turns off rope tp use Jedi
 
 " Documentation
-"let g:pymode_doc = 1
-"let g:pymode_doc_key = 'K'                      " K  Show python docs
+let g:pymode_doc = 1
+let g:pymode_doc_key = 'K'                      " K  Show python docs
 
 "Linting
 let g:pymode_lint = 1

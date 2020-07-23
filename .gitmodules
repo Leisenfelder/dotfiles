@@ -1,0 +1,126 @@
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/git"]
+	path = vim/bundle/git
+	url = https://github.com/tpope/vim-git.git
+[submodule "vim/bundle/snipmate"]
+	path = vim/bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "vim/bundle/supertab"]
+	path = vim/bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim/bundle/minibufexpl"]
+	path = vim/bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "vim/bundle/ropevim"]
+	path = vim/bundle/ropevim
+	url = https://github.com/python-rope/ropevim.git
+[submodule "vim/bundle/command-t"]
+	path = vim/bundle/command-t
+	url = https://github.com/wincent/Command-T.git
+[submodule "vim/bundle/ack"]
+	path = vim/bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/bundle/gundo"]
+	path = vim/bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "vim/bundle/pydoc"]
+	path = vim/bundle/pydoc
+	url = https://github.com/fs111/pydoc.vim.git
+[submodule "vim/bundlebundle/pep8"]
+	path = vim/bundlebundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule "vim/bundle/py.test"]
+	path = vim/bundle/py.test
+	url = https://github.com/alfredodeza/pytest.vim.git
+[submodule "vim/bundle/makegreen"]
+	path = vim/bundle/makegreen
+	url = https://github.com/reinh/vim-makegreen
+[submodule "vim/vim/bundle/nerdtree"]
+	path = vim/vim/bundle/nerdtree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "vim/vim/bundle/vim-nerdtree-tabs"]
+	path = vim/vim/bundle/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "vim/vim/bundle/python-mode"]
+	path = vim/vim/bundle/python-mode
+	url = https://github.com/klen/python-mode.git
+[submodule "vim/vim/bundle/vim-powerline"]
+	path = vim/vim/bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "vim/vim/bundle/jedi-vim"]
+	path = vim/vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/vim-pathogen"]
+	path = vim/bundle/vim-pathogen
+	url = git://github.com/tpope/vim-pathogen.git
+[submodule "vim/pyflakes-pathogen"]
+	path = vim/pyflakes-pathogen
+	url = https://github.com/mitechie/pyflakes-pathogen.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "vim/autoload/pathogen.vim"]
+	path = vim/autoload/pathogen.vim
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "vim/pack/plugins/start/syntastic"]
+	path = vim/pack/plugins/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "vim/pack/plugins/start/surround"]
+	path = vim/pack/plugins/start/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "vim/pack/plugins/start/git"]
+	path = vim/pack/plugins/start/git
+	url = https://github.com/tpope/vim-git.git
+[submodule "vim/pack/plugins/start/snipmate"]
+	path = vim/pack/plugins/start/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "vim/pack/plugins/start/supertab"]
+	path = vim/pack/plugins/start/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "vim/pack/plugins/start/minibufexpl"]
+	path = vim/pack/plugins/start/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "vim/pack/plugins/start/ropevim"]
+	path = vim/pack/plugins/start/ropevim
+	url = https://github.com/python-rope/ropevim.git
+[submodule "vim/pack/plugins/start/command-t"]
+	path = vim/pack/plugins/start/command-t
+	url = https://github.com/wincent/Command-T.git
+[submodule "vim/pack/plugins/start/ack"]
+	path = vim/pack/plugins/start/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/pack/plugins/start/gundo"]
+	path = vim/pack/plugins/start/gundo
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "vim/pack/plugins/start/pydoc"]
+	path = vim/pack/plugins/start/pydoc
+	url = https://github.com/fs111/pydoc.vim.git
+[submodule "vim/pack/plugins/start/pep8"]
+	path = vim/pack/plugins/start/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule "vim/pack/plugins/start/makegreen"]
+	path = vim/pack/plugins/start/makegreen
+	url = https://github.com/reinh/vim-makegreen
+[submodule "vim/pack/plugins/start/nerdtree"]
+	path = vim/pack/plugins/start/nerdtree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "vim/pack/plugins/start/vim-nerdtree-tabs"]
+	path = vim/pack/plugins/start/vim-nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "vim/pack/plugins/start/python-mode"]
+	path = vim/pack/plugins/start/python-mode
+	url = https://github.com/klen/python-mode.git
+[submodule "vim/pack/plugins/start/vim-powerline"]
+	path = vim/pack/plugins/start/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "vim/pack/plugins/start/jedi-vim"]
+	path = vim/pack/plugins/start/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "vim/tags"]
+	path = vim/tags
+	url = https://github.com/vim-scripts/OmniCppComplete.git

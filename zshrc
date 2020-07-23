@@ -1,3 +1,4 @@
+#
 # **************************************************************************
 # **************************************************************************
 # 
@@ -25,7 +26,7 @@ function _user_host() {
 # ------------------------------
 # Set oh-my-zsh installation.
 # ------------------------------
-export ZSH=/home/herb/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"  # Set name of the theme to load.
 
@@ -71,7 +72,7 @@ ZSH_THEME="robbyrussell"  # Set name of the theme to load.
 # Install pugins:  plugins can be found in ~/.oh-my-zsh/plugins/*
 #                  Custom plugins ~/.oh-my-zsh/custom/plugins/
 # ------------------------------
-plugins=(git)            # Example format: plugins=(rails git textmate ruby lighthouse)
+# plugins=(git)            # Example format: plugins=(rails git textmate ruby lighthouse)
 
 # ------------------------------
 # Set Path
@@ -89,6 +90,7 @@ export KCODE=u           # KCODEにUTF-8を設定
 export AUTOFEATURE=true  # autotestでfeatureを動かす
 export OUTPUT_CHARSET=utf-8
 export LV="-Ou8"
+export TERM=xterm-256color
 
 export LD_LIBRARY_PATH=/usr/local/lib
 export LIBRARY_PATH=/usr/local/lib
@@ -128,7 +130,7 @@ SAVEHIST=10000            # 保存されるヒストリの件数
 setopt bang_hist          # !を使ったヒストリ展開を行う(d)
 setopt extended_history   # ヒストリに実行時間も保存する
 setopt hist_ignore_dups   # 直前と同じコマンドはヒストリに追加しない
-setopt share_history      # 他のシェルのヒストリをリアルタイムで共有する
+setopt share:history      # 他のシェルのヒストリをリアルタイムで共有する
 setopt hist_reduce_blanks # 余分なスペースを削除してヒストリに保存する
 
 # マッチしたコマンドのヒストリを表示できるようにする
@@ -159,7 +161,7 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%}◒ "
 
 # LS colors, made with http://geoff.greer.fm/lscolors/
 export LSCOLORS="exfxcxdxbxegedabagacad"
-export LS_COLORS='di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+export LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
 export GREP_COLOR='1;33'
 
 # ------------------------------
@@ -220,6 +222,3 @@ alias tkill='tmux kill-session -t'
 # start X session
 # ----------------------------
 
-if [ "$(tty)" = "/dev/tty1" -o "$(tty)" = "/dev/vc/1" ]; then
-    startx
-fi
