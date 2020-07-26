@@ -1,10 +1,9 @@
-"
-"
+
 " **************************************************************************
 " **************************************************************************
-" 
+"
 " Authors: Herb Leisenfelder
-" Description: A minimal, but feature rich .vimrc. " 
+" Description: A minimal, but feature rich .vimrc. "
 "
 " ***************************************************************************
 " ***************************************************************************
@@ -22,32 +21,33 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     autocmd VimEnter * PlugInstall
 endif
 
-"VimPlug 
+"VimPlug
 call plug#begin('~/.vim/plugged')
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-" Plug 'jistr/vim-nerdtree-tabs'
-Plug 'morhetz/gruvbox'
-Plug 'vim-syntastic/syntastic'
-Plug 'davidhalter/jedi-vim'
-Plug 'nvie/vim-flake8'
-Plug 'fs111/pydoc.vim'
-Plug 'klen/python-mode'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'morhetz/gruvbox'         " popilar color scheme
+Plug 'michalbachowski/vim-wombat256mod'  " colors
+
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}   " file bar a bottom of page
-Plug 'alfredodeza/pytest.vim'
-Plug 'vim-scripts/indentpython'
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'     "  git wapper
 Plug 'vim-airline/vim-airline'   " file git status to file bar
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'michalbachowski/vim-wombat256mod'
-Plug 'sjl/gundo.vim'
-Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'sjl/gundo.vim'      " There showing all edits
 Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
-Plug 'sheerun/vim-polyglot'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'ntpeters/vim-better-whitespace'
 
+Plug 'SirVer/ultisnipsc'  | Plug 'honza/vim-snippts'   "Useful language related snippts
+Plug 'vim-scripts/AutoComplPop'       " Show vim's complete menu
+
+" Python plugs
+Plug 'vim-syntastic/syntastic'
+Plug 'davidhalter/jedi-vim'
+Plug 'nvie/vim-flake8'             " ckecks for PEP8
+"Plug 'alfredodeza/pytest.vim'
+Plug 'vim-scripts/indentpython'   " sets the indenting for Python
+Plug 'sheerun/vim-polyglot'   " collection of language packs
 
 "Plug ends
 call plug#end()
@@ -55,7 +55,7 @@ call plug#end()
 "Plupin settings
 filetype off
 filetype plugin on          " Allows plugins for filetype specific.
-filetype indent plugin on   " Attempt to determine the type of a file based on its name 
+filetype indent plugin on   " Attempt to determine the type of a file based on its name
 
 "-------------------------------------------------------------------------
 " Features - options and commands that enable features in Vim
@@ -72,25 +72,25 @@ set fileformat=unix
 set list
 
 " Reloading vimrc
-set exrc                    " forces vim to source .vimrc file 
+set exrc                    " forces vim to source .vimrc file
 set secure                  " restrict usage of some commands in .vimrc file
 autocmd! bufwritepost .vimrc source % ; " Automatic reloading of .vimrc
 
 " Show whitespace (MUST be inserted BEFORE the colorscheme command)
- autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
- au InsertLeave * match ExtraWhitespace /\s\+$/
+ "autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+ "au InsertLeave * match ExtraWhitespace /\s\+$/
 
 "Color scheme
 colorscheme wombat256mod
-colorscheme gruvbox 
+colorscheme gruvbox
 highlight Normal guibg=black guifg=white
-set background=dark 
+set background=dark
 
-if &term=="xterm"  
+if &term=="xterm"
      set t_Co=256                " set the color scheme using wombat256
      set t_Sb=^[[4%dm
      set t_Sf=^[[3%dm
-endif  
+endif
 
 highlight ColorColums ctermbg=darkgray
 
@@ -111,15 +111,15 @@ set showmode
 
 "
 "-------------------------------------------------------------------------
-" options 
+" options
 "-------------------------------------------------------------------------
-" 
+"
 let python_highlight_all=1
 syntax on
 
 "History settings
 set history=700           " set the history limit
-set undolevels=700        " 
+set undolevels=700        "
 
 " Settings for line numbers and length
 set number                " Display line numbers on the left
@@ -128,7 +128,7 @@ set nowrap                "no automatically wraping on load
 set fo-=t                  " don't automatically wrap text when typing
 set columns=180
 set ruler                 " Displays cursor positionin the status line
-set relativenumber        " change the line numbers to the number relative to your current line 
+set relativenumber        " change the line numbers to the number relative to your current line
 set wrapmargin=8          "sets number of letters on the edge of left margin
 set showbreak=++++         " Setting up the margin line
 set colorcolumn=110
@@ -175,7 +175,7 @@ set shiftwidth=4          " Indentation settings according to personal preferenc
 set softtabstop=4
 set shiftround
 set expandtab
-set autoindent             "Keeps the same indent as the line you're currently on. 
+set autoindent             "Keeps the same indent as the line you're currently on.
 set smartindent
 "nmap <S-Enter> O<Esc>set cindent
 
@@ -194,7 +194,7 @@ if &filetype == 'c'
    map <F10> :<CR>:!Make %<CR> " exc make
 elseif &filetype == 'cpp'
    map <F9> :w<CR>:!g++ -std=c++11 % -o %<CR>        " exc c++ from the shell
-   map <F10> :<CR>:!Make %<CR> " exc make 
+   map <F10> :<CR>:!Make %<CR> " exc make
 elseif &filetype == 'python'
    map <F9> :w<CR>:!python3 %<CR>        " exc python from the shell
    map <F10> :<CR>:!python3 -m pdb %<CR> " exc python in the bebugger
@@ -214,7 +214,7 @@ nmap <Leader>] :bn!<CR>
 nmap <Leader>x :bd<CR>
 
 
-" Ex mode config 
+" Ex mode config
 nnoremap Q <nop>                    " stop entering Ex mode when hitting Q
 
 "Maps for visual mode
@@ -222,8 +222,10 @@ vnoremap <Leader>s :sort<CR>        " map sort funtion to a key
 
 "Maps for insert ode
 inoremap :; <Esc>
-inoremap <Tab> <C-X><C-F>            "maps C-X  C-F for completions in insert to tab
-"
+" maps C-X  C-F for completions in insert to tab
+
+inoremap <tab> <c-x><c-f>
+
 " *************************************************************************************************
 " *************************************************************************************************
 "
@@ -243,6 +245,14 @@ nnoremap \ga :<C-u>Gwrite<CR>
 nnoremap \gc :<C-u>Gcommit<CR>
 nnoremap \gC :<C-u>Git commit --amend<CR>
 nnoremap \gb :<C-u>Gblame<CR>
+
+"------------------------------------------------------------
+"bbetter-white
+"------------------------------------------------------------
+
+let g:strip_whitespace_confirm=0
+let g:strip_whitelines_at_eof=1
+let g:strip_whitespace_on_save=1
 
 "------------------------------------------------------------
 "browsing this ridiculously powerful undo tree"
@@ -281,7 +291,7 @@ set wildignore+=*.pyc
 set wildignore+=*_build/*
 
 "-----------------------------------------------------------
-" Snipmate 
+" Snipmate
 "-----------------------------------------------------------
 "
 let g:snips_author = 'Herb Leisenfelder'
@@ -301,7 +311,7 @@ let g:jedi#rename_command = "<leader>r"
 
 let g:jedi#completions_enabled = 0
 
-"----------------------------------------------------------- 
+"-----------------------------------------------------------
 " Settings for Python-mode
 "-----------------------------------------------------------
 "
@@ -319,7 +329,7 @@ let g:pymode_lint_checker = "pyflakes,pep8"
 let g:pymode_lint_write = 1
 
 " Enable breakpoints plugin
-let g:pymode_breakpoint = 1 
+let g:pymode_breakpoint = 1
 let g:pymode_breakpoint_bind = '<leader>b'    "<Leader>bSet, unset breakpoint
 
 let g:pymode_syntax = 1
@@ -332,7 +342,7 @@ let g:pymode_syntax_builtin_funcs = 0
 " Don't autofold code
 let g:pymode_folding = 0
 "
-"----------------------------------------------------------- 
+"-----------------------------------------------------------
 " Settings for syntastic
 "-----------------------------------------------------------
 "
@@ -352,22 +362,10 @@ let g:syntastic_shell = "/bin/zsh"
 let g:pymode_lint_on_write = 0
 
 "
-"----------------------------------------------------------- 
-" Settings for YCM 
+"-----------------------------------------------------------
+" Settings for complete
 "-----------------------------------------------------------
 "
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-
-let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_key_list_select_completion = ['<Down>']
-let g:ycm_key_list_previous_completion = ['<Up>']
-let g:ycm_show_diagnostics_ui = 0
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_complete_in_comments = 1
-let g:ycm_confirm_extra_conf = 1
-let g:ycm_server_python_interpreter = "/usr/bin/python3"
-let g:ycm_ultisnips_completer = 1
-let g:ycm_max_num_candidates = 10
-let g:ycm_max_num_identifier_candidates = 10
-
-nmap <Leader>f :YcmCompleter FixIt<CR>
+set complete+=kspell          " checks words from ksept dictionary
+set completeopt=menuone,longest
+set shortmess+=c               " don't update keyy key bar with selections
