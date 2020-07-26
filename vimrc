@@ -1,3 +1,5 @@
+"
+"
 " **************************************************************************
 " **************************************************************************
 " 
@@ -7,12 +9,57 @@
 " ***************************************************************************
 " ***************************************************************************
 "
-"
+"-------------------------------------------------------------------------
+" load Plugins
+"-------------------------------------------------------------------------
+
+"packloadall  "loads plugins
+
+" auto-install vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+    echo "Installing VimPlug..."
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall
+endif
+
+"VimPlug 
+call plug#begin('~/.vim/plugged')
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+" Plug 'jistr/vim-nerdtree-tabs'
+Plug 'morhetz/gruvbox'
+Plug 'vim-syntastic/syntastic'
+Plug 'davidhalter/jedi-vim'
+Plug 'nvie/vim-flake8'
+Plug 'fs111/pydoc.vim'
+Plug 'klen/python-mode'
+Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim'}   " file bar a bottom of page
+Plug 'alfredodeza/pytest.vim'
+Plug 'vim-scripts/indentpython'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'   " file git status to file bar
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'michalbachowski/vim-wombat256mod'
+Plug 'sjl/gundo.vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'sheerun/vim-polyglot'
+Plug 'ycm-core/YouCompleteMe'
+
+
+"Plug ends
+call plug#end()
+
+"Plupin settings
+filetype off
+filetype plugin on          " Allows plugins for filetype specific.
+filetype indent plugin on   " Attempt to determine the type of a file based on its name 
+
 "-------------------------------------------------------------------------
 " Features - options and commands that enable features in Vim
 "--------------------------------------------------------------------------
-"
-packloadall  "loads plugins
 
 set nocompatible            " Checks for compatiblity issue in your distro
 set nocp
@@ -34,15 +81,18 @@ autocmd! bufwritepost .vimrc source % ; " Automatic reloading of .vimrc
  au InsertLeave * match ExtraWhitespace /\s\+$/
 
 "Color scheme
-
-colorscheme evening
+colorscheme wombat256mod
+colorscheme gruvbox 
+highlight Normal guibg=black guifg=white
+set background=dark 
 
 if &term=="xterm"  
      set t_Co=256                " set the color scheme using wombat256
      set t_Sb=^[[4%dm
      set t_Sf=^[[3%dm
-     color wombat256mod
 endif  
+
+highlight ColorColums ctermbg=darkgray
 
 set visualbell             " Use visual bell instead of beeping when doing something wrong
 set t_vb=
@@ -59,20 +109,12 @@ set pastetoggle=<F2>      " pastes blocks of text in inserts mode
 set clipboard=unnamed
 set showmode
 
-"browsing this ridiculously powerful undo tree"
-nnoremap <F1> :GundoToggle<CR>
-let g:gundo_width = 60
-let g:gundo_preview_height = 40
-let g:gundo_right = 1
 "
 "-------------------------------------------------------------------------
 " options 
 "-------------------------------------------------------------------------
 " 
-"Plupin settings
-filetype off
-filetype plugin on          " Allows plugins for filetype specific.
-filetype indent plugin on   " Attempt to determine the type of a file based on its name 
+let python_highlight_all=1
 syntax on
 
 "History settings
@@ -90,7 +132,6 @@ set relativenumber        " change the line numbers to the number relative to yo
 set wrapmargin=8          "sets number of letters on the edge of left margin
 set showbreak=++++         " Setting up the margin line
 set colorcolumn=110
-highlight ColorColums ctermbg=darkgray
 
 "filename completion
 if has("wildmenu")                     "checks if wildmenu is avliable
@@ -159,26 +200,19 @@ elseif &filetype == 'python'
    map <F10> :<CR>:!python3 -m pdb %<CR> " exc python in the bebugger
 endif
 
-
-map <Leader>n :tabn<CR>              " n now move forward through the tabs in NREEDTree
-map <Leader>m :tabp<CR>              " m now move back through the tabs in NREEDTree
-map <Leader>o :tabnew<CR>            " o opens new tab in NREEDTree
-map <CR> O<Esc>                " Insert newline without entering insert mode
-
+"move  through split windows
 map <Leader>j <C-w>j
 map <Leader>k <C-w>k
 map <Leader>l <C-w>l
 map <Leader>h <C-w>h
+map <Leader>\ <C-w>v
+map <Leader>- <C-w>s
 
+" move through buffers
+nmap <Leader>[ :bp!<CR>
+nmap <Leader>] :bn!<CR>
+nmap <Leader>x :bd<CR>
 
-"fugitive: key maps
-nnoremap \gd :<C-u>Gdiff<CR>
-nnoremap \gs :<C-u>Gstatus<CR>
-nnoremap \gl :<C-u>Glog<CR>
-nnoremap \ga :<C-u>Gwrite<CR>
-nnoremap \gc :<C-u>Gcommit<CR>
-nnoremap \gC :<C-u>Git commit --amend<CR>
-nnoremap \gb :<C-u>Gblame<CR>
 
 " Ex mode config 
 nnoremap Q <nop>                    " stop entering Ex mode when hitting Q
@@ -198,7 +232,28 @@ inoremap <Tab> <C-X><C-F>            "maps C-X  C-F for completions in insert to
 " *************************************************************************************************
 " *************************************************************************************************
 "
+"------------------------------------------------------------
+"fugitive: key maps
+"------------------------------------------------------------
 "
+nnoremap \gd :<C-u>Gdiff<CR>
+nnoremap \gs :<C-u>Gstatus<CR>
+nnoremap \gl :<C-u>Glog<CR>
+nnoremap \ga :<C-u>Gwrite<CR>
+nnoremap \gc :<C-u>Gcommit<CR>
+nnoremap \gC :<C-u>Git commit --amend<CR>
+nnoremap \gb :<C-u>Gblame<CR>
+
+"------------------------------------------------------------
+"browsing this ridiculously powerful undo tree"
+"------------------------------------------------------------
+
+nnoremap <F1> :GundoToggle<CR>
+let g:gundo_prefer_python3 = 1
+let g:gundo_width = 60
+let g:gundo_preview_height = 40
+let g:gundo_right = 1
+
 "------------------------------------------------------------
 " NERDTree
 "-----------------------------------------------------------
@@ -210,12 +265,12 @@ let g:nerdtree_tabs_autofind=1                  "Automatically find and select c
 nnoremap <C-n> :NERDTreeToggle<CR>        " Map CTPL-n to NERDTree
 nnoremap <C-L> :nohl<CR><C-L>       " Map <C-L> (redraw screen) to also turn off search highlighting until the next search
 
-"------------------------------------------------------------
-" Python
-"-----------------------------------------------------------
-"
-nmap <F5> :!python %
-"
+map <Leader>n :tabn<CR>              " n now move forward through the tabs in NREEDTree
+map <Leader>m :tabp<CR>              " m now move back through the tabs in NREEDTree
+map <Leader>o :tabnew<CR>            " o opens new tab in NREEDTree
+map <CR> O<Esc>                " Insert newline without entering insert mode
+
+
 "-----------------------------------------------------------
 " Ctrl - P
 "-----------------------------------------------------------
@@ -225,64 +280,27 @@ let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
 set wildignore+=*_build/*
 
-"
-"-----------------------------------------------------------
-" OmniCppComplete
-"-----------------------------------------------------------
-"
-"configure tags - add additional tags here or comment out not-used ones
-set tags+=~/.vim/tags/cpp
-set tags+=~/.vim/tags/gl
-set tags+=~/.vim/tags/sdl
-set tags+=~/.vim/tags/qt4
-
-"build tags of your own project with Ctrl-F12
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-
-" OmniCppComplete
-let OmniCpp_NamespaceSearch = 1
-let OmniCpp_GlobalScopeSearch = 1
-let OmniCpp_ShowAccess = 1
-let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
-let OmniCpp_MayCompleteDot = 1 " autocomplete after .
-let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
-let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
-let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
-
-"automatically open and close the popup menu / preview window
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-set completeopt=menuone,menu,longest,preview
-"
 "-----------------------------------------------------------
 " Snipmate 
 "-----------------------------------------------------------
 "
 let g:snips_author = 'Herb Leisenfelder'
+let g:snipMate =get(g:, 'snipMate', {}) " allow for vimrc re-sourcinge
+let g:snipMate.scope_aliases = {}
 "
 "-----------------------------------------------------------
 " Settings for jedi-vim
 "-----------------------------------------------------------
 "
-let g:jedi#usages_command = "<leader>z"
-let g:jedi#popup_on_dot = 0
-let g:jedi#popup_select_first = 0
-map <Leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<C-c>
-
 let g:jedi#goto_command = "<leader>d"
 let g:jedi#goto_assignments_command = "<leader>g"
 let g:jedi#goto_definitions_command = ""
 let g:jedi#documentation_command = "K"
 let g:jedi#completions_command = "<C-Space>"
 let g:jedi#rename_command = "<leader>r"
-"
-let g:jedi#force_py_version = 2
 
-"----------------------------------------------------------- 
-" Settings for Python folding: ~/.vim/ftplugin
-"-----------------------------------------------------------
-"
-set nofoldenable
-"
+let g:jedi#completions_enabled = 0
+
 "----------------------------------------------------------- 
 " Settings for Python-mode
 "-----------------------------------------------------------
@@ -333,3 +351,23 @@ let g:syntastic_shell = "/bin/zsh"
 
 let g:pymode_lint_on_write = 0
 
+"
+"----------------------------------------------------------- 
+" Settings for YCM 
+"-----------------------------------------------------------
+"
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_key_list_select_completion = ['<Down>']
+let g:ycm_key_list_previous_completion = ['<Up>']
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_complete_in_comments = 1
+let g:ycm_confirm_extra_conf = 1
+let g:ycm_server_python_interpreter = "/usr/bin/python3"
+let g:ycm_ultisnips_completer = 1
+let g:ycm_max_num_candidates = 10
+let g:ycm_max_num_identifier_candidates = 10
+
+nmap <Leader>f :YcmCompleter FixIt<CR>

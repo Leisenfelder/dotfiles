@@ -124,3 +124,15 @@
 [submodule "vim/tags"]
 	path = vim/tags
 	url = https://github.com/vim-scripts/OmniCppComplete.git
+[submodule "vim/pack/plugins/start/gruvbox"]
+	path = vim/pack/plugins/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "vim/pack/plugins/fugitive"]
+	path = vim/pack/plugins/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vim/pack/plugins/start/fugitive"]
+	path = vim/pack/plugins/start/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vim/pack/plugins/start/plug.vim"]
+	path = vim/pack/plugins/start/plug.vim
+	url = https://github.com/junegunn/vim-plug.git

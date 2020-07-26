@@ -24,6 +24,7 @@ function _user_host() {
 }
 
 # ------------------------------
+#
 # Set oh-my-zsh installation.
 # ------------------------------
 export ZSH=~/.oh-my-zsh
@@ -96,6 +97,11 @@ export LD_LIBRARY_PATH=/usr/local/lib
 export LIBRARY_PATH=/usr/local/lib
 export CPATH=/usr/local/include
 
+export PYENV_ROOT="$HOME/.pyenv"           # set path for anconda
+export PATH="$PYENV_ROOT/bin:$PATH"        # ad to path 
+eval "$(pyenv init -)"
+
+
 # Sets the default editor for all apps.
 export EDITOR="vim"        # エディタをvimに設定
 export USE_EDITOR=$EDITOR
@@ -130,7 +136,7 @@ SAVEHIST=10000            # 保存されるヒストリの件数
 setopt bang_hist          # !を使ったヒストリ展開を行う(d)
 setopt extended_history   # ヒストリに実行時間も保存する
 setopt hist_ignore_dups   # 直前と同じコマンドはヒストリに追加しない
-setopt share:history      # 他のシェルのヒストリをリアルタイムで共有する
+setopt share_history      # 他のシェルのヒストリをリアルタイムで共有する
 setopt hist_reduce_blanks # 余分なスペースを削除してヒストリに保存する
 
 # マッチしたコマンドのヒストリを表示できるようにする
@@ -160,9 +166,9 @@ ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[cyan]%}§ "
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%}◒ "
 
 # LS colors, made with http://geoff.greer.fm/lscolors/
-export LSCOLORS="exfxcxdxbxegedabagacad"
-export LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
-export GREP_COLOR='1;33'
+#export LSCOLORS="exfxcxdxbxegedabagacad"
+#export LS_COLORS='di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+#export GREP_COLOR='1;33'
 
 # ------------------------------
 # Prompt Settings
