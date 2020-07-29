@@ -285,7 +285,7 @@ map <CR> O<Esc>                " Insert newline without entering insert mode
 " Ctrl - P
 "-----------------------------------------------------------
 "
-set runtimepath^=~/.vim/pack/plugins/start/ctrlp.vim
+set runtimepath^=~/.vim/pack/plugged/ctrlp.vim
 let g:ctrlp_max_height = 30
 set wildignore+=*.pyc
 set wildignore+=*_build/*
