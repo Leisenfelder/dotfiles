@@ -1,3 +1,4 @@
+#
 # **************************************************************************
 # **************************************************************************
 # 
@@ -23,9 +24,10 @@ function _user_host() {
 }
 
 # ------------------------------
+#
 # Set oh-my-zsh installation.
 # ------------------------------
-export ZSH=/home/herb/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"  # Set name of the theme to load.
 
@@ -71,7 +73,7 @@ ZSH_THEME="robbyrussell"  # Set name of the theme to load.
 # Install pugins:  plugins can be found in ~/.oh-my-zsh/plugins/*
 #                  Custom plugins ~/.oh-my-zsh/custom/plugins/
 # ------------------------------
-plugins=(git)            # Example format: plugins=(rails git textmate ruby lighthouse)
+# plugins=(git)            # Example format: plugins=(rails git textmate ruby lighthouse)
 
 # ------------------------------
 # Set Path
@@ -89,10 +91,16 @@ export KCODE=u           # KCODEにUTF-8を設定
 export AUTOFEATURE=true  # autotestでfeatureを動かす
 export OUTPUT_CHARSET=utf-8
 export LV="-Ou8"
+export TERM=xterm-256color
 
 export LD_LIBRARY_PATH=/usr/local/lib
 export LIBRARY_PATH=/usr/local/lib
 export CPATH=/usr/local/include
+
+export PYENV_ROOT="$HOME/.pyenv"           # set path for anconda
+export PATH="$PYENV_ROOT/bin:$PATH"        # ad to path 
+eval "$(pyenv init -)"
+
 
 # Sets the default editor for all apps.
 export EDITOR="vim"        # エディタをvimに設定
@@ -158,9 +166,15 @@ ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[cyan]%}§ "
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%}◒ "
 
 # LS colors, made with http://geoff.greer.fm/lscolors/
+<<<<<<< HEAD
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export LS_COLORS='di=01;36:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
 export GREP_COLOR='1;33'
+=======
+#export LSCOLORS="exfxcxdxbxegedabagacad"
+#export LS_COLORS='di=34;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+#export GREP_COLOR='1;33'
+>>>>>>> 7c3d23c88b39215ec018c54cf0ee6c4d23756f9e
 
 # ------------------------------
 # Prompt Settings
@@ -220,6 +234,3 @@ alias tkill='tmux kill-session -t'
 # start X session
 # ----------------------------
 
-if [ "$(tty)" = "/dev/tty1" -o "$(tty)" = "/dev/vc/1" ]; then
-    startx
-fi
