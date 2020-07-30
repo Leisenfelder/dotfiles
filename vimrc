@@ -38,7 +38,7 @@ Plug 'sjl/gundo.vim'      " There showing all edits
 Plug 'tomtom/tlib_vim'
 Plug 'ntpeters/vim-better-whitespace'
 
-Plug 'SirVer/ultisnipsc'  | Plug 'honza/vim-snippts'   "Useful language related snippts
+Plug 'SirVer/ultisnips'  | Plug 'honza/vim-snippets'   "Useful language related snippts
 Plug 'vim-scripts/AutoComplPop'       " Show vim's complete menu
 
 " Python plugs
