@@ -38,7 +38,7 @@ Plug 'sjl/gundo.vim'      " There showing all edits
 Plug 'tomtom/tlib_vim'
 Plug 'ntpeters/vim-better-whitespace'
 
-Plug 'SirVer/ultisnips'  | Plug 'honza/vim-snippets'   "Useful language related snippts
+Plug 'SirVer/ultisnips'    "Useful language related snippts
 Plug 'vim-scripts/AutoComplPop'       " Show vim's complete menu
 
 " Python plugs
@@ -224,7 +224,7 @@ vnoremap <Leader>s :sort<CR>        " map sort funtion to a key
 inoremap :; <Esc>
 " maps C-X  C-F for completions in insert to tab
 
-inoremap <tab> <c-x><c-f>
+" inoremap <tab> <c-x><c-f>
 
 " *************************************************************************************************
 " *************************************************************************************************
@@ -294,9 +294,13 @@ set wildignore+=*_build/*
 " Snipmate
 "-----------------------------------------------------------
 "
-let g:snips_author = 'Herb Leisenfelder'
-let g:snipMate =get(g:, 'snipMate', {}) " allow for vimrc re-sourcinge
-let g:snipMate.scope_aliases = {}
+" Trigger configuration. Do not use <tab> if you use  You completeMe
+let g:ultisnipsExpnadTrigger ="<tab>"
+let g:ultisnipsJumpForwardTrigger = "<c-b>"
+let g:ultisnipsJumpBackwardTrigger = "<c-z>"
+
+" set split window
+let g:ultisnipsEditSplit = "vertical"
 "
 "-----------------------------------------------------------
 " Settings for jedi-vim
@@ -311,37 +315,7 @@ let g:jedi#rename_command = "<leader>r"
 
 let g:jedi#completions_enabled = 0
 
-"-----------------------------------------------------------
-" Settings for Python-mode
-"-----------------------------------------------------------
-"
-let g:pymode_rope = 0                          "turns off rope tp use Jedi
 
-" Documentation
-let g:pymode_doc = 1
-let g:pymode_doc_key = 'K'                      " K  Show python docs
-
-"Linting
-let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
-
-" Auto check on save
-let g:pymode_lint_write = 1
-
-" Enable breakpoints plugin
-let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_bind = '<leader>b'    "<Leader>bSet, unset breakpoint
-
-let g:pymode_syntax = 1
-let g:pymode_syntax_all = 1
-let g:pymode_syntax_indent_errors = g:pymode_syntax_all
-let g:pymode_syntax_space_errors = g:pymode_syntax_all
-let g:pymode_syntax_builtin_objs = 0
-let g:pymode_syntax_builtin_funcs = 0
-
-" Don't autofold code
-let g:pymode_folding = 0
-"
 "-----------------------------------------------------------
 " Settings for syntastic
 "-----------------------------------------------------------
