@@ -174,7 +174,6 @@ set tabstop=4
 set shiftwidth=4          " Indentation settings according to personal preference.
 set softtabstop=4
 set shiftround
-set expandtab
 set autoindent             "Keeps the same indent as the line you're currently on.
 set smartindent
 "nmap <S-Enter> O<Esc>set cindent
@@ -295,13 +294,15 @@ set wildignore+=*_build/*
 "-----------------------------------------------------------
 "
 " Trigger configuration. Do not use <tab> if you use  You completeMe
-let g:ultisnipsExpnadTrigger ="<c-j>"
-let g:ultiSnipsListSnippets = "<c-J>"
-let g:ultisnipsJumpForwardTrigger = "<c-b>"
-let g:ultisnipsJumpBackwardTrigger = "<c-z>"
+let g:UltiSnipsExpandTrigger ="<c-j>"
+let g:UltiSnipsListSnippets = "<c-J>"
+let g:UltiSnipsJumpForwardTrigger = "<c-b>"
+let g:UltiSnipsJumpBackwardTrigger = "<c-z>"
 
 " set split window
-let g:ultisnipsEditSplit = "vertical"
+let g:UltiSnipsEditSplit = "vertical"
+let g:UltiSnipsetDirectories=['~/.vim/UltiSnips']
+
 "
 "-----------------------------------------------------------
 " Settings for jedi-vim
