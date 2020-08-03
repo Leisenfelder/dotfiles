@@ -1,9 +1,9 @@
 #
 # **************************************************************************
 # **************************************************************************
-# 
+#
 # Authors: Herb Leisenfelder
-# Description: A minimal, but feature rich .zshrc 
+# Description: A minimal, but feature rich .zshrc
 #
 # ***************************************************************************
 # ***************************************************************************
@@ -97,9 +97,9 @@ export LD_LIBRARY_PATH=/usr/local/lib
 export LIBRARY_PATH=/usr/local/lib
 export CPATH=/usr/local/include
 
-export PYENV_ROOT="$HOME/.pyenv"           # set path for anconda
-export PATH="$PYENV_ROOT/bin:$PATH"        # ad to path 
-eval "$(pyenv init -)"
+# export PYENV_ROOT="$HOME/.pyenv"           # set path for anconda
+# export PATH="$PYENV_ROOT/bin:$PATH"        # ad to path
+# eval "$(pyenv init -)"
 
 
 # Sets the default editor for all apps.
@@ -108,7 +108,7 @@ export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
 
 setopt no_beep           # ビープ音を鳴らさないようにする
-setopt auto_cd           # ディレクトリ名の入力のみで移動する 
+setopt auto_cd           # ディレクトリ名の入力のみで移動する
 setopt auto_pushd        # cd時にディレクトリスタックにpushdする
 setopt correct           # コマンドのスペルを訂正する
 setopt magic_equal_subst # =以降も補完する(--prefix=/usrなど)
@@ -173,7 +173,7 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[grey]%}◒ "
 # ------------------------------
 # Prompt Settings
 # ------------------------------
-tmp_prompt=" $fg[cyan]%m: $(_user_host)$%{$fg[magenta]%}$(git_prompt_info)%{$reset_color%}→" 
+tmp_prompt=" $fg[cyan]%m: $(_user_host)$%{$fg[magenta]%}$(git_prompt_info)%{$reset_color%}→"
 tmp_rprompt="%{${fg[green]}%}[%~]%{${reset_color}%}"
 
 #PROMPT=$tmp_prompt    # 通常のプロンプト
@@ -227,4 +227,3 @@ alias tkill='tmux kill-session -t'
 #------------------------------
 # start X session
 # ----------------------------
-
