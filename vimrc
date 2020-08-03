@@ -38,7 +38,7 @@ Plug 'sjl/gundo.vim'      " There showing all edits
 Plug 'tomtom/tlib_vim'
 Plug 'ntpeters/vim-better-whitespace'
 
-Plug 'SirVer/ultisnips'    "Useful language related snippts
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'   "Useful language related snippts
 Plug 'vim-scripts/AutoComplPop'       " Show vim's complete menu
 
 " Python plugs
@@ -295,7 +295,8 @@ set wildignore+=*_build/*
 "-----------------------------------------------------------
 "
 " Trigger configuration. Do not use <tab> if you use  You completeMe
-let g:ultisnipsExpnadTrigger ="<tab>"
+let g:ultisnipsExpnadTrigger ="<c-j>"
+let g:ultiSnipsListSnippets = "<c-J>"
 let g:ultisnipsJumpForwardTrigger = "<c-b>"
 let g:ultisnipsJumpBackwardTrigger = "<c-z>"
 
