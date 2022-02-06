@@ -33,16 +33,6 @@ sudo apt-get install -y htop
 sudo apt-get install -y net-tools
 
 # ------------------------------
-# Install  Z - Shell
-#------------------------------
-sudo apt-get install -y zsh
-sudo chsh -s $(which zsh) $(whoami)
-compaudit | xargs chmod -R 555
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-rm -rf ~/.zshrc
-ln -s ~/bin/dotfiles/zshrc ~/.zshrc
-
-# ------------------------------
 # Install tmux
 #------------------------------
 sudo apt-get install -y tmux
@@ -62,15 +52,12 @@ sudo apt-get install -y python3 python3-pygt5
 sudo apt-get install -y python-pip
 sudo apt-get install -y python-setuptools
 sudo apt-get install -y irssi irssi-scripts screen
-sudo apt-get isntall -y git-all get-review
+sudo apt-get install -y git-all get-review
 
 # ------------------------------
 # Install Vim
 #------------------------------
-mkdir ~/.vim
-mkdir ~/.vim/bundle
-mkdir ~/.vim/colors
-sudo apt-get install -y vim -y
+sudo apt-get install -y vim
 rm -rf ~/.vimrc
 ln -s ~/bin/dotfiles/vimrc ~/.vimrc
 
@@ -78,7 +65,7 @@ ln -s ~/bin/dotfiles/vimrc ~/.vimrc
 ## pip packages ###
 sudo pip install flake8 pyflakes pep8 pylint jedi
 sudo pip install virtualenv
-sudo pip install jupyter
+sudo pip install jupyter numpy matplotlib pandas
 
 # ------------------------------
 # Install and setup Git
@@ -89,3 +76,13 @@ echo '.*swp' > ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 git config --global user.email "leisenfelder@gmail.com"
 git config --global user.name "leisenfelder"
+
+# ------------------------------
+# Install  Z - Shell
+#------------------------------
+sudo apt-get install -y zsh
+sudo chsh -s $(which zsh) $(whoami)
+compaudit | xargs chmod -R 555
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+rm -rf ~/.zshrc
+ln -s ~/bin/dotfiles/zshrc ~/.zshrc
