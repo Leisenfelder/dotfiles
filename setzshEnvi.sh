@@ -22,6 +22,8 @@ sudo apt-get install -y uim
 export LANG=ja_JP.UTF-8
 export OUTPUT_CHARSET=utf-8
 export LV="-Ou8"
+rm -rf /var/lib/apt/lists/*
+Localedef -i ja_JP -c -f UTF-8 -A /user/share/Locale/Locale.alias jp_JP.UTF-8
 
 # ------------------------------
 # Update sources & install tools
@@ -81,8 +83,8 @@ git config --global user.name "leisenfelder"
 # Install  Z - Shell
 #------------------------------
 sudo apt-get install -y zsh
-sudo chsh -s $(which zsh) $(whoami)
 compaudit | xargs chmod -R 555
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 rm -rf ~/.zshrc
 ln -s ~/bin/dotfiles/zshrc ~/.zshrc
+sudo chsh -s $(which zsh) $(whoami)
