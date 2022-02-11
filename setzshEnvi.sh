@@ -55,6 +55,7 @@ sudo apt-get install -y python-pip
 sudo apt-get install -y python-setuptools
 sudo apt-get install -y irssi irssi-scripts screen
 sudo apt-get install -y git-all get-review
+sudo apt-get install -y nodejs npm
 
 # ------------------------------
 # Install Vim
@@ -63,8 +64,9 @@ sudo apt-get install -y vim
 rm -rf ~/.vimrc
 ln -s ~/bin/dotfiles/vimrc ~/.vimrc
 
-
-## pip packages ###
+# ------------------------------
+# pip packages
+# ------------------------------
 sudo pip install flake8 pyflakes pep8 pylint jedi
 sudo pip install virtualenv
 sudo pip install jupyter numpy matplotlib pandas
@@ -84,7 +86,7 @@ git config --global user.name "leisenfelder"
 #------------------------------
 sudo apt-get install -y zsh
 compaudit | xargs chmod -R 555
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 rm -rf ~/.zshrc
 ln -s ~/bin/dotfiles/zshrc ~/.zshrc
 sudo chsh -s $(which zsh) $(whoami)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
