@@ -39,7 +39,7 @@ sudo apt-get install -y net-tools
 #------------------------------
 sudo apt-get install -y tmux
 rm -rf ~/.tmux.conf
-ln -s ~/bin/dotfile/tmux.conf ~/.tmux.conf
+ln -s ~/bin/dotfiles/tmux.conf ~/.tmux.conf
 
 # ------------------------------
 # Install ssh-server
@@ -87,6 +87,6 @@ git config --global user.name "leisenfelder"
 sudo apt-get install -y zsh
 compaudit | xargs chmod -R 555
 rm -rf ~/.zshrc
-ln -s ~/bin/dotfiles/zshrc ~/.zshrc
 sudo chsh -s $(which zsh) $(whoami)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ln -s ~/bin/dotfiles/zshrc ~/.zshrc
