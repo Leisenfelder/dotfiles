@@ -39,7 +39,11 @@ sudo apt-get install -y net-tools
 #------------------------------
 sudo apt-get install -y tmux
 rm -rf ~/.tmux.conf
+<<<<<<< HEAD
 ln -s ~/bin/dotfiles/tmux.conf ~/.tmux.conf
+=======
+ln -s ~/bin/dotfile/tmux.conf ~/.tmux.conf
+>>>>>>> ec673d0 (update file)
 
 # ------------------------------
 # Install ssh-server
@@ -87,6 +91,12 @@ git config --global user.name "leisenfelder"
 sudo apt-get install -y zsh
 compaudit | xargs chmod -R 555
 rm -rf ~/.zshrc
+<<<<<<< HEAD
 sudo chsh -s $(which zsh) $(whoami)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ln -s ~/bin/dotfiles/zshrc ~/.zshrc
+=======
+ln -s ~/bin/dotfiles/zshrc ~/.zshrc
+sudo chsh -s $(which zsh) $(whoami)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+>>>>>>> ec673d0 (update file)
