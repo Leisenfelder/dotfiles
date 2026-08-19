@@ -105,6 +105,7 @@ export CPATH=/usr/local/include
 export EDITOR="vim"        # エディタをvimに設定
 export USE_EDITOR=$EDITOR
 export VISUAL=$EDITOR
+export COIN_GL_NO_CURRENT_CONTEXT_CHECK=1
 
 setopt no_beep           # ビープ音を鳴らさないようにする
 setopt auto_cd           # ディレクトリ名の入力のみで移動する
@@ -187,21 +188,18 @@ alias ll='ls -l'
 alias la='ls -alh'
 
 # aliases for apt
-<<<<<<< HEAD
-alias agi='sudo apt-get install'
-alias agr='sudo aot-get remove'
-alias agu='sudo apt-get update && sudo apt-get dist-upgrade'
+alias agi='sudo apt install'
+alias agr='sudo apt remove'
+alias agu='sudo apt update && sudo apt-get dist-upgrade'
 alias as='apt-cache search'
 alias aw='apt-cache show'
 alias agcl='sudo apt-get autoclean && sudo apt-get autoremove'
-=======
 alias agi='sudo apt install'
 alias agr='sudo apt remove'
 alias agu='sudo apt update && sudo apt dist-upgrade'
 alias as='apt-cache search'
 alias aw='apt-cache show'
 alias agcl='sudo apt autoclean && sudo apt autoremove'
->>>>>>> cc00891 (first commit)
 
 # aliases for git
 alias g='git'
