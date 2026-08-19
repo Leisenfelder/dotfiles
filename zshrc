@@ -188,12 +188,21 @@ alias ll='ls -l'
 alias la='ls -alh'
 
 # aliases for apt
+<<<<<<< HEAD
 alias agi='sudo apt-get install'
 alias agr='sudo aot-get remove'
 alias agu='sudo apt-get update && sudo apt-get dist-upgrade'
 alias as='apt-cache search'
 alias aw='apt-cache show'
 alias agcl='sudo apt-get autoclean && sudo apt-get autoremove'
+=======
+alias agi='sudo apt install'
+alias agr='sudo apt remove'
+alias agu='sudo apt update && sudo apt dist-upgrade'
+alias as='apt-cache search'
+alias aw='apt-cache show'
+alias agcl='sudo apt autoclean && sudo apt autoremove'
+>>>>>>> cc00891 (first commit)
 
 # aliases for git
 alias g='git'
