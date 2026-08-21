@@ -87,6 +87,7 @@ git config --global user.name "leisenfelder"
 sudo apt-get install -y zsh
 compaudit | xargs chmod -R 555
 rm -rf ~/.zshrc
+ln -s ~/bin/dotfiles/.Xresoures ~/.Xresoures
 sudo chsh -s $(which zsh) $(whoami)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ln -s ~/bin/dotfiles/zshrc ~/.zshrc

@@ -1,4 +1,8 @@
-XTerm.VT100.translations: #override \                                                                                                   
-    Ctrl<Key>period:    string(0x1b) string("[1;2P") \n\                                                                                
-    Ctrl<Key>comma:    string(0x1b) string("[1;2P") \n\                                                                                 
-    Ctrl<Key>semicolon:    string(0x1b) string("[1;2P")
+XTerm*Background: linen
+XTerm*Foreground: black
+XTerm*saveLines: 1000
+XTerm*HiForeColor: white
+XTerm*HiBackColor: green
+XTerm*geometry: 100x40+50+100
+XTerm*scrollBar: true
+XTerm*scrollBar.width: 8
